@@ -64,6 +64,29 @@ h3.t{font:600 1.6rem var(--serif);color:var(--green);text-align:center;margin:18
 .opts input{accent-color:var(--green);width:18px;height:18px}
 .big{display:inline-block;margin-top:8px;background:var(--green);color:#fff;border-radius:999px;padding:13px 28px;font-weight:600;text-decoration:none}
 .foot{margin-top:34px;text-align:center;font-size:.85rem;color:var(--muted)}
+
+header .hl{margin-top:8px;font-size:.85rem}
+header .hl a{color:var(--green);font-weight:700;text-decoration:none}
+.pc{background:linear-gradient(135deg,#2e3a6e,#4b4f8f 60%,#c9893b);color:#fff;border-radius:22px;padding:22px;margin-top:16px}
+.pc h3{font:600 1.45rem var(--serif);margin:0}
+.pc p{margin:4px 0 0;opacity:.9}
+.bar{height:8px;background:rgba(255,255,255,.3);border-radius:8px;margin-top:14px;overflow:hidden}
+.bar i{display:block;height:100%;background:#f3c27a;border-radius:8px}
+.step{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-top:10px;cursor:pointer;text-align:left;width:100%;font:inherit;color:inherit}
+.step .n{flex:none;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;background:rgba(46,58,110,.08);color:var(--green)}
+.step.done .n{background:var(--gold);color:#fff}
+.step.cur{border:2px solid var(--gold)}
+.step.lock{opacity:.5;cursor:default}
+.step b{display:block;font:600 1.05rem var(--serif);color:var(--green)}
+.step small{color:var(--muted)}
+.pas{margin-top:26px;background:rgba(201,137,59,.12);border-radius:18px;padding:18px 20px}
+.pas h2{margin:0 0 6px;font-size:1.3rem}
+.chk{display:flex;gap:10px;align-items:center;margin-top:10px;font-weight:600;cursor:pointer}
+.chk input{width:20px;height:20px;accent-color:var(--gold)}
+.crown{text-align:center;padding:26px 10px}
+.crown .c{font-size:3rem}
+.why blockquote{margin:16px 0;padding:16px 18px;background:var(--card);border-left:4px solid var(--gold);border-radius:12px;font:italic 500 1.12rem/1.6 var(--serif)}
+.why p{line-height:1.75}
 .toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:.9rem;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
 .toast.on{opacity:1}
 </style>
@@ -74,15 +97,16 @@ h3.t{font:600 1.6rem var(--serif);color:var(--green);text-align:center;margin:18
     <h1>Ma course spirituelle</h1>
     <div class="by">Proposé par Avel Lumière</div>
     <span class="free">Gratuit</span>
+    <div class="hl"><a href="#pourquoi">Pourquoi cette course ?</a> · <a href="#soutenir">💝 Soutenir</a></div>
   </header>
   <main id="app"></main>
 </div>
 <nav id="nav">
   <a href="#verset" data-v="verset"><span class="i">📖</span>Verset du jour</a>
+  <a href="#parcours" data-v="parcours"><span class="i">🏃</span>Parcours</a>
   <a href="#prieres" data-v="prieres"><span class="i">🙏</span>Prières</a>
   <a href="#notes" data-v="notes"><span class="i">✍️</span>Mes notes</a>
   <a href="#partager" data-v="partager"><span class="i">💌</span>À partager</a>
-  <a href="#soutenir" data-v="soutenir"><span class="i">💝</span>Soutenir</a>
 </nav>
 <div class="toast" id="toast"></div>
 <script>
@@ -95,10 +119,10 @@ const BIBLE_DEFAULT = "LSG";
 const VERSES = [{"date": "2026-11-06", "ref": "Ésaïe 41:10", "text": "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours, je te soutiens de ma droite triomphante.", "reflection": "Ce matin, confiez à Dieu ce qui vous inquiète. Sa présence ne vous quitte pas : appuyez-vous sur lui pour avancer avec confiance, un pas après l'autre.", "prayer": "Seigneur, merci pour ce nouveau matin. Tu connais mes inquiétudes et les défis qui m’attendent. Apaise mon cœur et rappelle-moi que je ne suis pas seule : tu es avec moi. Donne-moi la force d’avancer, la sagesse pour mes décisions et la confiance pour te remettre ce que je ne peux pas contrôler. Que ta paix accompagne chacun de mes pas aujourd’hui. Au nom de Jésus, amen."}, {"date": "2026-11-05", "ref": "2 Timothée 2:22", "text": "Fuis les passions de la jeunesse, et recherche la justice, la foi, l'amour, la paix, avec ceux qui invoquent le Seigneur d'un cœur pur.", "reflection": "Fuir ce qui nous éloigne de Dieu n'est pas être faible, c'est faire preuve de sagesse spirituelle. Recherchez la droiture, la foi, l'amour et la paix, avec ceux qui font appel au Seigneur : notre marche avec Dieu ne doit pas être solitaire.", "thought": "Nous ne pouvons pas toujours empêcher une mauvaise pensée de traverser notre esprit, mais avec l'aide du Saint-Esprit, nous pouvons choisir de ne pas lui donner une place dans notre cœur.", "prayer": "Père céleste, en ce nouveau jour, nous venons devant Toi avec humilité. Examine nos cœurs et révèle-nous tout ce qui nous éloigne de Ta présence. Apprends-nous à fuir les pensées, les désirs et les comportements qui ne Te glorifient pas. Donne-nous un cœur droit, une foi persévérante, un amour sincère et un esprit de paix. Lorsque notre chair veut répondre par la colère, enseigne-nous la douceur. Lorsque notre orgueil veut prendre le dessus, enseigne-nous l'humilité. Lorsque nous sommes blessés, apprends-nous à pardonner. Place sur notre chemin des frères et des sœurs qui recherchent sincèrement Ta présence, afin que nous puissions grandir ensemble dans Ton amour. Que notre vie soit le reflet de Ta Parole, non seulement dans nos paroles, mais surtout dans nos actes. Au nom précieux de Jésus-Christ. Amen."}, {"ref": "Psaume 23:1", "text": "L'Éternel est mon berger : je ne manquerai de rien.", "reflection": "Dieu prend soin de vous comme un berger veille sur ses brebis. Qu'est-ce qui vous inquiète aujourd'hui ?", "prayer": "Seigneur, mon berger, je dépose devant toi mes inquiétudes. Conduis-moi et donne-moi ta paix. Amen."}, {"date": "2026-11-04", "ref": "Matthieu 11:28", "text": "Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos.", "reflection": "Jésus vous invite à lui remettre vos fardeaux. Lequel voulez-vous lui confier ?", "prayer": "Jésus, je viens à toi avec ma fatigue. Donne-moi ton repos et allège mon cœur. Amen."}, {"ref": "Philippiens 4:6-7", "text": "Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces. Et la paix de Dieu, qui surpasse toute intelligence, gardera vos cœurs et vos pensées en Jésus-Christ.", "reflection": "L'inquiétude est un fardeau que nous ne sommes pas appelés à porter seuls. Paul nous invite à un échange précieux : remettre chaque souci entre les mains de Dieu, et recevoir en retour sa paix. Ce matin, prenez le temps de nommer devant le Seigneur ce qui pèse sur votre cœur — une décision, une relation, une crainte pour l'avenir. Présentez-lui chaque chose, non pas avec des mots parfaits, mais avec un cœur sincère et reconnaissant. Car la gratitude ouvre la porte à la paix : lorsque nous nous souvenons de tout ce que Dieu a déjà accompli, nos inquiétudes perdent de leur force. Alors la paix de Dieu, qui dépasse tout ce que nous pouvons comprendre, monte la garde autour de notre cœur et de nos pensées, comme une sentinelle fidèle. Elle ne dépend pas des circonstances, mais de la présence du Christ en nous.", "prayer": "Père, je te confie mes besoins et je te remercie pour tes bienfaits. Que ta paix garde mon cœur. Amen."}, {"ref": "Ésaïe 41:10", "text": "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours.", "reflection": "Vous n'êtes jamais seul. Dieu est votre force dans chaque épreuve.", "prayer": "Seigneur, quand j'ai peur, rappelle-moi que tu es avec moi. Fortifie-moi aujourd'hui. Amen."}, {"ref": "Jean 14:27", "text": "Je vous laisse la paix, je vous donne ma paix. Je ne vous donne pas comme le monde donne. Que votre cœur ne se trouble point.", "reflection": "La paix du Christ ne dépend pas des circonstances. Accueillez-la maintenant.", "prayer": "Jésus, remplis-moi de ta paix, celle que le monde ne peut pas donner. Amen."}, {"ref": "Psaume 46:11", "text": "Arrêtez, et sachez que je suis Dieu.", "reflection": "Faites silence un instant. Laissez Dieu être Dieu dans votre vie.", "prayer": "Seigneur, j'arrête mon agitation pour te reconnaître. Tu es Dieu, et je me repose en toi. Amen."}, {"ref": "Proverbes 3:5-6", "text": "Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ta sagesse ; reconnais-le dans toutes tes voies, et il aplanira tes sentiers.", "reflection": "Dans quelle décision avez-vous besoin de faire confiance à Dieu ?", "prayer": "Père, je te fais confiance plus qu'à ma propre sagesse. Dirige mes pas. Amen."}, {"ref": "Lamentations 3:22-23", "text": "Les bontés de l'Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme ; elles se renouvellent chaque matin.", "reflection": "Chaque jour est un nouveau départ dans la fidélité de Dieu.", "prayer": "Merci Seigneur pour tes compassions renouvelées ce jour. Grande est ta fidélité. Amen."}];
 
 const $=s=>document.querySelector(s), app=$("#app");
-const VIEWS=["verset","prieres","notes","partager","soutenir"];
+const VIEWS=["verset","parcours","prieres","notes","partager","soutenir","pourquoi"];
 const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
-const fmt=s=>new Date(s+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+const fmt=s=>/^\d{4}-\d\d-\d\d$/.test(s)?new Date(s+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"Parcours";
 function toast(m){ const t=$("#toast"); t.textContent=m; t.classList.add("on"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("on"),2200); }
 function lsGet(k,d){ try{ const v=localStorage.getItem(k); return v===null?d:JSON.parse(v); }catch(e){ return d; } }
 function lsSet(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); return true; }catch(e){ return false; } }
@@ -207,6 +231,69 @@ function renderPartager(){
   $("#sc").onclick=()=>copy($("#st").value);
 }
 
+
+/* ---------- Parcours ---------- */
+const PARCOURS = {"id": "depart", "titre": "Prendre le départ", "sous": "7 jours pour commencer sa course avec Dieu", "jours": [{"t": "Courir pour remporter le prix", "ref": "1 Corinthiens 9:24-25", "v": "Ne savez-vous pas que ceux qui courent dans le stade courent tous, mais qu'un seul remporte le prix ? Courez de manière à le remporter. Tous ceux qui combattent s'imposent toute espèce d'abstinences, et ils le font pour obtenir une couronne corruptible ; mais nous, faisons-le pour une couronne incorruptible.", "m": "Paul parle à des chrétiens qui connaissaient bien les jeux de Corinthe : des athlètes s'y entraînaient des mois pour une simple couronne de feuillage, qui fanait en quelques jours. Paul leur dit : vous aussi, vous êtes dans une course, mais votre couronne, elle, ne fanera jamais. La question n'est donc pas de savoir si nous courons, car nous sommes tous en mouvement dans la vie. La question est : vers quoi courons-nous, et comment ? Courir « de manière à remporter le prix », c'est courir avec un but, avec discipline, en sachant que chaque jour compte. Aujourd'hui, Dieu vous invite à regarder votre vie comme une course qui a un sens et une ligne d'arrivée : l'éternité avec Lui.", "p": "Seigneur, merci de m'appeler à cette course. Ouvre mes yeux sur le prix que tu me réserves, une couronne qui ne passera jamais. Donne-moi de ne pas courir au hasard, mais avec un but : te connaître, te suivre et te plaire. Que cette journée soit un premier pas dans la bonne direction. Au nom de Jésus, amen.", "pas": "Écrivez dans vos notes une phrase : « Pour moi, remporter le prix, c'est… »"}, {"t": "Deux chemins, un choix", "ref": "Matthieu 7:13-14", "v": "Entrez par la porte étroite. Car large est la porte, spacieux est le chemin qui mènent à la perdition, et il y en a beaucoup qui entrent par là. Mais étroite est la porte, resserré le chemin qui mènent à la vie, et il y en a peu qui les trouvent.", "m": "La course a deux issues, et Jésus ne nous le cache pas. Le chemin large est facile : on y avance selon ses envies, son confort, ses propres choix. Le chemin resserré demande davantage, mais il mène à la vie. Personne ne se retrouve sur le bon chemin par hasard : il faut choisir d'y entrer. Ce choix n'est pas fait une fois pour toutes ; il se renouvelle chaque jour, dans nos paroles, nos décisions, nos priorités. Aujourd'hui, prenez le temps de regarder honnêtement sur quel chemin vous courez, sans culpabilité, mais avec le désir sincère de choisir la porte qui mène à la vie.", "p": "Seigneur, tu connais mon cœur et mes hésitations. Je ne veux pas suivre le chemin large par facilité. Aujourd'hui, je choisis la porte étroite, celle qui mène à toi. Donne-moi le courage de renouveler ce choix chaque matin, même quand il coûte. Au nom de Jésus, amen.", "pas": "Identifiez un domaine de votre vie où vous avez tendance à prendre « le chemin large », et confiez-le à Dieu dans la prière."}, {"t": "Renoncer à soi-même", "ref": "Luc 9:23", "v": "Puis il dit à tous : Si quelqu'un veut venir après moi, qu'il renonce à lui-même, qu'il se charge chaque jour de sa croix, et qu'il me suive.", "m": "Choisir la course de la couronne, c'est accepter de ne plus être le centre de sa propre vie. Renoncer à soi-même ne veut pas dire se mépriser : c'est laisser la première place à Jésus. Nos envies, notre orgueil, notre besoin d'avoir raison ou de tout contrôler deviennent des poids qui ralentissent la course. Jésus parle de le faire « chaque jour » : le renoncement n'est pas un grand geste unique, mais une suite de petits choix quotidiens. Et la promesse est là : celui qui renonce à lui-même ne perd rien, il trouve la vraie vie en suivant le Christ.", "p": "Seigneur Jésus, je veux te suivre. Montre-moi ce à quoi je m'accroche et qui m'empêche d'avancer avec toi. Je dépose aujourd'hui mon orgueil, mes envies de tout maîtriser et mes propres plans. Prends la première place dans ma vie, et apprends-moi à porter ma croix avec confiance. Au nom de Jésus, amen.", "pas": "Aujourd'hui, faites passer quelqu'un avant vous : cédez sur un désaccord, rendez un service, écoutez sans chercher à avoir raison."}, {"t": "S'abandonner à Dieu", "ref": "1 Pierre 5:6-7", "v": "Humiliez-vous donc sous la puissante main de Dieu, afin qu'il vous élève au temps convenable ; et déchargez-vous sur lui de tous vos soucis, car lui-même prend soin de vous.", "m": "Accepter les conditions de Dieu, ce n'est pas subir des règles : c'est s'abandonner à Lui. Comme l'argile dans la main du potier (Jérémie 18:6), nous acceptons qu'Il nous forme, qu'Il travaille en nous l'humilité, qu'Il façonne notre caractère pour la course. Cet abandon n'est pas une faiblesse, c'est là que se trouve notre force. Dieu l'a dit à Paul : « Ma grâce te suffit, car ma puissance s'accomplit dans la faiblesse » (2 Corinthiens 12:9). Quand nous cessons de compter sur nos seules forces, Dieu nous donne tout ce qu'il faut pour persévérer : la force, la sagesse, la paix. Et Il prend soin de nous à chaque pas.", "p": "Père, je m'abandonne entre tes mains. Je suis l'argile, tu es le potier : forme-moi selon ta volonté. Rends-moi humble, ôte de moi ce qui me ralentit, et donne-moi la force de persévérer. Je dépose devant toi tous mes soucis, car je sais que tu prends soin de moi. Que ta grâce me suffise aujourd'hui. Au nom de Jésus, amen.", "pas": "Notez un souci qui vous pèse, puis confiez-le à Dieu dans la prière, en lui disant : « Je te le remets, je ne le porte plus seul(e). »"}, {"t": "Courir avec Dieu, jamais seul", "ref": "Hébreux 12:1-2", "v": "Nous donc aussi, puisque nous sommes environnés d'une si grande nuée de témoins, rejetons tout fardeau, et le péché qui nous enveloppe si facilement, et courons avec persévérance dans la carrière qui nous est ouverte, ayant les regards sur Jésus, le chef et le consommateur de la foi.", "m": "Nous ne courons pas seuls. Autour de nous, une « nuée de témoins », tous ceux qui ont couru avant nous, nous rappelle que la course est possible. Devant nous, Jésus : Il a ouvert le chemin, Il court avec nous et Il nous attend à l'arrivée. Un coureur qui regarde ses pieds trébuche, celui qui regarde ses adversaires se décourage, mais celui qui fixe la ligne d'arrivée trouve l'élan. Garder les yeux sur Jésus, c'est revenir à Lui quand on se sent fatigué, seul ou distrait. Et c'est aussi courir avec nos frères et sœurs, pour nous encourager mutuellement jusqu'au bout.", "p": "Seigneur Jésus, merci de courir avec moi. Quand je suis fatigué(e), rappelle-moi que je ne suis pas seul(e). Aide-moi à rejeter tout fardeau et tout péché qui m'alourdit, et à garder les yeux fixés sur toi. Place aussi sur mon chemin des frères et des sœurs avec qui avancer. Au nom de Jésus, amen.", "pas": "Envoyez un message d'encouragement à une personne qui court elle aussi la course de la foi."}, {"t": "En mission", "ref": "Matthieu 28:19-20", "v": "Allez, faites de toutes les nations des disciples, les baptisant au nom du Père, du Fils et du Saint-Esprit, et enseignez-leur à observer tout ce que je vous ai prescrit. Et voici, je suis avec vous tous les jours, jusqu'à la fin du monde.", "m": "Dans cette course, nous ne sommes pas de simples coureurs : nous sommes en mission. Jésus confie à ses disciples une bonne nouvelle à partager, et cette mission continue aujourd'hui à travers nous. Elle ne commence pas forcément au bout du monde : elle commence dans notre famille, notre travail, notre quartier. Partager la bonne nouvelle, c'est parfois une parole, souvent un geste, toujours une vie qui reflète le Christ. Et la promesse qui accompagne l'envoi est précieuse : « Je suis avec vous tous les jours. » Nous ne partons jamais seuls en mission.", "p": "Seigneur, merci de me confier ta bonne nouvelle. Fais de moi un témoin fidèle, là où tu m'as placé(e). Donne-moi les bons mots, le bon moment et un cœur plein d'amour pour ceux qui ne te connaissent pas encore. Merci d'être avec moi tous les jours. Au nom de Jésus, amen.", "pas": "Partagez le verset de ce jour, ou celui qui vous a le plus touché cette semaine, avec une personne de votre entourage."}, {"t": "La couronne de victoire", "ref": "2 Timothée 4:7-8", "v": "J'ai combattu le bon combat, j'ai achevé la course, j'ai gardé la foi. Désormais la couronne de justice m'est réservée ; le Seigneur, le juste juge, me la donnera dans ce jour-là, et non seulement à moi, mais encore à tous ceux qui auront aimé son avènement.", "m": "Au début de ce parcours, Paul nous invitait à courir pour une couronne incorruptible (1 Corinthiens 9:25). À la fin de sa vie, il peut dire : « J'ai achevé la course. » La couronne qu'il attend n'est pas réservée aux plus forts ou aux plus parfaits, mais à tous ceux qui auront aimé le Seigneur et attendu son retour. Ce qui compte, ce n'est pas la vitesse, c'est la fidélité : garder la foi, jour après jour, jusqu'au bout. Ces sept jours ne sont qu'un départ. La course continue, avec Dieu, en mission, les yeux fixés sur la couronne.", "p": "Seigneur, merci pour ces sept jours avec toi. Je ne veux pas seulement prendre le départ, je veux achever la course. Garde-moi fidèle, renouvelle mes forces quand je faiblis, et fais grandir en moi l'amour de ton retour. Que ma vie entière soit une course pour ta gloire, jusqu'à la couronne. Au nom de Jésus, amen.", "pas": "Relisez vos notes de la semaine et écrivez votre engagement pour la suite de la course : « Avec Dieu, je choisis de… »"}]};
+const pState=()=>lsGet("mcs_parcours_"+PARCOURS.id,{done:{},pas:{}});
+const pSave=st=>lsSet("mcs_parcours_"+PARCOURS.id,st);
+function pUnlocked(i,st){ if(i===0) return true; const prev=st.done[i-1]; return !!prev && (prev<TODAY || !!st.done[i]); }
+function pCurrent(st){ for(let i=0;i<PARCOURS.jours.length;i++) if(!st.done[i]) return i; return -1; }
+let pOpen=null;
+function renderParcours(){
+  const st=pState(), n=PARCOURS.jours.length, nd=Object.keys(st.done).length, cur=pCurrent(st);
+  if(pOpen!==null) return renderEtape(pOpen);
+  let h=`<h3 class="t">Parcours</h3>
+    <section class="pc"><h3>🏃 ${esc(PARCOURS.titre)}</h3><p>${esc(PARCOURS.sous)}</p>
+      <div class="bar"><i style="width:${Math.round(nd/n*100)}%"></i></div>
+      <p style="margin-top:8px;font-weight:700">${nd===n?"🏆 Parcours terminé !":nd?`Jour ${nd} sur ${n} accompli`:"Prêt(e) à prendre le départ ?"}</p></section>`;
+  PARCOURS.jours.forEach((j,i)=>{ const done=!!st.done[i], un=pUnlocked(i,st), isCur=i===cur&&un;
+    h+=`<button class="step ${done?"done":""} ${isCur?"cur":""} ${un?"":"lock"}" data-i="${i}" ${un?"":"disabled"}>
+      <span class="n">${done?"✓":i+1}</span><span><b>Jour ${i+1} – ${esc(j.t)}</b><small>${esc(j.ref)}${!un?(i===cur?" · 🔒 demain":" · 🔒"):""}</small></span></button>`; });
+  if(cur>0 && !pUnlocked(cur,st)) h+=`<p style="text-align:center;color:var(--muted);font-size:.9rem;margin-top:14px">Une étape par jour : la suivante s'ouvrira demain. 🌅</p>`;
+  h+=`<p style="text-align:center;margin-top:18px"><a class="link" href="#pourquoi">Pourquoi cette course ?</a></p>`;
+  app.innerHTML=h;
+  app.querySelectorAll(".step:not(.lock)").forEach(b=>b.onclick=()=>{ pOpen=+b.dataset.i; renderParcours(); window.scrollTo(0,0); });
+}
+function renderEtape(i){
+  const j=PARCOURS.jours[i], st=pState(), n=PARCOURS.jours.length, key="p_"+PARCOURS.id+"_"+i;
+  const note=(notes()[key]||{}).text||"";
+  app.innerHTML=`<button class="link" id="pb">← Le parcours</button>
+    <div class="kick">${esc(PARCOURS.titre)} · Jour ${i+1} sur ${n}</div>
+    <h3 class="t" style="margin-top:6px">${esc(j.t)}</h3>
+    <section class="vcard"><div class="vt">« ${esc(j.v)} »</div><div class="vr">${esc(j.ref)} (LSG)</div></section>
+    <h2>Méditation</h2><p class="refl">${esc(j.m)}</p>
+    <div class="sig">Méditation proposée par Avel Lumière</div>
+    <section class="prayer"><h2>Prière</h2><p>${esc(j.p)}</p></section>
+    <section class="pas"><h2>👣 Le pas du jour</h2><p style="margin:0">${esc(j.pas)}</p>
+      <label class="chk"><input type="checkbox" id="pasok" ${st.pas[i]?"checked":""}> J'ai fait mon pas du jour</label></section>
+    <section class="box"><h2 style="margin:0;font-size:1.3rem">✍️ Mes notes</h2>
+      <textarea id="pnote" placeholder="Ce que Dieu me dit à travers cette étape…">${esc(note)}</textarea>
+      <div class="saved" id="psaved">${note?"Enregistré sur cet appareil":""}</div></section>
+    <div class="acts">${st.done[i]?`<span style="color:var(--gold);font-weight:700">✓ Étape accomplie</span>`:`<button class="pb on" id="pdone">🏁 J'ai terminé cette étape</button>`}</div>`;
+  $("#pb").onclick=()=>{ pOpen=null; renderParcours(); window.scrollTo(0,0); };
+  $("#pasok").onchange=e=>{ const s2=pState(); if(e.target.checked) s2.pas[i]=TODAY; else delete s2.pas[i]; pSave(s2); };
+  const ta=$("#pnote"); let h;
+  ta.oninput=()=>{ clearTimeout(h); h=setTimeout(()=>{ const nn=notes(); if(ta.value.trim()) nn[key]={ref:`${PARCOURS.titre} – Jour ${i+1} : ${j.t}`,text:ta.value,updated:Date.now()}; else delete nn[key]; $("#psaved").textContent=lsSet("mcs_notes",nn)?(ta.value.trim()?"Enregistré sur cet appareil":""):"⚠️ Pensez à copier vos notes."; },500); };
+  const d=$("#pdone"); if(d) d.onclick=()=>{ const s2=pState(); s2.done[i]=TODAY; pSave(s2);
+    if(i===n-1){ app.innerHTML=`<div class="crown"><div class="c">👑</div><h3 class="t">Parcours accompli !</h3>
+      <p>« J'ai achevé la course, j'ai gardé la foi. » — 2 Timothée 4:7</p>
+      <p style="color:var(--muted)">Bravo ! Ces sept jours ne sont qu'un départ : la course continue, avec Dieu, en mission, les yeux fixés sur la couronne.</p>
+      <div class="acts"><button class="pb on" id="pback">Revenir au parcours</button></div></div>`; $("#pback").onclick=()=>{ pOpen=null; renderParcours(); }; window.scrollTo(0,0); return; }
+    toast("Étape accomplie ✓ Rendez-vous demain !"); pOpen=null; renderParcours(); window.scrollTo(0,0); };
+}
+
+/* ---------- Pourquoi ---------- */
+function renderPourquoi(){
+  app.innerHTML=`<div class="why"><h3 class="t">Pourquoi Ma course spirituelle ?</h3>
+    <blockquote>« Ne savez-vous pas que ceux qui courent dans le stade courent tous, mais qu'un seul remporte le prix ? Courez de manière à le remporter. Tous ceux qui combattent s'imposent toute espèce d'abstinences, et ils le font pour obtenir une couronne corruptible ; mais nous, faisons-le pour une couronne incorruptible. »<br><span style="font:700 .85rem var(--sans);color:var(--gold);font-style:normal">— 1 Corinthiens 9:24-25 (LSG)</span></blockquote>
+    <p>Tout est parti de ce verset, médité un matin.</p>
+    <p>La vie est une course, et cette course a deux issues. D'un côté, la voie de la couronne de victoire, qui mène à l'éternité. De l'autre, la voie du choix personnel, celle où l'on court pour soi-même.</p>
+    <p>Prendre le départ, c'est d'abord faire un choix. Choisir la course qui mène à l'éternité, c'est renoncer à soi-même et s'abandonner à Dieu : accepter qu'Il nous accompagne, nous rende humbles, nous forme et nous donne toute la force dont nous avons besoin pour persévérer jusqu'au bout. Nous ne courons plus seuls, mais avec Lui.</p>
+    <p>Et dans cette course, nous ne sommes pas de simples coureurs : nous sommes en mission. Missionnaires pour Dieu, nous avons une bonne nouvelle à partager tout au long du chemin qui nous mène à la victoire et à la couronne.</p>
+    <p style="text-align:right;font-style:italic">Avel Lumière</p>
+    <div class="acts"><a class="pb on" href="#parcours" style="text-decoration:none">🏃 Prendre le départ</a></div></div>`;
+}
+
 /* ---------- Soutenir ---------- */
 function renderSoutenir(){
   app.innerHTML=`<h3 class="t">Soutenir</h3>
@@ -225,7 +312,8 @@ function renderSoutenir(){
 
 function render(){ tStop(); const h=location.hash.slice(1); const v=VIEWS.includes(h)?h:"verset";
   document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v));
-  ({verset:renderVerset,prieres:renderPrieres,notes:renderNotes,partager:renderPartager,soutenir:renderSoutenir})[v](); }
+  if(v!=="parcours") pOpen=null;
+  ({verset:renderVerset,parcours:renderParcours,prieres:renderPrieres,notes:renderNotes,partager:renderPartager,soutenir:renderSoutenir,pourquoi:renderPourquoi})[v](); }
 function go(v){ if(location.hash!=="#"+v) location.hash=v; else render(); window.scrollTo(0,0); }
 window.addEventListener("hashchange",()=>{ render(); window.scrollTo(0,0); });
 render();
