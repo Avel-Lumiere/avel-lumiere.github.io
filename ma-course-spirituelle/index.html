@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ma course spirituelle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#26304f;--muted:#6a6f86;--green:#2e3a6e;--gold:#c9893b;--card:rgba(255,255,255,.82);--line:rgba(46,58,110,.18);--serif:"Lora",Georgia,serif;--sans:"Nunito Sans",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font:17px/1.6 var(--sans);background:linear-gradient(180deg,#fdf6ec 0%,#fbe7d6 38%,#efe3f1 75%,#e7e8f6 100%) fixed;-webkit-font-smoothing:antialiased;min-height:100vh}
+@media(max-width:700px){body{background-attachment:scroll}}
+body:before{content:"";position:fixed;top:-120px;left:50%;transform:translateX(-50%);width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(247,196,120,.45),rgba(247,196,120,0) 70%);pointer-events:none;z-index:-1}
+button,textarea,input{font:inherit;color:inherit}
+.wrap{max-width:680px;margin:0 auto;padding:18px 18px 96px}
+header{text-align:center;padding:6px 0 4px}
+header h1{font:600 2rem/1.15 var(--serif);margin:0;color:var(--green)}
+header h1:after{content:"";display:block;width:54px;height:3px;border-radius:3px;background:var(--gold);margin:10px auto 0}
+header .by{font-size:.85rem;color:var(--muted);margin-top:4px}
+header .free{display:inline-block;margin-top:8px;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;background:rgba(201,137,59,.15);color:#9a6427;border-radius:999px;padding:3px 12px;font-weight:600}
+nav{position:fixed;left:0;right:0;bottom:0;background:rgba(255,252,247,.97);border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:6px 4px calc(6px + env(safe-area-inset-bottom));z-index:5;backdrop-filter:blur(6px)}
+nav a{flex:1;text-align:center;text-decoration:none;color:var(--muted);font-size:.74rem;padding:4px 2px;border-radius:10px}
+nav a .i{display:block;font-size:1.25rem;line-height:1.3}
+nav a.on{color:var(--green);font-weight:700;background:rgba(201,137,59,.14)}
+.kick{text-align:center;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:18px}
+.day{text-align:center;font-size:.92rem;color:var(--muted);text-transform:capitalize}
+.gift{display:block;margin:26px auto 8px;background:linear-gradient(135deg,#2e3a6e,#4b4f8f 55%,#c9893b);color:#fff;border:0;border-radius:22px;padding:22px 26px;font:600 1.25rem var(--sans);cursor:pointer;box-shadow:0 18px 50px -12px rgba(46,58,110,.55);width:100%;max-width:420px}
+.gift small{display:block;font-weight:400;font-size:.88rem;opacity:.85;margin-top:4px}
+.vcard{background:var(--card);border-radius:18px;padding:26px 22px 22px;text-align:left;border-top:4px solid var(--gold);box-shadow:0 14px 40px -14px rgba(46,58,110,.35);margin-top:18px;animation:fade .6s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1}}
+.vt{font:italic 500 1.3rem/1.6 var(--serif)}
+.vr{margin-top:14px;font-weight:700;font-size:.9rem;letter-spacing:.04em;color:var(--gold);text-align:right}
+h2{font:600 1.45rem var(--serif);margin:30px 0 6px;color:var(--green)}
+.refl{color:var(--muted);line-height:1.7;white-space:pre-wrap}
+.thought{margin-top:16px;border-left:3px solid var(--gold);padding-left:14px;color:var(--muted)}
+.sig{text-align:right;font-size:.76rem;color:var(--muted);margin-top:10px}
+.prayer{margin-top:30px;background:rgba(46,58,110,.06);border-radius:18px;padding:18px 20px}
+.prayer h2{margin-top:0}
+.prayer p{font-style:italic;line-height:1.75;white-space:pre-wrap}
+.silence{margin-top:28px;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:24px;padding:20px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.clock{font:500 3rem var(--serif);font-variant-numeric:tabular-nums}
+.clock.run{animation:pulse 2s infinite}@keyframes pulse{50%{opacity:.5}}
+.durs{display:flex;gap:8px}
+.durs button{border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:#fff;cursor:pointer}
+.durs button.on{background:var(--green);color:#fff}
+.pb{border-radius:999px;padding:10px 20px;font-size:.95rem;cursor:pointer;border:1px solid var(--line);background:rgba(255,255,255,.7)}
+.pb.on{background:var(--green);color:#f6f7f0;border-color:var(--green)}
+.acts{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.box{background:var(--card);border-radius:18px;border:1px solid var(--line);padding:20px;margin-top:16px}
+.box .hint{font-size:.88rem;color:var(--muted);margin:2px 0 10px}
+textarea{width:100%;min-height:200px;border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(255,255,255,.92);line-height:1.6;resize:vertical}
+.saved{font-size:.82rem;color:var(--muted)}
+.item{background:var(--card);border-radius:16px;border-left:3px solid var(--gold);padding:16px 18px;margin-bottom:12px}
+.item .d{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.item .r{font:600 1.05rem var(--serif);color:var(--gold);margin:2px 0 6px}
+.item .p{font-style:italic;white-space:pre-wrap;line-height:1.7}
+.item .n{white-space:pre-wrap}
+.link{color:var(--green);font-weight:600;background:none;border:0;cursor:pointer;font-size:.92rem;padding:0}
+.empty{text-align:center;color:var(--muted);padding:34px 10px}
+h3.t{font:600 1.6rem var(--serif);color:var(--green);text-align:center;margin:18px 0 10px}
+.opts{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0 10px;font-size:.95rem}
+.opts label{display:flex;gap:6px;align-items:center}
+.opts input{accent-color:var(--green);width:18px;height:18px}
+.big{display:inline-block;margin-top:8px;background:var(--green);color:#fff;border-radius:999px;padding:13px 28px;font-weight:600;text-decoration:none}
+.foot{margin-top:34px;text-align:center;font-size:.85rem;color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:.9rem;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Ma course spirituelle</h1>
+    <div class="by">Proposé par Avel Lumière</div>
+    <span class="free">Gratuit</span>
+  </header>
+  <main id="app"></main>
+</div>
+<nav id="nav">
+  <a href="#verset" data-v="verset"><span class="i">📖</span>Verset du jour</a>
+  <a href="#prieres" data-v="prieres"><span class="i">🙏</span>Prières</a>
+  <a href="#notes" data-v="notes"><span class="i">✍️</span>Mes notes</a>
+  <a href="#partager" data-v="partager"><span class="i">💌</span>À partager</a>
+  <a href="#soutenir" data-v="soutenir"><span class="i">💝</span>Soutenir</a>
+</nav>
+<div class="toast" id="toast"></div>
+<script>
+(function(){
+/* ======== RÉGLAGES (à compléter) ======== */
+const DON_URL = "";          // lien de la page de don (HelloAsso, PayPal…)
+const ADHESION_URL = "";     // lien pour adhérer (formulaire, WhatsApp…)
+const START = "2026-11-04";  // premier jour de la course
+const BIBLE_DEFAULT = "LSG";
+const VERSES = [{"date": "2026-11-06", "ref": "Ésaïe 41:10", "text": "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours, je te soutiens de ma droite triomphante.", "reflection": "Ce matin, confiez à Dieu ce qui vous inquiète. Sa présence ne vous quitte pas : appuyez-vous sur lui pour avancer avec confiance, un pas après l'autre.", "prayer": "Seigneur, merci pour ce nouveau matin. Tu connais mes inquiétudes et les défis qui m’attendent. Apaise mon cœur et rappelle-moi que je ne suis pas seule : tu es avec moi. Donne-moi la force d’avancer, la sagesse pour mes décisions et la confiance pour te remettre ce que je ne peux pas contrôler. Que ta paix accompagne chacun de mes pas aujourd’hui. Au nom de Jésus, amen."}, {"date": "2026-11-05", "ref": "2 Timothée 2:22", "text": "Fuis les passions de la jeunesse, et recherche la justice, la foi, l'amour, la paix, avec ceux qui invoquent le Seigneur d'un cœur pur.", "reflection": "Fuir ce qui nous éloigne de Dieu n'est pas être faible, c'est faire preuve de sagesse spirituelle. Recherchez la droiture, la foi, l'amour et la paix, avec ceux qui font appel au Seigneur : notre marche avec Dieu ne doit pas être solitaire.", "thought": "Nous ne pouvons pas toujours empêcher une mauvaise pensée de traverser notre esprit, mais avec l'aide du Saint-Esprit, nous pouvons choisir de ne pas lui donner une place dans notre cœur.", "prayer": "Père céleste, en ce nouveau jour, nous venons devant Toi avec humilité. Examine nos cœurs et révèle-nous tout ce qui nous éloigne de Ta présence. Apprends-nous à fuir les pensées, les désirs et les comportements qui ne Te glorifient pas. Donne-nous un cœur droit, une foi persévérante, un amour sincère et un esprit de paix. Lorsque notre chair veut répondre par la colère, enseigne-nous la douceur. Lorsque notre orgueil veut prendre le dessus, enseigne-nous l'humilité. Lorsque nous sommes blessés, apprends-nous à pardonner. Place sur notre chemin des frères et des sœurs qui recherchent sincèrement Ta présence, afin que nous puissions grandir ensemble dans Ton amour. Que notre vie soit le reflet de Ta Parole, non seulement dans nos paroles, mais surtout dans nos actes. Au nom précieux de Jésus-Christ. Amen."}, {"ref": "Psaume 23:1", "text": "L'Éternel est mon berger : je ne manquerai de rien.", "reflection": "Dieu prend soin de vous comme un berger veille sur ses brebis. Qu'est-ce qui vous inquiète aujourd'hui ?", "prayer": "Seigneur, mon berger, je dépose devant toi mes inquiétudes. Conduis-moi et donne-moi ta paix. Amen."}, {"date": "2026-11-04", "ref": "Matthieu 11:28", "text": "Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos.", "reflection": "Jésus vous invite à lui remettre vos fardeaux. Lequel voulez-vous lui confier ?", "prayer": "Jésus, je viens à toi avec ma fatigue. Donne-moi ton repos et allège mon cœur. Amen."}, {"ref": "Philippiens 4:6-7", "text": "Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces. Et la paix de Dieu, qui surpasse toute intelligence, gardera vos cœurs et vos pensées en Jésus-Christ.", "reflection": "L'inquiétude est un fardeau que nous ne sommes pas appelés à porter seuls. Paul nous invite à un échange précieux : remettre chaque souci entre les mains de Dieu, et recevoir en retour sa paix. Ce matin, prenez le temps de nommer devant le Seigneur ce qui pèse sur votre cœur — une décision, une relation, une crainte pour l'avenir. Présentez-lui chaque chose, non pas avec des mots parfaits, mais avec un cœur sincère et reconnaissant. Car la gratitude ouvre la porte à la paix : lorsque nous nous souvenons de tout ce que Dieu a déjà accompli, nos inquiétudes perdent de leur force. Alors la paix de Dieu, qui dépasse tout ce que nous pouvons comprendre, monte la garde autour de notre cœur et de nos pensées, comme une sentinelle fidèle. Elle ne dépend pas des circonstances, mais de la présence du Christ en nous.", "prayer": "Père, je te confie mes besoins et je te remercie pour tes bienfaits. Que ta paix garde mon cœur. Amen."}, {"ref": "Ésaïe 41:10", "text": "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours.", "reflection": "Vous n'êtes jamais seul. Dieu est votre force dans chaque épreuve.", "prayer": "Seigneur, quand j'ai peur, rappelle-moi que tu es avec moi. Fortifie-moi aujourd'hui. Amen."}, {"ref": "Jean 14:27", "text": "Je vous laisse la paix, je vous donne ma paix. Je ne vous donne pas comme le monde donne. Que votre cœur ne se trouble point.", "reflection": "La paix du Christ ne dépend pas des circonstances. Accueillez-la maintenant.", "prayer": "Jésus, remplis-moi de ta paix, celle que le monde ne peut pas donner. Amen."}, {"ref": "Psaume 46:11", "text": "Arrêtez, et sachez que je suis Dieu.", "reflection": "Faites silence un instant. Laissez Dieu être Dieu dans votre vie.", "prayer": "Seigneur, j'arrête mon agitation pour te reconnaître. Tu es Dieu, et je me repose en toi. Amen."}, {"ref": "Proverbes 3:5-6", "text": "Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ta sagesse ; reconnais-le dans toutes tes voies, et il aplanira tes sentiers.", "reflection": "Dans quelle décision avez-vous besoin de faire confiance à Dieu ?", "prayer": "Père, je te fais confiance plus qu'à ma propre sagesse. Dirige mes pas. Amen."}, {"ref": "Lamentations 3:22-23", "text": "Les bontés de l'Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme ; elles se renouvellent chaque matin.", "reflection": "Chaque jour est un nouveau départ dans la fidélité de Dieu.", "prayer": "Merci Seigneur pour tes compassions renouvelées ce jour. Grande est ta fidélité. Amen."}];
+
+const $=s=>document.querySelector(s), app=$("#app");
+const VIEWS=["verset","prieres","notes","partager","soutenir"];
+const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const fmt=s=>new Date(s+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+function toast(m){ const t=$("#toast"); t.textContent=m; t.classList.add("on"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("on"),2200); }
+function lsGet(k,d){ try{ const v=localStorage.getItem(k); return v===null?d:JSON.parse(v); }catch(e){ return d; } }
+function lsSet(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); return true; }catch(e){ return false; } }
+async function copy(t){ try{ await navigator.clipboard.writeText(t); toast("Copié ✓ Vous pouvez le coller où vous voulez"); }catch(e){ toast("Copie impossible ici"); } }
+
+function verseFor(dayIso){
+  const dated=VERSES.find(v=>v.date===dayIso); if(dated) return dated;
+  const und=VERSES.filter(v=>!v.date); const d=new Date(dayIso+"T12:00:00");
+  const day=Math.floor(d.getTime()/86400000), base=VERSES.indexOf(und[0]);
+  return VERSES[(base+(day%und.length))%VERSES.length];
+}
+const refOf=v=>v.ref+" ("+(v.version||BIBLE_DEFAULT)+")";
+const TODAY=iso(new Date());
+function pastDays(){ const out=[]; const d=new Date(TODAY+"T12:00:00"); const s=new Date(START+"T12:00:00");
+  while(d>=s && out.length<400){ out.push(iso(d)); d.setDate(d.getDate()-1); } return out; }
+
+/* notes et état, gardés sur l'appareil */
+const notes=()=>lsGet("mcs_notes",{});
+function saveNote(day,text){ const n=notes(); if(text.trim()) n[day]={ref:refOf(verseFor(day)),text,updated:Date.now()}; else delete n[day]; return lsSet("mcs_notes",n); }
+const opened=()=>lsGet("mcs_opened",{});
+
+/* minuteur */
+let tMin=5,tLeft=300,tRun=false,tId=null;
+function tDraw(){ const c=$("#clock"); if(!c) return;
+  c.textContent=tLeft===0?"Amen":String(Math.floor(tLeft/60)).padStart(2,"0")+":"+String(tLeft%60).padStart(2,"0");
+  c.classList.toggle("run",tRun); $("#tgo").textContent=tRun?"Pause":tLeft===0?"Recommencer":"Commencer";
+  document.querySelectorAll(".durs button").forEach(b=>b.classList.toggle("on",+b.dataset.m===tMin)); }
+function tStop(){ tRun=false; clearInterval(tId); }
+
+/* ---------- Verset du jour ---------- */
+function renderVerset(){
+  const v=verseFor(TODAY), isOpen=!!opened()[TODAY];
+  let h=`<div class="kick">Verset du jour</div><div class="day">${esc(fmt(TODAY))}</div>`;
+  if(!isOpen){
+    h+=`<button class="gift" id="open">📖 J'ai reçu un verset<small>Touchez pour le découvrir</small></button>
+      <p style="text-align:center;color:var(--muted);font-size:.92rem">Chaque jour, un verset choisi pour vous,<br>avec une méditation et une prière.</p>`;
+    app.innerHTML=h;
+    $("#open").onclick=()=>{ const o=opened(); o[TODAY]=1; lsSet("mcs_opened",o); renderVerset(); };
+    return;
+  }
+  h+=`<section class="vcard"><div class="vt">« ${esc(v.text)} »</div><div class="vr">${esc(refOf(v))}</div></section>
+    <h2>Méditation</h2><p class="refl">${esc(v.reflection)}</p>
+    ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
+    <div class="sig">Méditation proposée par Avel Lumière</div>
+    <section class="silence"><div style="font-size:.9rem;color:var(--muted)">Temps de silence avec Dieu</div>
+      <div class="clock" id="clock"></div><div class="durs">${[2,5,10].map(m=>`<button data-m="${m}">${m} min</button>`).join("")}</div>
+      <button class="pb on" id="tgo" style="padding:11px 30px;font-weight:600"></button></section>
+    <section class="prayer"><h2>Prière</h2><p>${esc(v.prayer)}</p></section>
+    <div class="acts"><button class="pb on" id="toNotes">✍️ Écrire dans mes notes</button><button class="pb" id="toShare">💌 Partager ce verset</button></div>
+    <div class="foot">Application gratuite · <button class="link" id="toDon">Soutenir</button></div>`;
+  app.innerHTML=h; tDraw();
+  document.querySelectorAll(".durs button").forEach(b=>b.onclick=()=>{ tMin=+b.dataset.m; tLeft=tMin*60; tStop(); tDraw(); });
+  $("#tgo").onclick=()=>{ if(tRun){ tStop(); tDraw(); return; } if(tLeft===0) tLeft=tMin*60; tRun=true;
+    tId=setInterval(()=>{ tLeft=Math.max(0,tLeft-1); if(tLeft===0) tStop(); tDraw(); },1000); tDraw(); };
+  $("#toNotes").onclick=()=>go("notes"); $("#toShare").onclick=()=>go("partager"); $("#toDon").onclick=()=>go("soutenir");
+}
+
+/* ---------- Prières ---------- */
+function renderPrieres(){
+  const op=opened(); const days=pastDays().filter(d=>d===TODAY?op[TODAY]:true);
+  app.innerHTML=`<h3 class="t">Prières</h3><p style="text-align:center;color:var(--muted);font-size:.92rem;margin-top:-6px">Les prières de chaque jour, à reprendre quand vous le souhaitez.</p>
+    ${days.length?days.map(d=>{ const v=verseFor(d); return `<div class="item"><div class="d">${esc(fmt(d))}</div><div class="r">${esc(refOf(v))}</div><div class="p">${esc(v.prayer)}</div>
+      <div style="text-align:right;margin-top:8px"><button class="link" data-c="${d}">Copier la prière</button></div></div>`; }).join("")
+    : `<div class="empty">Découvrez le verset du jour pour recevoir sa prière.</div>`}`;
+  app.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{ const v=verseFor(b.dataset.c); copy(`🙏 Prière\n${v.prayer}\n\n📖 ${refOf(v)}`); });
+}
+
+/* ---------- Mes notes ---------- */
+function renderNotes(){
+  const v=verseFor(TODAY), n=notes(), cur=(n[TODAY]||{}).text||"";
+  const others=Object.keys(n).filter(d=>d!==TODAY).sort().reverse();
+  app.innerHTML=`<h3 class="t">Mes notes</h3>
+    <section class="box"><div style="font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)">${esc(fmt(TODAY))}</div>
+      <div style="font:600 1.1rem var(--serif);color:var(--green)">${esc(refOf(v))}</div>
+      <p class="hint">Votre page blanche : ce que ce verset vous inspire, ce que vous voulez confier à Dieu… Vos notes restent sur cet appareil et ne sont lues par personne d'autre.</p>
+      <textarea id="note" placeholder="Écrire ici…">${esc(cur)}</textarea>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px"><span class="saved" id="saved">${cur?"Enregistré sur cet appareil":""}</span><button class="link" id="cp">Copier</button></div></section>
+    ${others.length?`<h2 style="font-size:1.4rem">Mes notes précédentes</h2>`+others.map(d=>`<div class="item"><div class="d">${esc(fmt(d))}</div><div class="r">${esc(n[d].ref)}</div><div class="n">${esc(n[d].text)}</div>
+      <div style="text-align:right;margin-top:6px"><button class="link" data-c="${d}">Copier</button> · <button class="link" data-x="${d}" style="color:#a1442f">Effacer</button></div></div>`).join(""):""}`;
+  const ta=$("#note"); let h;
+  ta.oninput=()=>{ clearTimeout(h); $("#saved").textContent="…"; h=setTimeout(()=>{ $("#saved").textContent=saveNote(TODAY,ta.value)?(ta.value.trim()?"Enregistré sur cet appareil":""):"⚠️ Ce navigateur ne garde pas les notes : pensez à les copier."; },500); };
+  $("#cp").onclick=()=>copy(`📖 ${refOf(v)}\n\n✍️ Mes notes\n${ta.value.trim()}`);
+  app.querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{ const x=notes()[b.dataset.c]; copy(`📖 ${x.ref}\n\n✍️ Mes notes\n${x.text}`); });
+  app.querySelectorAll("[data-x]").forEach(b=>b.onclick=()=>{ if(b.dataset.ok){ const m=notes(); delete m[b.dataset.x]; lsSet("mcs_notes",m); renderNotes(); toast("Note effacée"); } else { b.dataset.ok="1"; b.textContent="Toucher encore pour effacer"; } });
+}
+
+/* ---------- À partager ---------- */
+function renderPartager(){
+  const v=verseFor(TODAY); const parts=lsGet("mcs_share",{med:true,pri:true,notes:false});
+  app.innerHTML=`<h3 class="t">À partager</h3>
+    <section class="box"><p class="hint">Choisissez ce que vous voulez partager, retouchez le texte si besoin, puis copiez-le pour l'envoyer (WhatsApp, SMS…).</p>
+      <div class="opts"><label><input type="checkbox" checked disabled> Verset</label>
+        <label><input type="checkbox" id="oMed" ${parts.med?"checked":""}> Méditation</label>
+        <label><input type="checkbox" id="oPri" ${parts.pri?"checked":""}> Prière</label>
+        <label><input type="checkbox" id="oNotes" ${parts.notes?"checked":""}> Mes notes</label></div>
+      <textarea id="st" style="min-height:300px"></textarea>
+      <div class="acts" style="margin-top:12px"><button class="pb on" id="sc">Copier le texte</button></div></section>`;
+  const build=()=>{ const out=[`📖 « ${v.text} » — ${refOf(v)}`];
+    if(parts.med) out.push(`🕊️ Méditation\n${v.reflection}`);
+    if(parts.pri) out.push(`🙏 Prière\n${v.prayer}`);
+    const n=(notes()[TODAY]||{}).text; if(parts.notes&&n) out.push(`✍️ Mes notes\n${n.trim()}`);
+    out.push("🌿 Ma course spirituelle — proposé gratuitement par Avel Lumière\n"+location.origin+location.pathname);
+    $("#st").value=out.join("\n\n"); };
+  build();
+  [["oMed","med"],["oPri","pri"],["oNotes","notes"]].forEach(([id,k])=>$("#"+id).onchange=e=>{ parts[k]=e.target.checked; lsSet("mcs_share",parts); build(); });
+  $("#sc").onclick=()=>copy($("#st").value);
+}
+
+/* ---------- Soutenir ---------- */
+function renderSoutenir(){
+  app.innerHTML=`<h3 class="t">Soutenir</h3>
+    <section class="box" style="text-align:center">
+      <p style="font:500 1.3rem/1.5 var(--serif);margin:4px 0">Ma course spirituelle est et restera gratuite.</p>
+      <p style="color:var(--muted)">Chaque jour, Avel Lumière prépare avec soin un verset, une méditation et une prière pour vous accompagner dans votre marche avec Dieu.</p>
+    </section>
+    <section class="box" style="text-align:center"><h2 style="margin-top:0">Adhérer</h2>
+      <p style="color:var(--muted)">Vous souhaitez faire partie de la communauté et marcher avec nous ? L'adhésion est libre et volontaire.</p>
+      ${ADHESION_URL?`<a class="big" href="${esc(ADHESION_URL)}" target="_blank" rel="noopener">🤝 J'adhère</a>`:`<p style="font-weight:600;color:var(--green)">L'adhésion sera bientôt ouverte.</p>`}</section>
+    <section class="box" style="text-align:center"><h2 style="margin-top:0">Faire un don</h2>
+      <p style="color:var(--muted)">Si cette application vous fait du bien, vous pouvez soutenir ce service par un don, du montant de votre choix. Merci du fond du cœur.</p>
+      ${DON_URL?`<a class="big" href="${esc(DON_URL)}" target="_blank" rel="noopener">💝 Faire un don</a>`:`<p style="font-weight:600;color:var(--green)">La page de don arrive très bientôt.</p>`}
+      <p style="font-size:.85rem;color:var(--muted);margin-top:16px">« Que chacun donne comme il l'a résolu en son cœur, sans tristesse ni contrainte ; car Dieu aime celui qui donne avec joie. » — 2 Corinthiens 9:7 (LSG)</p></section>`;
+}
+
+function render(){ tStop(); const h=location.hash.slice(1); const v=VIEWS.includes(h)?h:"verset";
+  document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v));
+  ({verset:renderVerset,prieres:renderPrieres,notes:renderNotes,partager:renderPartager,soutenir:renderSoutenir})[v](); }
+function go(v){ if(location.hash!=="#"+v) location.hash=v; else render(); window.scrollTo(0,0); }
+window.addEventListener("hashchange",()=>{ render(); window.scrollTo(0,0); });
+render();
+})();
+</script>
+</body>
+</html>
