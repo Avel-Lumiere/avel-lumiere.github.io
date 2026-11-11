@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>La Source du Matin — Parole & Prière</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#3f6f57">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Source du Matin">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -97,6 +104,26 @@ function tDraw(){ const c=$("#clock"); if(!c) return;
   document.querySelectorAll(".durs button").forEach(b=>b.classList.toggle("on",+b.dataset.m===tMin)); }
 function tStop(){ tRun=false; clearInterval(tId); }
 
+
+let deferredPrompt=null;
+const isStandalone=()=>window.matchMedia("(display-mode: standalone)").matches||window.navigator.standalone===true;
+const isIOS=()=>/iphone|ipad|ipod/i.test(navigator.userAgent);
+window.addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); deferredPrompt=e; drawInstall(); });
+window.addEventListener("appinstalled",()=>{ deferredPrompt=null; toast("Application installée ✓"); drawInstall(); });
+function drawInstall(){
+  const box=$("#installBox"); if(!box) return;
+  if(isStandalone()){ box.innerHTML=""; return; }
+  box.innerHTML=`<div style="text-align:center;margin-top:8px"><button class="pb on" id="instBtn">📲 Installer l'application</button>
+    <div id="instHelp" style="display:none;margin-top:12px;font-size:.95rem;color:var(--muted);line-height:1.6"></div></div>`;
+  $("#instBtn").onclick=async()=>{
+    if(deferredPrompt){ deferredPrompt.prompt(); try{ await deferredPrompt.userChoice; }catch(_){} deferredPrompt=null; return; }
+    const h=$("#instHelp"); h.style.display="block";
+    h.innerHTML = isIOS()
+      ? "Sur iPhone : touchez le bouton <b>Partager</b> (le carré avec une flèche ↑) en bas de Safari, puis <b>« Sur l'écran d'accueil »</b>."
+      : "Ouvrez cette page dans <b>Chrome</b>, touchez <b>⋮</b> en haut à droite, puis <b>« Installer l'application »</b> ou <b>« Ajouter à l'écran d'accueil »</b>.";
+  };
+}
+
 /* ---------- vues ---------- */
 function renderDay(){
   const now=new Date(), day=iso(now), v=verseOfDay(now), note=(allNotes()[day]||{}).text||"";
@@ -120,6 +147,7 @@ function renderDay(){
     <div class="foot">
       <button class="link" id="goNotes">📒 Toutes mes notes</button>
       <button class="link" id="goDon">💝 Soutenir La Source du Matin</button>
+      <div id="installBox"></div>
     </div>`;
   tDraw();
   document.querySelectorAll(".durs button").forEach(b=>b.onclick=()=>{ tMin=+b.dataset.m; tLeft=tMin*60; tStop(); tDraw(); });
@@ -129,6 +157,7 @@ function renderDay(){
   const ta=$("#note"); let h;
   ta.oninput=()=>{ clearTimeout(h); $("#saved").textContent="…"; h=setTimeout(()=>{ $("#saved").textContent = saveNote(day,refOf(v),ta.value) ? (ta.value.trim()?"Enregistré sur cet appareil":"") : "⚠️ Ce navigateur ne peut pas garder vos notes : pensez à les copier."; },500); };
   $("#copyNote").onclick=()=>copy(`📖 « ${v.text} » — ${refOf(v)}\n\n✍️ Mes notes\n${ta.value.trim()}`);
+  drawInstall();
   $("#goNotes").onclick=()=>go("notes"); $("#goDon").onclick=()=>go("soutenir");
 }
 function renderNotes(){
@@ -161,6 +190,7 @@ function go(h){ tStop(); h=h||"jour"; if(location.hash!=="#"+h) location.hash=h;
 function render(){ const h=location.hash.slice(1); if(h==="notes") renderNotes(); else if(h==="soutenir") renderDon(); else renderDay(); }
 window.addEventListener("hashchange",()=>{ tStop(); render(); window.scrollTo(0,0); });
 render();
+if("serviceWorker" in navigator && location.protocol==="https:"){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }
 })();
 </script>
 </body>
