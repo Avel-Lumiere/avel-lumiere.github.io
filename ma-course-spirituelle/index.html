@@ -87,6 +87,7 @@ header .hl a{color:var(--green);font-weight:700;text-decoration:none}
 .crown .c{font-size:3rem}
 .why blockquote{margin:16px 0;padding:16px 18px;background:var(--card);border-left:4px solid var(--gold);border-radius:12px;font:italic 500 1.12rem/1.6 var(--serif)}
 .why p{line-height:1.75}
+.kick.k2{font-size:.8rem;letter-spacing:.12em}
 .scene{display:block;width:100%;max-width:380px;margin:18px auto 0;border-radius:22px;filter:drop-shadow(0 14px 30px rgba(46,58,110,.18))}
 .toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:.9rem;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
 .toast.on{opacity:1}
@@ -283,7 +284,7 @@ function renderEtape(i){
   const j=PARCOURS.jours[i], st=pState(), n=PARCOURS.jours.length, key="p_"+PARCOURS.id+"_"+i;
   const note=(notes()[key]||{}).text||"";
   app.innerHTML=`<button class="link" id="pb">← Le parcours</button>
-    <div class="kick">${esc(PARCOURS.titre)} · Jour ${i+1} sur ${n}</div>
+    <div class="kick k2">${esc(PARCOURS.titre)} · Jour ${i+1} sur ${n}</div>
     <h3 class="t" style="margin-top:6px">${esc(j.t)}</h3>
     <section class="vcard"><div class="vt">« ${esc(j.v)} »</div><div class="vr">${esc(j.ref)} (LSG)</div></section>
     <h2>Méditation</h2><p class="refl">${esc(j.m)}</p>
