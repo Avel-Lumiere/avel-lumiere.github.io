@@ -193,10 +193,10 @@ function renderVerset(){
     <h2>Méditation</h2><p class="refl">${esc(v.reflection)}</p>
     ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
     <div class="sig">Méditation proposée par Avel Lumière</div>
+    <section class="prayer"><h2>Prière</h2><p>${esc(v.prayer)}</p></section>
     <section class="silence"><div style="font-size:.9rem;color:var(--muted)">Temps de silence avec Dieu</div>
       <div class="clock" id="clock"></div><div class="durs">${[2,5,10].map(m=>`<button data-m="${m}">${m} min</button>`).join("")}</div>
       <button class="pb on" id="tgo" style="padding:11px 30px;font-weight:600"></button></section>
-    <section class="prayer"><h2>Prière</h2><p>${esc(v.prayer)}</p></section>
     <div class="acts"><button class="pb on" id="toNotes">✍️ Écrire dans mes notes</button><button class="pb" id="toShare">💌 Partager ce verset</button></div>
     <div class="foot">Application gratuite · <button class="link" id="toDon">Soutenir</button></div>`;
   app.innerHTML=h; tDraw();
