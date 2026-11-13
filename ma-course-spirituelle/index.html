@@ -42,6 +42,7 @@ nav a.on{color:var(--green);font-weight:700;background:rgba(201,137,59,.14)}
 .vr{margin-top:14px;font-weight:700;font-size:.9rem;letter-spacing:.04em;color:var(--gold);text-align:right}
 h2{font:600 1.45rem var(--serif);margin:30px 0 6px;color:var(--green)}
 .refl{color:var(--muted);line-height:1.7;white-space:pre-wrap}
+.refl p{margin:0}.refl p+p{margin-top:.55em}
 .thought{margin-top:16px;border-left:3px solid var(--gold);padding-left:14px;color:var(--muted)}
 .sig{text-align:right;font-size:.76rem;color:var(--muted);margin-top:10px}
 .prayer{margin-top:30px;background:rgba(46,58,110,.06);border-radius:18px;padding:18px 20px}
@@ -132,6 +133,7 @@ const VERSES = [{"date": "2026-11-13", "ref": "Matthieu 11:28", "text": "Venez �
 const $=s=>document.querySelector(s), app=$("#app");
 const VIEWS=["verset","parcours","prieres","notes","partager","soutenir","pourquoi"];
 const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const paras=s=>String(s||"").split(/\n\s*\n/).map(x=>"<p>"+esc(x.trim())+"</p>").join("");
 const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 const fmt=s=>/^\d{4}-\d\d-\d\d$/.test(s)?new Date(s+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"Parcours";
 function toast(m){ const t=$("#toast"); t.textContent=m; t.classList.add("on"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("on"),2200); }
@@ -201,7 +203,7 @@ function renderVerset(){
     return;
   }
   h+=`<section class="vcard"><div class="vt">« ${esc(v.text)} »</div><div class="vr">${esc(refOf(v))}</div></section>
-    <h2>Méditation</h2><p class="refl">${esc(v.reflection)}</p>
+    <h2>Méditation</h2><div class="refl">${paras(v.reflection)}</div>
     ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
     <div class="sig">Méditation proposée par Avel Lumière</div>
     <section class="prayer"><h2>Prière</h2><p>${esc(v.prayer)}</p></section>
@@ -319,7 +321,7 @@ function renderEtape(i){
     <div class="kick k2">${esc(PARCOURS.titre)} · Jour ${i+1} sur ${n}</div>
     <h3 class="t" style="margin-top:6px">${esc(j.t)}</h3>
     <section class="vcard"><div class="vt">« ${esc(j.v)} »</div><div class="vr">${esc(j.ref)} (LSG)</div></section>
-    <h2>Méditation</h2><p class="refl">${esc(j.m)}</p>
+    <h2>Méditation</h2><div class="refl">${paras(j.m)}</div>
     <div class="sig">Méditation proposée par Avel Lumière</div>
     <section class="prayer"><h2>Prière</h2><p>${esc(j.p)}</p></section>
     <section class="pas"><h2>👣 Le pas du jour</h2><p style="margin:0">${esc(j.pas)}</p>
