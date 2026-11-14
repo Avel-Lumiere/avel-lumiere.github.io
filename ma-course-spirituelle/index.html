@@ -101,24 +101,97 @@ header .hl a{color:var(--green);font-weight:700;text-decoration:none}
 .scene{display:block;width:100%;max-width:380px;margin:18px auto 0;border-radius:22px;filter:drop-shadow(0 14px 30px rgba(46,58,110,.18))}
 .toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:9px 16px;border-radius:999px;font-size:.9rem;opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
 .toast.on{opacity:1}
+/* ===== Interface « Aube » ===== */
+:root{--night:#2A3163;--night2:#1C2246;--sun:#F2C27A;--cream:#FBF5EC;--soft:#C9C3E0}
+body{background:var(--cream)}
+body:before{display:none}
+body.dark{background:var(--night);color:#F5EFE6}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 12px;text-align:left;padding:2px 0 6px}
+header .brand{font:600 1.05rem var(--serif);color:var(--green)}
+header .hl{margin-top:0;font-size:.8rem}
+body.dark header .brand{color:#F5EFE6}
+body.dark header .hl a{color:var(--sun)}
+nav{background:var(--night2);border-top:1px solid rgba(245,239,230,.1)}
+nav a{color:var(--soft);font-size:.72rem;padding:6px 2px;min-height:48px}
+nav a svg{display:block;margin:0 auto 3px}
+nav a.on{color:var(--sun);background:none}
+.hello{display:flex;flex-direction:column;margin-top:14px}
+.hd{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.hn{font:600 1.75rem/1.25 var(--serif);color:#F5EFE6}
+.stats{display:flex;gap:10px;margin-top:18px}
+.stat{flex:1;background:rgba(255,255,255,.07);border-radius:16px;padding:12px 16px;display:flex;flex-direction:column}
+.stat b{font-size:1.6rem;color:var(--sun);line-height:1.2}
+.stat span{font-size:.85rem;color:var(--soft)}
+.gift{background:var(--sun);color:#26304f;box-shadow:none}
+.gift svg{vertical-align:-4px;margin-right:6px}
+.sub{text-align:center;color:var(--soft);font-size:1.05rem;line-height:1.6}
+.scene{filter:none}
+.today{margin-top:20px;background:var(--cream);color:#26304f;border-radius:26px;padding:24px 22px;display:flex;flex-direction:column;gap:12px}
+.tk{font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9a6427}
+.tv{margin:0;font:italic 500 1.3rem/1.5 var(--serif)}
+.tr{font-size:.9rem;font-weight:700;color:#9a6427}
+.cta{margin-top:6px;min-height:52px;border:0;border-radius:26px;background:var(--green);color:#fff;font-weight:700;font-size:1rem;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer}
+.lk{margin:24px 0 10px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.tile{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:rgba(255,255,255,.07);border:0;border-radius:18px;padding:14px 16px;margin-bottom:10px;color:#F5EFE6;text-decoration:none;cursor:pointer;font:inherit}
+.tile b{display:block}.tile small{display:block;font-size:.88rem;color:var(--soft)}
+.ti{flex:none;width:44px;height:44px;border-radius:14px;background:rgba(242,194,122,.18);color:var(--sun);display:flex;align-items:center;justify-content:center}
+body.dark .foot{color:var(--soft)}
+body.dark .link{color:var(--sun)}
+body.dark .toast{background:var(--sun);color:#26304f}
+.hero{margin-top:8px;background:var(--night);color:#F5EFE6;border-radius:26px;padding:16px 20px 26px;display:flex;flex-direction:column;gap:12px}
+.hbar{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.hbar .hd{text-align:center}
+.ib{flex:none;width:44px;height:44px;border-radius:22px;border:1px solid rgba(245,239,230,.25);background:transparent;color:#F5EFE6;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.hero .tv{font-size:1.4rem}
+.hero .tr{color:var(--sun)}
+.vcard{background:var(--night);color:#F5EFE6;border-top:0;box-shadow:none;border-radius:26px}
+.vcard .vr{color:var(--sun)}
+.prayer{background:var(--green);color:#F5EFE6;border-radius:24px}
+.prayer h2{color:#F5EFE6;display:flex;align-items:center;gap:10px}
+.prayer h2 svg{color:var(--sun)}
+.silence{background:#fff;border:1px solid #E3D9C8}
+.clock{width:150px;height:150px;border-radius:50%;border:6px solid #F2E3CC;display:flex;align-items:center;justify-content:center;font-size:2.4rem;color:var(--green)}
+.durs button{min-height:44px;min-width:64px}
+#tgo{background:var(--sun);color:#26304f;border:0;width:100%;min-height:52px}
+.pb{min-height:48px}
+.pk{margin-top:14px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.pt{font:600 1.8rem/1.2 var(--serif);margin:2px 0 0;color:#F5EFE6}
+.ps{margin:4px 0 0;color:var(--soft)}
+.pbar{height:8px;border-radius:4px;background:rgba(255,255,255,.15);margin-top:14px;overflow:hidden}
+.pbar i{display:block;height:100%;background:var(--sun);border-radius:4px}
+.pn{margin:6px 0 0;font-size:.9rem;color:var(--soft)}
+.tl{list-style:none;margin:20px 0 0;padding:0}
+.tl li{display:flex;gap:16px;align-items:stretch}
+.rail{display:flex;flex-direction:column;align-items:center;width:36px;flex:none}
+.dot{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-weight:700;color:#F5EFE6;flex:none}
+.dot.d{background:var(--sun);color:#26304f}
+.dot.c{background:transparent;border:3px solid var(--sun);color:var(--sun)}
+.ln{flex:1;width:3px;min-height:18px;background:rgba(255,255,255,.18)}
+.ln.g{background:var(--sun)}
+.trow{flex:1;background:none;border:0;color:#F5EFE6;text-align:left;padding:6px 0 18px;cursor:pointer;font:inherit}
+.trow b,.tcard b{display:block}
+.trow small{display:block;color:var(--soft);font-size:.88rem}
+.trow[disabled]{cursor:default}
+.tcard{flex:1;margin-bottom:14px;background:var(--cream);color:#26304f;border:0;border-radius:18px;padding:14px 16px;text-align:left;cursor:pointer;font:inherit}
+.tcard b{font:600 1.1rem var(--serif)}
+.tcard small{display:block;color:#4a4f68;font-size:.88rem}
+.tl li.lock{opacity:.55}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>Ma course spirituelle</h1>
-    <div class="by">Proposé par Avel Lumière</div>
-    <span class="free">Gratuit</span>
+    <div class="brand">Ma course spirituelle</div>
     <div class="hl"><a href="#pourquoi">Pourquoi cette course ?</a> · <a href="#soutenir">💝 Soutenir</a></div>
   </header>
   <main id="app"></main>
 </div>
 <nav id="nav">
-  <a href="#verset" data-v="verset"><span class="i">📖</span>Verset du jour</a>
-  <a href="#parcours" data-v="parcours"><span class="i">🏃</span>Parcours</a>
-  <a href="#prieres" data-v="prieres"><span class="i">🙏</span>Prières</a>
-  <a href="#notes" data-v="notes"><span class="i">✍️</span>Mes notes</a>
-  <a href="#partager" data-v="partager"><span class="i">💌</span>À partager</a>
+  <a href="#verset" data-v="verset"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2"/></svg>Aujourd'hui</a>
+  <a href="#parcours" data-v="parcours"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20c4-1 6-4 8-8s4-7 8-8"/><circle cx="18" cy="6" r="2"/></svg>Parcours</a>
+  <a href="#prieres" data-v="prieres"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 11V5a2 2 0 0 1 4 0v5"/><path d="M11 10V4a2 2 0 0 1 4 0v8"/><path d="M15 12a2 2 0 0 1 4 0v2a7 7 0 0 1-7 7h-1a7 7 0 0 1-6-3l-2-3a2 2 0 0 1 3-2l1 1"/></svg>Prières</a>
+  <a href="#notes" data-v="notes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Notes</a>
+  <a href="#partager" data-v="partager"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></svg>Partager</a>
 </nav>
 <div class="toast" id="toast"></div>
 <script>
@@ -165,14 +238,9 @@ function tDraw(){ const c=$("#clock"); if(!c) return;
   document.querySelectorAll(".durs button").forEach(b=>b.classList.toggle("on",+b.dataset.m===tMin)); }
 function tStop(){ tRun=false; clearInterval(tId); }
 
-/* ---------- Verset du jour ---------- */
-function renderVerset(){
-  const v=verseFor(TODAY), isOpen=!!opened()[TODAY];
-  let h=`<div class="kick">Verset du jour</div><div class="day">${esc(fmt(TODAY))}</div>`;
-  if(!isOpen){
-    h+=`<button class="gift" id="open">📖 J'ai reçu un verset<small>Touchez pour le découvrir</small></button>
-      <p style="text-align:center;color:var(--muted);font-size:1.12rem;line-height:1.6">Chaque jour, un verset choisi pour vous,<br>avec une méditation et une prière.</p>
-      <svg class="scene" viewBox="0 0 360 230" role="img" aria-label="Un chemin qui monte vers le soleil levant">
+/* ---------- Aujourd'hui (verset du jour) ---------- */
+const IC={"path": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 20c4-1 6-4 8-8s4-7 8-8\"/><circle cx=\"18\" cy=\"6\" r=\"2\"/></svg>", "hands": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 11V5a2 2 0 0 1 4 0v5\"/><path d=\"M11 10V4a2 2 0 0 1 4 0v8\"/><path d=\"M15 12a2 2 0 0 1 4 0v2a7 7 0 0 1-7 7h-1a7 7 0 0 1-6-3l-2-3a2 2 0 0 1 3-2l1 1\"/></svg>", "share": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7\"/><path d=\"m16 6-4-4-4 4\"/><path d=\"M12 2v13\"/></svg>", "book": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2Z\"/><path d=\"M22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8Z\"/></svg>", "timer": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"13\" r=\"8\"/><path d=\"M12 9v4l2 2\"/><path d=\"M9 2h6\"/></svg>", "arrow": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m13 6 6 6-6 6\"/></svg>", "back": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m15 6-6 6 6 6\"/></svg>", "check": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 5 5L20 7\"/></svg>", "crown": "<svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m2 8 4 10h12l4-10-6 4-4-7-4 7Z\"/></svg>"};
+const SCENE=`<svg class="scene" viewBox="0 0 360 230" role="img" aria-label="Un chemin qui monte vers le soleil levant">
   <defs>
     <radialGradient id="sun" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff3d6"/><stop offset=".55" stop-color="#f6c77d"/><stop offset="1" stop-color="#f6c77d" stop-opacity="0"/></radialGradient>
     <linearGradient id="h1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9b3d9"/><stop offset="1" stop-color="#d8d2ea"/></linearGradient>
@@ -195,27 +263,56 @@ function renderVerset(){
     <path d="M186 155 l-5 3 M186 155 l6 1" stroke="#2e3a6e" stroke-width="2" stroke-linecap="round" fill="none"/>
   </g>
   <g fill="#c9893b" opacity=".8"><path d="M60 60 q4 -3 8 0 q4 -3 8 0" stroke="#8b7fb8" stroke-width="1.6" fill="none"/><path d="M280 48 q3 -2 6 0 q3 -2 6 0" stroke="#8b7fb8" stroke-width="1.4" fill="none"/></g>
-</svg>
-      <div id="installBox"></div>`;
-    app.innerHTML=h;
-    drawInstall();
+</svg>`;
+let mOpen=false;
+function streak(){ const o=opened(); let n=0; const d=new Date(TODAY+"T12:00:00"); if(!o[TODAY]) d.setDate(d.getDate()-1); while(o[iso(d)]&&n<400){ n++; d.setDate(d.getDate()-1); } return n; }
+function greet(){ const h=new Date().getHours(); return h<12?"Bonjour":h<18?"Bon après-midi":"Bonsoir"; }
+function renderVerset(){
+  if(mOpen) return renderMeditation();
+  document.body.classList.add("dark");
+  const v=verseFor(TODAY), isOpen=!!opened()[TODAY], st=pState(), n=PARCOURS.jours.length, nd=Object.keys(st.done).length, s=streak(), cur=pCurrent(st);
+  let h=`<div class="hello"><span class="hd">${esc(fmt(TODAY))}</span><span class="hn">${greet()}</span></div>
+    <div class="stats"><div class="stat"><b>${s}</b><span>${s>1?"jours de suite":"jour de suite"}</span></div><div class="stat"><b>${nd}/${n}</b><span>étapes du parcours</span></div></div>`;
+  if(!isOpen){
+    h+=`<button class="gift" id="open">${IC.book}J'ai reçu un verset<small>Touchez pour le découvrir</small></button>
+      <p class="sub">Chaque jour, un verset choisi pour vous,<br>avec une méditation et une prière.</p>${SCENE}<div id="installBox"></div>`;
+    app.innerHTML=h; drawInstall();
     $("#open").onclick=()=>{ const o=opened(); o[TODAY]=1; lsSet("mcs_opened",o); renderVerset(); };
     return;
   }
-  h+=`<section class="vcard"><div class="vt">« ${esc(v.text)} »</div><div class="vr">${esc(refOf(v))}</div></section>
+  let tile;
+  if(cur<0) tile=`<a class="tile" href="#parcours"><span class="ti">${IC.crown}</span><span><b>Parcours terminé</b><small>${esc(PARCOURS.titre)}</small></span></a>`;
+  else tile=`<a class="tile" href="#parcours"><span class="ti">${IC.path}</span><span><b>Parcours · Jour ${cur+1}</b><small>${pUnlocked(cur,st)?esc(PARCOURS.jours[cur].t):"La prochaine étape s'ouvre demain"}</small></span></a>`;
+  h+=`<section class="today"><span class="tk">Verset du jour</span><p class="tv">« ${esc(v.text)} »</p><span class="tr">${esc(refOf(v))}</span>
+      <button class="cta" id="med">Méditer maintenant ${IC.arrow}</button></section>
+    <div class="lk">Pour aujourd'hui</div>${tile}
+    <button class="tile" id="sil"><span class="ti">${IC.timer}</span><span><b>Temps de silence</b><small>Quelques minutes avec Dieu</small></span></button>
+    <div class="foot">Application gratuite · <button class="link" id="toDon">Soutenir</button></div>`;
+  app.innerHTML=h;
+  $("#med").onclick=()=>{ mOpen=true; renderVerset(); window.scrollTo(0,0); };
+  $("#sil").onclick=()=>{ mOpen=true; renderVerset(); const e=$("#silence"); if(e) e.scrollIntoView({block:"center"}); };
+  $("#toDon").onclick=()=>go("soutenir");
+}
+function renderMeditation(){
+  document.body.classList.remove("dark");
+  const v=verseFor(TODAY);
+  app.innerHTML=`<section class="hero"><div class="hbar"><button class="ib" id="back" aria-label="Retour">${IC.back}</button><span class="hd">${esc(fmt(TODAY))}</span><button class="ib" id="shr" aria-label="Partager">${IC.share}</button></div>
+      <p class="tv">« ${esc(v.text)} »</p><span class="tr">${esc(refOf(v))}</span></section>
     <h2>Méditation</h2><div class="refl">${paras(v.reflection)}</div>
     ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
     <div class="sig">Méditation proposée par Avel Lumière</div>
-    <section class="prayer"><h2>Prière</h2><p>${esc(v.prayer)}</p></section>
-    <section class="silence"><div style="font-size:.9rem;color:var(--muted)">Temps de silence avec Dieu</div>
+    <section class="prayer"><h2>${IC.hands}Prière</h2><p>${esc(v.prayer)}</p></section>
+    <section class="silence" id="silence"><div style="font-size:.9rem;color:var(--muted)">Temps de silence avec Dieu</div>
       <div class="clock" id="clock"></div><div class="durs">${[2,5,10].map(m=>`<button data-m="${m}">${m} min</button>`).join("")}</div>
-      <button class="pb on" id="tgo" style="padding:11px 30px;font-weight:600"></button></section>
-    <div class="acts"><button class="pb on" id="toNotes">✍️ Écrire dans mes notes</button><button class="pb" id="toShare">💌 Partager ce verset</button></div>
+      <button class="pb on" id="tgo" style="font-weight:700"></button></section>
+    <div class="acts"><button class="pb on" id="toNotes">Écrire une note</button><button class="pb" id="toShare">Partager</button></div>
     <div class="foot">Application gratuite · <button class="link" id="toDon">Soutenir</button></div>`;
-  app.innerHTML=h; tDraw();
+  tDraw();
   document.querySelectorAll(".durs button").forEach(b=>b.onclick=()=>{ tMin=+b.dataset.m; tLeft=tMin*60; tStop(); tDraw(); });
   $("#tgo").onclick=()=>{ if(tRun){ tStop(); tDraw(); return; } if(tLeft===0) tLeft=tMin*60; tRun=true;
     tId=setInterval(()=>{ tLeft=Math.max(0,tLeft-1); if(tLeft===0) tStop(); tDraw(); },1000); tDraw(); };
+  $("#back").onclick=()=>{ tStop(); mOpen=false; renderVerset(); window.scrollTo(0,0); };
+  $("#shr").onclick=()=>go("partager");
   $("#toNotes").onclick=()=>go("notes"); $("#toShare").onclick=()=>go("partager"); $("#toDon").onclick=()=>go("soutenir");
 }
 
@@ -302,19 +399,22 @@ let pOpen=null;
 function renderParcours(){
   const st=pState(), n=PARCOURS.jours.length, nd=Object.keys(st.done).length, cur=pCurrent(st);
   if(pOpen!==null) return renderEtape(pOpen);
-  let h=`<h3 class="t">Parcours</h3>
-    <section class="pc"><h3>🏃 ${esc(PARCOURS.titre)}</h3><p>${esc(PARCOURS.sous)}</p>
-      <div class="bar"><i style="width:${Math.round(nd/n*100)}%"></i></div>
-      <p style="margin-top:8px;font-weight:700">${nd===n?"🏆 Parcours terminé !":nd?`Jour ${nd} sur ${n} accompli`:"Prêt(e) à prendre le départ ?"}</p></section>`;
-  PARCOURS.jours.forEach((j,i)=>{ const done=!!st.done[i], un=pUnlocked(i,st), isCur=i===cur&&un;
-    h+=`<button class="step ${done?"done":""} ${isCur?"cur":""} ${un?"":"lock"}" data-i="${i}" ${un?"":"disabled"}>
-      <span class="n">${done?"✓":i+1}</span><span><b>Jour ${i+1} – ${esc(j.t)}</b><small>${esc(j.ref)}${!un?(i===cur?" · 🔒 demain":" · 🔒"):""}</small></span></button>`; });
-  if(cur>0 && !pUnlocked(cur,st)) h+=`<p style="text-align:center;color:var(--muted);font-size:.9rem;margin-top:14px">Une étape par jour : la suivante s'ouvrira demain. 🌅</p>`;
-  h+=`<p style="text-align:center;margin-top:18px"><a class="link" href="#pourquoi">Pourquoi cette course ?</a></p>`;
+  document.body.classList.add("dark");
+  let h=`<div class="pk">Parcours · ${n} jours</div><h3 class="pt">${esc(PARCOURS.titre)}</h3><p class="ps">${esc(PARCOURS.sous)}</p>
+    <div class="pbar"><i style="width:${Math.round(nd/n*100)}%"></i></div>
+    <p class="pn">${nd===n?"Parcours terminé ! 👑":nd?`${nd} étape${nd>1?"s":""} sur ${n} accomplie${nd>1?"s":""}`:"Prêt(e) à prendre le départ ?"}</p><ol class="tl">`;
+  PARCOURS.jours.forEach((j,i)=>{ const done=!!st.done[i], un=pUnlocked(i,st), isCur=i===cur&&un, last=i===n-1;
+    const dot=done?`<span class="dot d">${IC.check}</span>`:isCur?`<span class="dot c">${i+1}</span>`:`<span class="dot">${last?IC.crown:i+1}</span>`;
+    const line=last?"":`<span class="ln${done?" g":""}"></span>`;
+    const body=isCur?`<button class="tcard" data-i="${i}"><span class="tk">Étape du jour</span><b>${esc(j.t)}</b><small>${esc(j.ref)}</small></button>`
+      :`<button class="trow" data-i="${i}" ${un?"":"disabled"}><b>${esc(j.t)}</b><small>${!un&&i===cur?"S'ouvre demain":esc(j.ref)}</small></button>`;
+    h+=`<li class="${un?"":"lock"}"><div class="rail">${dot}${line}</div>${body}</li>`; });
+  h+=`</ol><p style="text-align:center;margin-top:18px"><a class="link" href="#pourquoi">Pourquoi cette course ?</a></p>`;
   app.innerHTML=h;
-  app.querySelectorAll(".step:not(.lock)").forEach(b=>b.onclick=()=>{ pOpen=+b.dataset.i; renderParcours(); window.scrollTo(0,0); });
+  app.querySelectorAll(".tl button:not([disabled])").forEach(b=>b.onclick=()=>{ pOpen=+b.dataset.i; renderParcours(); window.scrollTo(0,0); });
 }
 function renderEtape(i){
+  document.body.classList.remove("dark");
   const j=PARCOURS.jours[i], st=pState(), n=PARCOURS.jours.length, key="p_"+PARCOURS.id+"_"+i;
   const note=(notes()[key]||{}).text||"";
   app.innerHTML=`<button class="link" id="pb">← Le parcours</button>
@@ -372,10 +472,13 @@ function renderSoutenir(){
 
 function render(){ tStop(); const h=location.hash.slice(1); const v=VIEWS.includes(h)?h:"verset";
   document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.v===v));
+  document.body.classList.remove("dark");
   if(v!=="parcours") pOpen=null;
+  if(v!=="verset") mOpen=false;
   ({verset:renderVerset,parcours:renderParcours,prieres:renderPrieres,notes:renderNotes,partager:renderPartager,soutenir:renderSoutenir,pourquoi:renderPourquoi})[v](); }
 function go(v){ if(location.hash!=="#"+v) location.hash=v; else render(); window.scrollTo(0,0); }
 window.addEventListener("hashchange",()=>{ render(); window.scrollTo(0,0); });
+document.querySelectorAll("#nav a").forEach(a=>a.addEventListener("click",()=>{ if(location.hash==="#"+a.dataset.v||(!location.hash&&a.dataset.v==="verset")){ pOpen=null; mOpen=false; render(); window.scrollTo(0,0); } }));
 render();
 if("serviceWorker" in navigator && location.protocol==="https:"){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }
 })();
