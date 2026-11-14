@@ -1,14 +1,14 @@
 {
-  "name": "La Source du Matin – Parole et Lumière",
-  "short_name": "La Source",
+  "name": "Parole et Lumière",
+  "short_name": "Parole et Lumière",
   "description": "Versets à méditer, réflexions et prières quotidiennes. Proposé par Avel Lumière.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f4efd6",
-  "theme_color": "#4f8a62",
+  "background_color": "#f6e6e4",
+  "theme_color": "#522B3E",
   "icons": [
     {
       "src": "icons/icon-192.png",
