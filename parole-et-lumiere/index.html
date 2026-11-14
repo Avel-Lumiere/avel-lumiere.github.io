@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parole et Lumière — Méditation quotidienne</title>
+<meta name="description" content="Versets à méditer, réflexions et prières quotidiennes.">
+<meta property="og:title" content="Parole et Lumière — Méditation quotidienne">
+<meta property="og:description" content="Versets à méditer, réflexions et prières du jour.
+👉🏽 Cliquez sur l’image pour lire le verset du jour.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://avel-lumiere.github.io/parole-et-lumiere/">
+<meta property="og:site_name" content="Parole et Lumière">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://avel-lumiere.github.io/parole-et-lumiere/parole-et-lumiere-pastel.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://avel-lumiere.github.io/parole-et-lumiere/">
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#4f8a62">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Karla:wght@400;500&display=swap">
+<style>
+:root{--bg:oklch(0.97 0.015 150);--fg:oklch(0.3 0.04 160);--primary:oklch(0.52 0.07 160);--primary-fg:oklch(0.98 0.01 150);--secondary:oklch(0.92 0.025 150);--accent:oklch(0.88 0.04 150);--muted:oklch(0.5 0.03 160);--card:oklch(1 0 0)}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Karla,system-ui,sans-serif;font-size:16px;line-height:1.5;color:var(--fg);background:var(--bg)}
+main{position:relative;min-height:100vh;padding:32px 24px;background-color:var(--bg);background-image:url(fond-meditation.jpg);background-size:cover;background-position:center;background-attachment:fixed}
+@media(max-width:700px){main{background-attachment:scroll}}
+.tint{position:absolute;inset:0;pointer-events:none;transition:background-color .7s}
+.wrap{position:relative;max-width:672px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+header{text-align:center}
+.kick{margin:0;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.date{margin:4px 0 0;font-size:14px;color:var(--muted);text-transform:capitalize}
+h1{margin:8px 0 0;font:600 36px/1.1 "Cormorant Garamond",serif}
+h2{margin:0;font:600 24px/1.2 "Cormorant Garamond",serif}
+.btn{display:inline-block;background:transparent;border:1px solid color-mix(in oklab,var(--primary) 30%,transparent);border-radius:999px;padding:8px 20px;font:inherit;font-size:14px;color:var(--fg);cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--accent)}
+.verse{border-radius:24px;background:color-mix(in oklab,var(--card) 70%,transparent);padding:32px;text-align:center;box-shadow:0 20px 60px -10px color-mix(in oklab,var(--primary) 45%,transparent)}
+.vt{margin:0;font:400 20px/1.375 "Cormorant Garamond",serif}
+.vr{margin:16px 0 0;font-size:14px;font-weight:500;letter-spacing:.025em;color:var(--primary)}
+.verse .btn{margin-top:24px}
+.refl{margin:8px 0 0;white-space:pre-line;color:var(--muted)}
+.thought{margin:24px 0 0;border-left:2px solid var(--primary);padding-left:16px;color:var(--muted)}
+.thought b{font-weight:500;color:var(--fg)}
+.sig{margin:16px 0 0;text-align:right;font-size:12px;color:var(--muted)}
+.prayer{border-left:2px solid var(--primary);padding-left:20px}
+.prayer p{margin:8px 0 0;font-style:italic;line-height:1.625}
+.sub{display:flex;flex-direction:column;align-items:center;gap:16px;border-radius:24px;background:var(--secondary);padding:24px;text-align:center}
+.sub h2{font-size:20px}
+.sub p{margin:0;font-size:14px;color:var(--muted)}
+.cta{border-radius:999px;background:var(--primary);color:var(--primary-fg);padding:12px 32px;font-weight:500;text-decoration:none;text-align:center}
+.cta:hover{opacity:.9}
+.prev ul{list-style:none;margin:8px 0 0;padding:0}
+.prev li+li{border-top:1px solid color-mix(in oklab,var(--primary) 20%,transparent)}
+.prev li button{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;background:none;border:0;padding:12px 0;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.prev .d{text-transform:capitalize;color:var(--muted)}
+.prev .r{color:var(--primary)}
+.center{text-align:center;margin-top:8px}
+.foot{margin:16px 0 0;text-align:center;font-size:14px;color:var(--muted)}
+.foot a{color:var(--primary);text-underline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+  <div class="tint" id="tint" aria-hidden="true"></div>
+  <div class="wrap" id="app"></div>
+</main>
+<script>
+(function(){
+/* ======== CONTENU ======== */
+const WHATSAPP_CHANNEL = "https://whatsapp.com/channel/0029VbDYUq02kNFm2aootG47";
+const SITE_URL = "https://avel-lumiere.github.io/parole-et-lumiere/";
+// Versets : « date » (AAAA-MM-JJ) = verset de ce jour ; sans date = rotation.
+const VERSES = [
+{
+"date": "2026-11-11",
+"ref": "Psaume 118:24",
+"phrase": "C’est ici la journée que l’Éternel a faite",
+"accroche": "Une journée offerte par Dieu",
+"text": "C’est ici la journée que l’Éternel a faite : qu’elle soit pour nous un sujet d’allégresse et de joie !",
+"reflection": "Chaque lever de soleil est un cadeau renouvelé, une page blanche que Dieu nous invite à vivre dans la confiance. Même lorsque la veille a été chargée de doutes ou de fatigue, ce matin porte en lui une grâce toute fraîche. Choisir la joie aujourd'hui n'est pas ignorer les difficultés, mais décider de poser nos regards sur la fidélité de Dieu qui devance chacun de nos pas.",
+"thought": "Aujourd’hui est une création de Dieu : recevez-la comme un présent et laissez sa paix éclairer vos choix.",
+"prayer": "Seigneur, merci pour cette nouvelle journée que tu as préparée pour moi. Éloigne de mon cœur l’anxiété et le découragement, et remplis-moi de ta joie véritable. Guide mes paroles, fortifie mes pas et fais de moi une source d’encouragement pour ceux que je croiserai aujourd’hui. Au nom de Jésus, amen."
+},
+{
+"date": "2026-11-08",
+"ref": "Psaume 118:24",
+"phrase": "C’est ici la journée que l’Éternel a faite",
+"accroche": "Une journée offerte par Dieu",
+"text": "C’est ici la journée que l’Éternel a faite : qu’elle soit pour nous un sujet d’allégresse et de joie !",
+"reflection": "Chaque lever de soleil est un cadeau renouvelé, une page blanche que Dieu nous invite à vivre dans la confiance. Même lorsque la veille a été chargée de doutes ou de fatigue, ce matin porte en lui une grâce toute fraîche. Choisir la joie aujourd'hui n'est pas ignorer les difficultés, mais décider de poser nos regards sur la fidélité de Dieu qui devance chacun de nos pas.",
+"thought": "Aujourd’hui est une création de Dieu : recevez-la comme un présent et laissez sa paix éclairer vos choix.",
+"prayer": "Seigneur, merci pour cette nouvelle journée que tu as préparée pour moi. Éloigne de mon cœur l’anxiété et le découragement, et remplis-moi de ta joie véritable. Guide mes paroles, fortifie mes pas et fais de moi une source d’encouragement pour ceux que je croiserai aujourd’hui. Au nom de Jésus, amen."
+},
+{
+"date": "2026-11-06",
+"ref": "Ésaïe 41:10",
+"phrase": "Ne crains rien, car je suis avec toi",
+"accroche": "Tu n’es pas seul : Dieu te tient la main",
+"text": "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours, je te soutiens de ma droite triomphante.",
+"reflection": "Ce matin, confiez à Dieu ce qui vous inquiète. Sa présence ne vous quitte pas : appuyez-vous sur lui pour avancer avec confiance, un pas après l'autre.",
+"prayer": "Seigneur, merci pour ce nouveau matin. Tu connais mes inquiétudes et les défis qui m’attendent. Apaise mon cœur et rappelle-moi que je ne suis pas seule : tu es avec moi. Donne-moi la force d’avancer, la sagesse pour mes décisions et la confiance pour te remettre ce que je ne peux pas contrôler. Que ta paix accompagne chacun de mes pas aujourd’hui. Au nom de Jésus, amen."
+},
+{
+"date": "2026-11-05",
+"ref": "2 Timothée 2:22",
+"phrase": "Recherche la justice, la foi, l’amour, la paix",
+"accroche": "Fuir le mal, rechercher la paix",
+"text": "Fuis les passions de la jeunesse, et recherche la justice, la foi, l'amour, la paix, avec ceux qui invoquent le Seigneur d'un cœur pur.",
+"reflection": "Fuir ce qui nous éloigne de Dieu n'est pas être faible, c'est faire preuve de sagesse spirituelle. Recherchez la droiture, la foi, l'amour et la paix, avec ceux qui font appel au Seigneur : notre marche avec Dieu ne doit pas être solitaire.",
+"thought": "Nous ne pouvons pas toujours empêcher une mauvaise pensée de traverser notre esprit, mais avec l'aide du Saint-Esprit, nous pouvons choisir de ne pas lui donner une place dans notre cœur.",
+"prayer": "Père céleste, en ce nouveau jour, nous venons devant Toi avec humilité. Examine nos cœurs et révèle-nous tout ce qui nous éloigne de Ta présence. Apprends-nous à fuir les pensées, les désirs et les comportements qui ne Te glorifient pas. Donne-nous un cœur droit, une foi persévérante, un amour sincère et un esprit de paix. Lorsque notre chair veut répondre par la colère, enseigne-nous la douceur. Lorsque notre orgueil veut prendre le dessus, enseigne-nous l'humilité. Lorsque nous sommes blessés, apprends-nous à pardonner. Place sur notre chemin des frères et des sœurs qui recherchent sincèrement Ta présence, afin que nous puissions grandir ensemble dans Ton amour. Que notre vie soit le reflet de Ta Parole, non seulement dans nos paroles, mais surtout dans nos actes. Au nom précieux de Jésus-Christ. Amen."
+},
+{
+"date": "2026-11-12",
+"ref": "Psaume 23:1",
+"phrase": "L’Éternel est mon berger",
+"accroche": "Le Berger qui veille sur nous",
+"text": "L'Éternel est mon berger : je ne manquerai de rien.",
+"reflection": "Dieu prend soin de vous comme un berger veille sur ses brebis. Qu'est-ce qui vous inquiète aujourd'hui ?",
+"prayer": "Seigneur, mon berger, je dépose devant toi mes inquiétudes. Conduis-moi et donne-moi ta paix. Amen."
+},
+{
+"date": "2026-11-04",
+"ref": "Matthieu 11:28",
+"phrase": "Venez à moi, et je vous donnerai du repos",
+"accroche": "Déposer ses fardeaux auprès de Jésus",
+"text": "Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos.",
+"reflection": "Jésus vous invite à lui remettre vos fardeaux. Lequel voulez-vous lui confier ?",
+"prayer": "Jésus, je viens à toi avec ma fatigue. Donne-moi ton repos et allège mon cœur. Amen."
+},
+{
+"date": "2026-11-07",
+"ref": "Philippiens 4:6-7",
+"phrase": "Ne vous inquiétez de rien",
+"accroche": "La paix qui garde nos cœurs",
+"text": "Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces. Et la paix de Dieu, qui surpasse toute intelligence, gardera vos cœurs et vos pensées en Jésus-Christ.",
+"reflection": "L'inquiétude est un fardeau que nous ne sommes pas appelés à porter seuls. Paul nous invite à un échange précieux : remettre chaque souci entre les mains de Dieu, et recevoir en retour sa paix. Ce matin, prenez le temps de nommer devant le Seigneur ce qui pèse sur votre cœur — une décision, une relation, une crainte pour l'avenir. Présentez-lui chaque chose, non pas avec des mots parfaits, mais avec un cœur sincère et reconnaissant. Car la gratitude ouvre la porte à la paix : lorsque nous nous souvenons de tout ce que Dieu a déjà accompli, nos inquiétudes perdent de leur force. Alors la paix de Dieu, qui dépasse tout ce que nous pouvons comprendre, monte la garde autour de notre cœur et de nos pensées, comme une sentinelle fidèle. Elle ne dépend pas des circonstances, mais de la présence du Christ en nous.",
+"prayer": "Père, je te confie mes besoins et je te remercie pour tes bienfaits. Que ta paix garde mon cœur. Amen."
+},
+{
+"date": "2026-11-15",
+"ref": "Ésaïe 41:10",
+"phrase": "Ne crains rien, car je suis avec toi",
+"accroche": "Tu n’es pas seul : Dieu te tient la main",
+"text": "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours.",
+"reflection": "Vous n'êtes jamais seul. Dieu est votre force dans chaque épreuve.",
+"prayer": "Seigneur, quand j'ai peur, rappelle-moi que tu es avec moi. Fortifie-moi aujourd'hui. Amen."
+},
+{
+"date": "2026-11-09",
+"ref": "Jean 14:27",
+"phrase": "Je vous laisse la paix, je vous donne ma paix",
+"accroche": "La paix que le monde ne peut donner",
+"text": "Je vous laisse la paix, je vous donne ma paix. Je ne vous donne pas comme le monde donne. Que votre cœur ne se trouble point.",
+"reflection": "La paix du Christ ne dépend pas des circonstances. Accueillez-la maintenant.",
+"prayer": "Jésus, remplis-moi de ta paix, celle que le monde ne peut pas donner. Amen."
+},
+{
+"date": "2026-11-10",
+"ref": "Psaume 46:11",
+"phrase": "Arrêtez, et sachez que je suis Dieu",
+"accroche": "S’arrêter pour reconnaître Dieu",
+"text": "Arrêtez, et sachez que je suis Dieu.",
+"reflection": "Faites silence un instant. Laissez Dieu être Dieu dans votre vie.",
+"prayer": "Seigneur, j'arrête mon agitation pour te reconnaître. Tu es Dieu, et je me repose en toi. Amen."
+},
+{
+"date": "2026-11-13",
+"ref": "Proverbes 3:5-6",
+"phrase": "Confie-toi en l’Éternel de tout ton cœur",
+"accroche": "Confier son chemin au Seigneur",
+"text": "Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ta sagesse ; reconnais-le dans toutes tes voies, et il aplanira tes sentiers.",
+"reflection": "Dans quelle décision avez-vous besoin de faire confiance à Dieu ? Un choix professionnel, une relation, un projet ou un chemin qui vous semble incertain ?\n\nC'est normal de vouloir tout comprendre et tout maîtriser avant d'avancer. Mais Dieu vous invite à vous appuyer sur lui plutôt que sur votre seule sagesse. Il voit plus loin que vous et il connaît le chemin.\n\nPrenez un instant pour lui présenter cette décision. Reconnaissez-le dans chacune de vos voies, et laissez-le aplanir vos sentiers, un pas après l'autre.",
+"prayer": "Père, je te fais confiance plus qu'à ma propre sagesse. Dirige mes pas. Amen."
+},
+{
+"date": "2026-11-14",
+"ref": "Lamentations 3:22-23",
+"phrase": "Les bontés de l’Éternel ne sont pas épuisées",
+"accroche": "Des grâces nouvelles chaque matin",
+"text": "Les bontés de l'Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme ; elles se renouvellent chaque matin.",
+"reflection": "Chaque jour est un nouveau départ dans la fidélité de Dieu.",
+"prayer": "Merci Seigneur pour tes compassions renouvelées ce jour. Grande est ta fidélité. Amen."
+}
+];
+// Jours qui ont une image d'aperçu (og/AAAA-MM-JJ.jpg) et une page de partage (j/AAAA-MM-JJ/).
+const OG_DATES = ["2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11", "2026-11-12", "2026-11-13", "2026-11-14", "2026-11-15"];
+
+const DAY_COLORS=[
+  {overlay:"rgba(250, 238, 200, 0.42)",card:"rgba(252, 244, 222, 0.85)"},
+  {overlay:"rgba(186, 220, 245, 0.42)",card:"rgba(220, 237, 250, 0.85)"},
+  {overlay:"rgba(215, 200, 240, 0.42)",card:"rgba(234, 226, 248, 0.85)"},
+  {overlay:"rgba(190, 215, 190, 0.42)",card:"rgba(222, 236, 220, 0.85)"},
+  {overlay:"rgba(250, 210, 180, 0.42)",card:"rgba(252, 230, 214, 0.85)"},
+  {overlay:"rgba(242, 200, 210, 0.42)",card:"rgba(248, 226, 232, 0.85)"},
+  {overlay:"rgba(250, 236, 170, 0.42)",card:"rgba(252, 245, 210, 0.85)"}];
+
+const $=s=>document.querySelector(s), app=$("#app");
+const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const isoOf=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+const fmt=s=>new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).format(new Date(s+"T12:00:00"));
+const dayColor=s=>DAY_COLORS[new Date(s+"T12:00:00").getDay()];
+const TODAY=isoOf(new Date());
+
+function previousVerses(){ return VERSES.filter(v=>v.date&&v.date<TODAY).sort((a,b)=>b.date.localeCompare(a.date)); }
+function verseOfDay(){
+  const dated=VERSES.find(v=>v.date===TODAY); if(dated) return dated;
+  const und=VERSES.filter(v=>!v.date);
+  if(!und.length){ return previousVerses()[0]||VERSES[0]; }
+  const day=Math.floor(Date.now()/86400000); return und[day%und.length];
+}
+function shareLink(){ return OG_DATES.includes(TODAY)? SITE_URL+"j/"+TODAY+"/" : SITE_URL+"?jour="+TODAY; }
+
+let archived=null, showOlder=false, copied=false;
+
+function render(){
+  const v=archived||verseOfDay(), prev=previousVerses(), col=dayColor(archived?archived.date:TODAY);
+  $("#tint").style.backgroundColor=col.overlay;
+  const list=(showOlder?prev:prev.slice(0,1));
+  app.innerHTML=`<header>
+      <p class="kick">${archived?"Méditation précédente":"Verset du jour"}</p>
+      <p class="date">${esc(fmt(archived?archived.date:TODAY))}</p>
+      <h1>Parole et Lumière</h1>
+      ${archived?`<button class="btn" id="back" style="margin-top:12px">Revenir au verset du jour</button>`:""}
+    </header>
+    <section class="verse"><p class="vt">« ${esc(v.text)} »</p><p class="vr">${esc(v.ref)}</p>
+      <button class="btn" id="share">${copied?"✓ Lien copié !":"⤴ Partager le verset"}</button></section>
+    <section><h2>Méditer</h2><p class="refl">${esc(v.reflection)}</p>
+      ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
+      <p class="sig">Méditation by Avel Lumière</p></section>
+    <section class="prayer"><h2>Prière</h2><p>${esc(v.prayer)}</p></section>
+    <section class="sub" aria-label="S'abonner à la méditation quotidienne" style="background-color:${col.card}">
+      <h2>Recevez la méditation chaque matin</h2>
+      <p>Suivez Avel Lumière sur WhatsApp : un verset, une méditation et une prière chaque jour.</p>
+      <a class="cta" href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">🔔 S'abonner à la méditation quotidienne</a></section>
+    <section class="prev"><h2>Méditations précédentes</h2>
+      <ul>${list.map(p=>`<li><button data-d="${p.date}" aria-pressed="${archived&&archived.date===p.date}"><span class="d">${esc(fmt(p.date))}</span><span class="r">${esc(p.ref)}</span></button></li>`).join("")}</ul>
+      ${prev.length>1?`<div class="center"><button class="btn" id="older" aria-expanded="${showOlder}">${showOlder?"Masquer les méditations précédentes ▴":"Lire les méditations précédentes ▾"}</button></div>`:""}
+      <p class="foot">Recevez chaque matin la méditation : <a href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">suivez Avel Lumière sur WhatsApp</a></p></section>`;
+  const b=$("#back"); if(b) b.onclick=()=>{ archived=null; copied=false; render(); window.scrollTo(0,0); };
+  $("#share").onclick=share;
+  const o=$("#older"); if(o) o.onclick=()=>{ showOlder=!showOlder; render(); };
+  app.querySelectorAll("[data-d]").forEach(x=>x.onclick=()=>{ archived=VERSES.find(p=>p.date===x.dataset.d); copied=false; render(); window.scrollTo(0,0); });
+}
+async function share(){
+  const text=shareLink();
+  if(navigator.share){ try{ await navigator.share({url:text}); return; }catch(e){ if(e&&e.name==="AbortError") return; } }
+  try{ await navigator.clipboard.writeText(text); }
+  catch(_){ const ta=document.createElement("textarea"); ta.value=text; document.body.appendChild(ta); ta.select(); try{document.execCommand("copy");}catch(e){} ta.remove(); }
+  copied=true; render(); setTimeout(()=>{ copied=false; render(); },2000);
+}
+render();
+if("serviceWorker" in navigator && location.protocol==="https:"){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }
+})();
+</script>
+</body>
+</html>
