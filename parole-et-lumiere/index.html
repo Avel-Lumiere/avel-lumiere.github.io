@@ -247,7 +247,7 @@ function render(){
       <a class="btn" href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">🔔 Recevoir chaque matin</a></div></section>
     <section class="card"><h2><span class="ic">🕊️</span>Méditer</h2><p class="refl">${esc(v.reflection)}</p>
       ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
-      <p class="sig">Méditation by Avel Lumière</p></section>
+      <p class="sig">Méditation by Avel &amp; Lumière</p></section>
     <section class="card prayer"><h2><span class="ic">🙏</span>Prière</h2><p>${esc(v.prayer)}</p></section>
     <section class="prev"><h2><span class="ic">📖</span>Méditations précédentes</h2>
       <ul>${list.map(p=>`<li><button data-d="${p.date}" aria-pressed="${archived&&archived.date===p.date}"><span><span class="d">${esc(fmt(p.date))}</span><span class="r">${esc(p.ref)}</span></span></button></li>`).join("")}</ul>
