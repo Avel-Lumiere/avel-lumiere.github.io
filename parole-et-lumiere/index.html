@@ -22,48 +22,49 @@
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#522B3E">
+<meta name="theme-color" content="#fdf6ec">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Karla:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap">
 <style>
-:root{--bg:oklch(0.97 0.015 150);--fg:oklch(0.3 0.04 160);--primary:oklch(0.52 0.07 160);--primary-fg:oklch(0.98 0.01 150);--secondary:oklch(0.92 0.025 150);--accent:oklch(0.88 0.04 150);--muted:oklch(0.5 0.03 160);--card:oklch(1 0 0)}
+:root{--ink:#2e3a6e;--fg:#3a4262;--muted:#6a6f86;--gold:#c9893b;--gold-soft:rgba(201,137,59,.14);--card:rgba(255,255,255,.78);--line:rgba(46,58,110,.12)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:Karla,system-ui,sans-serif;font-size:16px;line-height:1.5;color:var(--fg);background:var(--bg)}
-main{position:relative;min-height:100vh;padding:32px 24px;background-color:var(--bg);background-image:url(fond-meditation.jpg);background-size:cover;background-position:center;background-attachment:fixed}
-@media(max-width:700px){main{background-attachment:scroll}}
-.tint{position:absolute;inset:0;pointer-events:none;transition:background-color .7s}
-.wrap{position:relative;max-width:672px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
-header{text-align:center}
-.kick{margin:0;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
-.date{margin:4px 0 0;font-size:14px;color:var(--muted);text-transform:capitalize}
-h1{margin:8px 0 0;font:600 36px/1.1 "Cormorant Garamond",serif}
-h2{margin:0;font:600 24px/1.2 "Cormorant Garamond",serif}
-.btn{display:inline-block;background:transparent;border:1px solid color-mix(in oklab,var(--primary) 30%,transparent);border-radius:999px;padding:8px 20px;font:inherit;font-size:14px;color:var(--fg);cursor:pointer;transition:background .2s}
-.btn:hover{background:var(--accent)}
-.verse{border-radius:24px;background:color-mix(in oklab,var(--card) 70%,transparent);padding:32px;text-align:center;box-shadow:0 20px 60px -10px color-mix(in oklab,var(--primary) 45%,transparent)}
-.vt{margin:0;font:400 20px/1.375 "Cormorant Garamond",serif}
-.vr{margin:16px 0 0;font-size:14px;font-weight:500;letter-spacing:.025em;color:var(--primary)}
-.verse .btn{margin-top:24px}
-.refl{margin:8px 0 0;white-space:pre-line;color:var(--muted)}
-.thought{margin:24px 0 0;border-left:2px solid var(--primary);padding-left:16px;color:var(--muted)}
-.thought b{font-weight:500;color:var(--fg)}
-.sig{margin:16px 0 0;text-align:right;font-size:12px;color:var(--muted)}
-.prayer{border-left:2px solid var(--primary);padding-left:20px}
-.prayer p{margin:8px 0 0;font-style:italic;line-height:1.625}
-.sub{display:flex;flex-direction:column;align-items:center;gap:16px;border-radius:24px;background:var(--secondary);padding:24px;text-align:center}
-.sub h2{font-size:20px}
-.sub p{margin:0;font-size:14px;color:var(--muted)}
-.cta{border-radius:999px;background:var(--primary);color:var(--primary-fg);padding:12px 32px;font-weight:500;text-decoration:none;text-align:center}
-.cta:hover{opacity:.9}
-.prev ul{list-style:none;margin:8px 0 0;padding:0}
-.prev li+li{border-top:1px solid color-mix(in oklab,var(--primary) 20%,transparent)}
-.prev li button{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;background:none;border:0;padding:12px 0;font:inherit;color:inherit;text-align:left;cursor:pointer}
-.prev .d{text-transform:capitalize;color:var(--muted)}
-.prev .r{color:var(--primary)}
-.center{text-align:center;margin-top:8px}
-.foot{margin:16px 0 0;text-align:center;font-size:14px;color:var(--muted)}
-.foot a{color:var(--primary);text-underline-offset:2px}
+body{margin:0;font:17px/1.65 "Nunito Sans",system-ui,sans-serif;color:var(--fg);background:#fdf6ec}
+main{position:relative;min-height:100vh;padding:0 0 40px;background:linear-gradient(180deg,#fdf6ec 0%,#fbe7d6 30%,#f3e4ee 65%,#e7e8f6 100%)}
+.tint{display:none}
+.wrap{position:relative;max-width:560px;margin:0 auto;padding:0 18px;display:flex;flex-direction:column;gap:22px}
+header{text-align:center;padding:38px 0 6px;position:relative}
+.sun{width:64px;height:64px;margin:0 auto 10px;border-radius:50%;background:radial-gradient(circle,#ffe2a8 0%,#f6c27a 55%,rgba(246,194,122,0) 72%);box-shadow:0 0 60px 18px rgba(246,194,122,.35)}
+h1{margin:0;font:600 2.3rem/1.1 "Lora",serif;color:var(--ink)}
+h1:after{content:"";display:block;width:56px;height:3px;border-radius:3px;background:var(--gold);margin:12px auto 0}
+.kick{margin:14px 0 0;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.date{margin:2px 0 0;font-size:.95rem;color:var(--muted);text-transform:capitalize}
+h2{margin:0;display:flex;align-items:center;gap:10px;font:600 1.3rem/1.2 "Lora",serif;color:var(--ink)}
+h2 .ic{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--gold-soft);font-size:1rem}
+.btn{text-decoration:none;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.6);border:1px solid var(--line);border-radius:999px;padding:8px 18px;font:inherit;font-size:.9rem;color:var(--ink);cursor:pointer}
+.btn:hover{background:#fff}
+.verse{position:relative;border-radius:26px;background:var(--card);padding:34px 24px 26px;text-align:center;border:1px solid rgba(255,255,255,.9);box-shadow:0 18px 44px -18px rgba(46,58,110,.35)}
+.verse:before{content:"“";position:absolute;top:-6px;left:18px;font:600 5rem/1 "Lora",serif;color:var(--gold);opacity:.35}
+.vt{margin:0;font:italic 500 1.28rem/1.55 "Lora",serif;color:var(--ink)}
+.vr{display:inline-block;margin:18px 0 0;padding:4px 14px;border-radius:999px;background:var(--gold-soft);color:#9a6427;font-weight:700;font-size:.85rem;letter-spacing:.03em}
+.verse .actions{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.card{border-radius:22px;background:rgba(255,255,255,.55);padding:22px 20px;border:1px solid rgba(255,255,255,.8)}
+.refl{margin:10px 0 0;white-space:pre-line}
+.thought{margin:18px 0 0;padding:14px 16px;border-radius:14px;background:var(--gold-soft);color:var(--fg);font-size:.95rem}
+.thought b{color:#9a6427}
+.sig{margin:12px 0 0;text-align:right;font-size:.8rem;color:var(--muted);font-style:italic}
+.prayer p{margin:10px 0 0;font:italic 500 1.08rem/1.65 "Lora",serif;color:var(--ink)}
+.prayer .amen{display:block;margin-top:10px;text-align:center;color:var(--gold);letter-spacing:.3em;font-size:.8rem}
+.sub{text-align:center;font-size:.92rem;color:var(--muted)}
+.sub a{color:var(--ink);font-weight:600;text-underline-offset:3px}
+.prev ul{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.prev li button{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.prev li button:after{content:"›";color:var(--gold);font-size:1.4rem;line-height:1}
+.prev .d{display:block;text-transform:capitalize;color:var(--muted);font-size:.85rem}
+.prev .r{display:block;color:var(--ink);font-weight:600}
+.center{text-align:center;margin-top:12px}
+.foot{margin-top:6px;text-align:center;font-size:.85rem;color:var(--muted)}
+.foot .g{display:inline-block;background:var(--gold-soft);color:#9a6427;border-radius:999px;padding:3px 12px;font-weight:700;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -225,25 +226,24 @@ function render(){
   $("#tint").style.backgroundColor=col.overlay;
   const list=(showOlder?prev:prev.slice(0,1));
   app.innerHTML=`<header>
+      <div class="sun" aria-hidden="true"></div>
+      <h1>Parole et Lumière</h1>
       <p class="kick">${archived?"Méditation précédente":"Verset du jour"}</p>
       <p class="date">${esc(fmt(archived?archived.date:TODAY))}</p>
-      <h1>Parole et Lumière</h1>
-      ${archived?`<button class="btn" id="back" style="margin-top:12px">Revenir au verset du jour</button>`:""}
+      ${archived?`<button class="btn" id="back" style="margin-top:12px">← Revenir au verset du jour</button>`:""}
     </header>
-    <section class="verse"><p class="vt">« ${esc(v.text)} »</p><p class="vr">${esc(v.ref)}</p>
-      <button class="btn" id="share">${copied?"✓ Lien copié !":"⤴ Partager le verset"}</button></section>
-    <section><h2>Méditer</h2><p class="refl">${esc(v.reflection)}</p>
+    <section class="verse"><p class="vt">${esc(v.text)}</p><span class="vr">${esc(v.ref)}</span>
+      <div class="actions"><button class="btn" id="share">${copied?"✓ Lien copié !":"⤴ Partager le verset"}</button>
+      <a class="btn" href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">🔔 Recevoir chaque matin</a></div></section>
+    <section class="card"><h2><span class="ic">🕊️</span>Méditer</h2><p class="refl">${esc(v.reflection)}</p>
       ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
       <p class="sig">Méditation by Avel Lumière</p></section>
-    <section class="prayer"><h2>Prière</h2><p>${esc(v.prayer)}</p></section>
-    <section class="sub" aria-label="S'abonner à la méditation quotidienne" style="background-color:${col.card}">
-      <h2>Recevez la méditation chaque matin</h2>
-      <p>Suivez Avel Lumière sur WhatsApp : un verset, une méditation et une prière chaque jour.</p>
-      <a class="cta" href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">🔔 S'abonner à la méditation quotidienne</a></section>
-    <section class="prev"><h2>Méditations précédentes</h2>
-      <ul>${list.map(p=>`<li><button data-d="${p.date}" aria-pressed="${archived&&archived.date===p.date}"><span class="d">${esc(fmt(p.date))}</span><span class="r">${esc(p.ref)}</span></button></li>`).join("")}</ul>
-      ${prev.length>1?`<div class="center"><button class="btn" id="older" aria-expanded="${showOlder}">${showOlder?"Masquer les méditations précédentes ▴":"Lire les méditations précédentes ▾"}</button></div>`:""}
-      <p class="foot">Recevez chaque matin la méditation : <a href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">suivez Avel Lumière sur WhatsApp</a></p></section>`;
+    <section class="card prayer"><h2><span class="ic">🙏</span>Prière</h2><p>${esc(v.prayer)}</p></section>
+    <section class="prev"><h2><span class="ic">📖</span>Méditations précédentes</h2>
+      <ul>${list.map(p=>`<li><button data-d="${p.date}" aria-pressed="${archived&&archived.date===p.date}"><span><span class="d">${esc(fmt(p.date))}</span><span class="r">${esc(p.ref)}</span></span></button></li>`).join("")}</ul>
+      ${prev.length>1?`<div class="center"><button class="btn" id="older" aria-expanded="${showOlder}">${showOlder?"Masquer ▴":"Voir toutes les méditations ▾"}</button></div>`:""}</section>
+    <p class="sub">Recevez chaque matin la méditation :<br><a href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">suivez Avel Lumière sur WhatsApp</a></p>
+    <p class="foot"><span class="g">Gratuit</span><br>Proposé par Avel Lumière</p>`;
   const b=$("#back"); if(b) b.onclick=()=>{ archived=null; copied=false; render(); window.scrollTo(0,0); };
   $("#share").onclick=share;
   const o=$("#older"); if(o) o.onclick=()=>{ showOlder=!showOlder; render(); };
