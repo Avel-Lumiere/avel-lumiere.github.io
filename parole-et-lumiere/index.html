@@ -252,8 +252,8 @@ function render(){
     <section class="prev"><h2><span class="ic">📖</span>Méditations précédentes</h2>
       <ul>${list.map(p=>`<li><button data-d="${p.date}" aria-pressed="${archived&&archived.date===p.date}"><span><span class="d">${esc(fmt(p.date))}</span><span class="r">${esc(p.ref)}</span></span></button></li>`).join("")}</ul>
       ${prev.length>1?`<div class="center"><button class="btn" id="older" aria-expanded="${showOlder}">${showOlder?"Masquer ▴":"Voir toutes les méditations ▾"}</button></div>`:""}</section>
-    <p class="sub">Recevez chaque matin la méditation :<br><a href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">suivez Avel Lumière sur WhatsApp</a></p>
-    <p class="foot"><span class="g">Gratuit</span><br>Proposé par Avel Lumière</p>`;
+    <p class="sub">Recevez chaque matin la méditation :<br><a href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">suivez Avel &amp; Lumière sur WhatsApp</a></p>
+    <p class="foot"><span class="g">Gratuit</span><br>Proposé par Avel &amp; Lumière</p>`;
   const b=$("#back"); if(b) b.onclick=()=>{ archived=null; copied=false; render(); window.scrollTo(0,0); };
   $("#share").onclick=share;
   const o=$("#older"); if(o) o.onclick=()=>{ showOlder=!showOlder; render(); };
