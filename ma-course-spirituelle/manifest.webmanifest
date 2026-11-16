@@ -1,7 +1,7 @@
 {
   "name": "Ma course spirituelle",
   "short_name": "Ma course",
-  "description": "Chaque jour, un verset, une méditation et une prière. Proposé gratuitement par Avel Lumière.",
+  "description": "Chaque jour, un verset, une méditation et une prière. Proposé gratuitement par Avel & Lumière.",
   "lang": "fr",
   "start_url": "./",
   "scope": "./",

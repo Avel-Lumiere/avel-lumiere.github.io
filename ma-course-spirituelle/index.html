@@ -12,7 +12,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Ma course">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="description" content="Chaque jour, un verset, une méditation et une prière. Proposé gratuitement par Avel Lumière.">
+<meta name="description" content="Chaque jour, un verset, une méditation et une prière. Proposé gratuitement par Avel &amp; Lumière.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -300,7 +300,7 @@ function renderMeditation(){
       <p class="tv">« ${esc(v.text)} »</p><span class="tr">${esc(refOf(v))}</span></section>
     <h2>Méditation</h2><div class="refl">${paras(v.reflection)}</div>
     ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
-    <div class="sig">Méditation proposée par Avel Lumière</div>
+    <div class="sig">Méditation proposée par Avel &amp; Lumière</div>
     <section class="prayer"><h2>${IC.hands}Prière</h2><p>${esc(v.prayer)}</p></section>
     <section class="silence" id="silence"><div style="font-size:.9rem;color:var(--muted)">Temps de silence avec Dieu</div>
       <div class="clock" id="clock"></div><div class="durs">${[2,5,10].map(m=>`<button data-m="${m}">${m} min</button>`).join("")}</div>
@@ -360,7 +360,7 @@ function renderPartager(){
     if(parts.med) out.push(`🕊️ Méditation\n${v.reflection}`);
     if(parts.pri) out.push(`🙏 Prière\n${v.prayer}`);
     const n=(notes()[TODAY]||{}).text; if(parts.notes&&n) out.push(`✍️ Mes notes\n${n.trim()}`);
-    out.push("🌿 Ma course spirituelle — proposé gratuitement par Avel Lumière\n"+location.origin+location.pathname);
+    out.push("🌿 Ma course spirituelle — proposé gratuitement par Avel & Lumière\n"+location.origin+location.pathname);
     $("#st").value=out.join("\n\n"); };
   build();
   [["oMed","med"],["oPri","pri"],["oNotes","notes"]].forEach(([id,k])=>$("#"+id).onchange=e=>{ parts[k]=e.target.checked; lsSet("mcs_share",parts); build(); });
@@ -422,7 +422,7 @@ function renderEtape(i){
     <h3 class="t" style="margin-top:6px">${esc(j.t)}</h3>
     <section class="vcard"><div class="vt">« ${esc(j.v)} »</div><div class="vr">${esc(j.ref)} (LSG)</div></section>
     <h2>Méditation</h2><div class="refl">${paras(j.m)}</div>
-    <div class="sig">Méditation proposée par Avel Lumière</div>
+    <div class="sig">Méditation proposée par Avel &amp; Lumière</div>
     <section class="prayer"><h2>Prière</h2><p>${esc(j.p)}</p></section>
     <section class="pas"><h2>👣 Le pas du jour</h2><p style="margin:0">${esc(j.pas)}</p>
       <label class="chk"><input type="checkbox" id="pasok" ${st.pas[i]?"checked":""}> J'ai fait mon pas du jour</label></section>
@@ -450,7 +450,7 @@ function renderPourquoi(){
     <p>La vie est une course, et cette course a deux issues. D'un côté, la voie de la couronne de victoire, qui mène à l'éternité. De l'autre, la voie du choix personnel, celle où l'on court pour soi-même.</p>
     <p>Prendre le départ, c'est d'abord faire un choix. Choisir la course qui mène à l'éternité, c'est renoncer à soi-même et s'abandonner à Dieu : accepter qu'Il nous accompagne, nous rende humbles, nous forme et nous donne toute la force dont nous avons besoin pour persévérer jusqu'au bout. Nous ne courons plus seuls, mais avec Lui.</p>
     <p>Et dans cette course, nous ne sommes pas de simples coureurs : nous sommes en mission. Missionnaires pour Dieu, nous avons une bonne nouvelle à partager tout au long du chemin qui nous mène à la victoire et à la couronne.</p>
-    <p style="text-align:right;font-style:italic">Avel Lumière</p>
+    <p style="text-align:right;font-style:italic">Avel &amp; Lumière</p>
     <div class="acts"><a class="pb on" href="#parcours" style="text-decoration:none">🏃 Prendre le départ</a></div></div>`;
 }
 
@@ -459,7 +459,7 @@ function renderSoutenir(){
   app.innerHTML=`<h3 class="t">Soutenir</h3>
     <section class="box" style="text-align:center">
       <p style="font:500 1.3rem/1.5 var(--serif);margin:4px 0">Ma course spirituelle est et restera gratuite.</p>
-      <p style="color:var(--muted)">Chaque jour, Avel Lumière prépare avec soin un verset, une méditation et une prière pour vous accompagner dans votre marche avec Dieu.</p>
+      <p style="color:var(--muted)">Chaque jour, Avel &amp; Lumière prépare avec soin un verset, une méditation et une prière pour vous accompagner dans votre marche avec Dieu.</p>
     </section>
     <section class="box" style="text-align:center"><h2 style="margin-top:0">Adhérer</h2>
       <p style="color:var(--muted)">Vous souhaitez faire partie de la communauté et marcher avec nous ? L'adhésion est libre et volontaire.</p>

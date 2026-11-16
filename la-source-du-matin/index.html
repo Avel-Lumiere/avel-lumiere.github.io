@@ -134,7 +134,7 @@ function renderDay(){
       <div class="acts"><button class="pb" id="share">📖 Partager le verset</button></div></section>
     <h2>Méditer</h2><p class="refl">${esc(v.reflection)}</p>
     ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
-    <div class="by">Méditation proposée par Avel Lumière</div>
+    <div class="by">Méditation proposée par Avel &amp; Lumière</div>
     <section class="silence"><div style="font-size:.9rem;color:var(--muted)">Temps de silence avec Dieu</div>
       <div class="clock" id="clock"></div><div class="durs">${[2,5,10].map(m=>`<button data-m="${m}">${m} min</button>`).join("")}</div>
       <button class="pb on" id="tgo" style="padding:12px 30px;font-weight:600"></button></section>
