@@ -176,6 +176,9 @@ body.dark .toast{background:var(--sun);color:#26304f}
 .tcard b{font:600 1.1rem var(--serif)}
 .tcard small{display:block;color:#4a4f68;font-size:.88rem}
 .tl li.lock{opacity:.55}
+
+/* Lecture agréable : méditation, pensée et prière justifiées, avec coupure des mots en français */
+.refl,.thought,.prayer p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty;word-spacing:.02em}
 </style>
 </head>
 <body>
@@ -205,7 +208,7 @@ const VERSES = [{"date": "2026-11-20", "ref": "1 Thessaloniciens 5:16-18", "text
 
 const $=s=>document.querySelector(s), app=$("#app");
 const VIEWS=["verset","parcours","prieres","notes","partager","soutenir","pourquoi"];
-const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])).replace(/ ([;:!?»])/g,"\u202F$1").replace(/« /g,"«\u202F"); // espaces fines insécables : jamais de « : » ou « ; » seul en début de ligne
 const paras=s=>String(s||"").split(/\n\s*\n/).map(x=>"<p>"+esc(x.trim())+"</p>").join("");
 const iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 const fmt=s=>/^\d{4}-\d\d-\d\d$/.test(s)?new Date(s+"T12:00:00").toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}):"Parcours";
@@ -283,7 +286,7 @@ function renderVerset(){
   let tile;
   if(cur<0) tile=`<a class="tile" href="#parcours"><span class="ti">${IC.crown}</span><span><b>Parcours terminé</b><small>${esc(PARCOURS.titre)}</small></span></a>`;
   else tile=`<a class="tile" href="#parcours"><span class="ti">${IC.path}</span><span><b>Parcours · Jour ${cur+1}</b><small>${pUnlocked(cur,st)?esc(PARCOURS.jours[cur].t):"La prochaine étape s'ouvre demain"}</small></span></a>`;
-  h+=`<section class="today"><span class="tk">Verset du jour</span><p class="tv">« ${esc(v.text)} »</p><span class="tr">${esc(refOf(v))}</span>
+  h+=`<section class="today"><span class="tk">Verset du jour</span><p class="tv">«&#8239;${esc(v.text)}&#8239;»</p><span class="tr">${esc(refOf(v))}</span>
       <button class="cta" id="med">Méditer maintenant ${IC.arrow}</button></section>
     <div class="lk">Pour aujourd'hui</div>${tile}
     <button class="tile" id="sil"><span class="ti">${IC.timer}</span><span><b>Temps de silence</b><small>Quelques minutes avec Dieu</small></span></button>
@@ -297,7 +300,7 @@ function renderMeditation(){
   document.body.classList.remove("dark");
   const v=verseFor(TODAY);
   app.innerHTML=`<section class="hero"><div class="hbar"><button class="ib" id="back" aria-label="Retour">${IC.back}</button><span class="hd">${esc(fmt(TODAY))}</span><button class="ib" id="shr" aria-label="Partager">${IC.share}</button></div>
-      <p class="tv">« ${esc(v.text)} »</p><span class="tr">${esc(refOf(v))}</span></section>
+      <p class="tv">«&#8239;${esc(v.text)}&#8239;»</p><span class="tr">${esc(refOf(v))}</span></section>
     <h2>Méditation</h2><div class="refl">${paras(v.reflection)}</div>
     ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
     <div class="sig">Méditation proposée par Avel &amp; Lumière</div>

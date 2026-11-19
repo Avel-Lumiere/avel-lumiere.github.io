@@ -65,6 +65,10 @@ h2 .ic{display:inline-grid;place-items:center;width:34px;height:34px;border-radi
 .center{text-align:center;margin-top:12px}
 .foot{margin-top:6px;text-align:center;font-size:.85rem;color:var(--muted)}
 .foot .g{display:inline-block;background:var(--gold-soft);color:#9a6427;border-radius:999px;padding:3px 12px;font-weight:700;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}
+
+/* Lecture agréable : méditation, pensée et prière justifiées, avec coupure des mots en français */
+.refl,.thought,.prayer p{text-align:justify}
+.refl,.thought,.prayer p{hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty;word-spacing:.02em}
 </style>
 </head>
 <body>
@@ -263,7 +267,7 @@ const DAY_COLORS=[
   {overlay:"rgba(250, 236, 170, 0.42)",card:"rgba(252, 245, 210, 0.85)"}];
 
 const $=s=>document.querySelector(s), app=$("#app");
-const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])).replace(/ ([;:!?»])/g,"\u202F$1").replace(/« /g,"«\u202F"); // espaces fines insécables : jamais de « : » ou « ; » seul en début de ligne
 const isoOf=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
 const fmt=s=>new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).format(new Date(s+"T12:00:00"));
 // Couleur pastel propre à chaque verset (champ "couleur"), sinon couleur du jour de la semaine.
