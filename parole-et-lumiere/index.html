@@ -71,7 +71,7 @@ h2 .ic{display:inline-grid;place-items:center;width:34px;height:34px;border-radi
 .refl,.thought,.prayer p{hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty;word-spacing:.02em}
 </style>
 </head>
-<body>
+<body data-avel-site="matin">
 <main>
   <div class="tint" id="tint" aria-hidden="true"></div>
   <div class="wrap" id="app"></div>
@@ -306,13 +306,14 @@ function render(){
       <p class="date">${esc(fmt(archived?archived.date:TODAY))}</p>
       ${archived?`<button class="btn" id="back" style="margin-top:12px">← Revenir au verset du jour</button>`:""}
     </header>
-    <section class="verse"><p class="vt">${esc(v.text)}</p><span class="vr">${esc(v.ref)}</span>
+    <section class="verse"><p class="vt">${esc(v.text)}</p><span class="vr">${esc(v.ref)}</span><p data-avel-visits aria-live="polite"></p>
       <div class="actions"><button class="btn" id="share">${copied?"✓ Lien copié !":"⤴ Partager le verset"}</button>
       <a class="btn" href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">🔔 Recevoir chaque matin</a></div></section>
     <section class="card"><h2><span class="ic">🕊️</span>Méditer</h2><p class="refl">${esc(v.reflection)}</p>
       ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
       <p class="sig">Méditation by Avel &amp; Lumière</p></section>
     <section class="card prayer"><h2><span class="ic">🙏</span>Prière</h2><p>${esc(v.prayer)}</p></section>
+    <div data-avel-comments></div>
     <section class="prev"><h2><span class="ic">📖</span>Méditations précédentes</h2>
       <ul>${list.map(p=>`<li><button data-d="${p.date}" aria-pressed="${archived&&archived.date===p.date}"><span><span class="d">${esc(fmt(p.date))}</span><span class="r">${esc(p.ref)}</span></span></button></li>`).join("")}</ul>
       ${prev.length>1?`<div class="center"><button class="btn" id="older" aria-expanded="${showOlder}">${showOlder?"Masquer ▴":"Voir toutes les méditations ▾"}</button></div>`:""}</section>
@@ -334,5 +335,6 @@ render();
 if("serviceWorker" in navigator && location.protocol==="https:"){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }
 })();
 </script>
+<script src="../avel-engagement.js" defer></script>
 </body>
 </html>
