@@ -181,7 +181,7 @@ body.dark .toast{background:var(--sun);color:#26304f}
 .refl,.thought,.prayer p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty;word-spacing:.02em}
 </style>
 </head>
-<body>
+<body data-avel-site="course">
 <div class="wrap">
   <header>
     <div class="brand">Ma course spirituelle</div>
@@ -278,7 +278,7 @@ function renderVerset(){
     <div class="stats"><div class="stat"><b>${s}</b><span>${s>1?"jours de suite":"jour de suite"}</span></div><div class="stat"><b>${nd}/${n}</b><span>étapes du parcours</span></div></div>`;
   if(!isOpen){
     h+=`<button class="gift" id="open">${IC.book}J'ai reçu un verset<small>Touchez pour le découvrir</small></button>
-      <p class="sub">Chaque jour, un verset choisi pour vous,<br>avec une méditation et une prière.</p>${SCENE}<div id="installBox"></div>`;
+      <p class="sub">Chaque jour, un verset choisi pour vous,<br>avec une méditation et une prière.</p><p data-avel-visits aria-live="polite"></p><div data-avel-comments></div>${SCENE}<div id="installBox"></div>`;
     app.innerHTML=h; drawInstall();
     $("#open").onclick=()=>{ const o=opened(); o[TODAY]=1; lsSet("mcs_opened",o); renderVerset(); };
     return;
@@ -286,8 +286,9 @@ function renderVerset(){
   let tile;
   if(cur<0) tile=`<a class="tile" href="#parcours"><span class="ti">${IC.crown}</span><span><b>Parcours terminé</b><small>${esc(PARCOURS.titre)}</small></span></a>`;
   else tile=`<a class="tile" href="#parcours"><span class="ti">${IC.path}</span><span><b>Parcours · Jour ${cur+1}</b><small>${pUnlocked(cur,st)?esc(PARCOURS.jours[cur].t):"La prochaine étape s'ouvre demain"}</small></span></a>`;
-  h+=`<section class="today"><span class="tk">Verset du jour</span><p class="tv">«&#8239;${esc(v.text)}&#8239;»</p><span class="tr">${esc(refOf(v))}</span>
+  h+=`<section class="today"><span class="tk">Verset du jour</span><p class="tv">«&#8239;${esc(v.text)}&#8239;»</p><span class="tr">${esc(refOf(v))}</span><p data-avel-visits aria-live="polite"></p>
       <button class="cta" id="med">Méditer maintenant ${IC.arrow}</button></section>
+    <div data-avel-comments></div>
     <div class="lk">Pour aujourd'hui</div>${tile}
     <button class="tile" id="sil"><span class="ti">${IC.timer}</span><span><b>Temps de silence</b><small>Quelques minutes avec Dieu</small></span></button>
     <div class="foot">Application gratuite · <button class="link" id="toDon">Soutenir</button></div>`;
@@ -305,6 +306,7 @@ function renderMeditation(){
     ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
     <div class="sig">Méditation proposée par Avel &amp; Lumière</div>
     <section class="prayer"><h2>${IC.hands}Prière</h2><p>${esc(v.prayer)}</p></section>
+    <div data-avel-comments></div>
     <section class="silence" id="silence"><div style="font-size:.9rem;color:var(--muted)">Temps de silence avec Dieu</div>
       <div class="clock" id="clock"></div><div class="durs">${[2,5,10].map(m=>`<button data-m="${m}">${m} min</button>`).join("")}</div>
       <button class="pb on" id="tgo" style="font-weight:700"></button></section>
@@ -486,5 +488,6 @@ render();
 if("serviceWorker" in navigator && location.protocol==="https:"){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }
 })();
 </script>
+<script src="../avel-engagement.js" defer></script>
 </body>
 </html>
