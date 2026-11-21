@@ -313,7 +313,7 @@ function render(){
       ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
       <p class="sig">Méditation by Avel &amp; Lumière</p></section>
     <section class="card prayer"><h2><span class="ic">🙏</span>Prière</h2><p>${esc(v.prayer)}</p></section>
-    <div data-avel-comments></div>
+    <div data-avel-reactions="${esc(archived ? archived.date : TODAY)}"></div>
     <section class="prev"><h2><span class="ic">📖</span>Méditations précédentes</h2>
       <ul>${list.map(p=>`<li><button data-d="${p.date}" aria-pressed="${archived&&archived.date===p.date}"><span><span class="d">${esc(fmt(p.date))}</span><span class="r">${esc(p.ref)}</span></span></button></li>`).join("")}</ul>
       ${prev.length>1?`<div class="center"><button class="btn" id="older" aria-expanded="${showOlder}">${showOlder?"Masquer ▴":"Voir toutes les méditations ▾"}</button></div>`:""}</section>
@@ -335,6 +335,6 @@ render();
 if("serviceWorker" in navigator && location.protocol==="https:"){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }
 })();
 </script>
-<script src="../avel-engagement.js" defer></script>
+<script src="../avel-engagement.js?v=reactions1" defer></script>
 </body>
 </html>
