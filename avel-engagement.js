@@ -8,15 +8,20 @@
     return fetch(endpoint + "/" + action, {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data),credentials:"omit"});
   }
   let info;
+  const count = document.createElement("p");
+  count.className = "avel-view-count";
   const comments = document.createElement("section");
   comments.className = "avel-comments";
   comments.innerHTML = '<h2>Commentaires</h2><div data-approved></div><details><summary>Laisser un commentaire</summary><form><label>Prénom ou pseudo (facultatif)<input name="name" maxlength="60" autocomplete="nickname"></label><label>Commentaire<textarea name="body" required maxlength="1000" rows="4"></textarea></label><label hidden>Site web<input name="website" tabindex="-1" autocomplete="off"></label><p>Ton commentaire reste privé jusqu’à sa validation. Évite les coordonnées ou informations personnelles.</p><button>Envoyer pour validation</button><p role="status"></p></form></details>';
   const style = document.createElement("style");
-  style.textContent = '.avel-comments{margin:1.25rem 0;padding:1rem;border:1px solid currentColor;border-radius:14px;text-align:left}.avel-comments h2{margin-top:0}.avel-comments summary{cursor:pointer;font-weight:700}.avel-comments form label:not([hidden]){display:block;margin:.75rem 0}.avel-comments input,.avel-comments textarea{display:block;width:100%;padding:.5rem;border:1px solid #8a8095;border-radius:8px;background:#fff;color:#222}.avel-comments button{cursor:pointer;padding:.5rem .75rem;border:1px solid #8a8095;border-radius:8px;background:#fff;color:#222}.avel-comments article p{white-space:pre-wrap;overflow-wrap:anywhere}[data-avel-visits]{margin:.55rem 0;font-size:.9rem;font-weight:600}body[data-avel-site="course"] .avel-comments{background:#fffaf2;color:#26304f;border-color:#d4c2a8}body[data-avel-site="course"] .avel-comments h2,body[data-avel-site="course"] .avel-comments p{color:#26304f}body[data-avel-site="course"] .avel-comments summary{padding:.65rem .85rem;border-radius:8px;background:#263868;color:#fff}body[data-avel-site="course"] .avel-comments summary:focus-visible{outline:3px solid #94601c;outline-offset:3px}';
+  style.textContent = '.avel-comments{margin:1.25rem 0;padding:1rem;border:1px solid currentColor;border-radius:14px;text-align:left}.avel-comments h2{margin-top:0}.avel-comments summary{cursor:pointer;font-weight:700}.avel-comments form label:not([hidden]){display:block;margin:.75rem 0}.avel-comments input,.avel-comments textarea{display:block;width:100%;padding:.5rem;border:1px solid #8a8095;border-radius:8px;background:#fff;color:#222}.avel-comments button{cursor:pointer;padding:.5rem .75rem;border:1px solid #8a8095;border-radius:8px;background:#fff;color:#222}.avel-comments article p{white-space:pre-wrap;overflow-wrap:anywhere}.avel-view-count{margin:1rem 0 0;font-size:.8125rem;text-align:center;opacity:.8}body[data-avel-site="course"] .avel-comments{background:#fffaf2;color:#26304f;border-color:#d4c2a8}body[data-avel-site="course"] .avel-comments h2,body[data-avel-site="course"] .avel-comments p{color:#26304f}body[data-avel-site="course"] .avel-comments summary{padding:.65rem .85rem;border-radius:8px;background:#263868;color:#fff}body[data-avel-site="course"] .avel-comments summary:focus-visible{outline:3px solid #94601c;outline-offset:3px}';
   document.head.append(style);
   function attach() {
-    for (const node of document.querySelectorAll("[data-avel-visits]:empty")) {
-      node.textContent = info ? "👁 " + info.total.toLocaleString("fr-FR") + (info.total === 1 ? " visite" : " visites") : "";
+    for (const placeholder of mount.querySelectorAll("[data-avel-visits]")) placeholder.remove();
+    if (info) {
+      const label = info.total.toLocaleString("fr-FR") + (info.total === 1 ? " vue" : " vues");
+      if (count.textContent !== label) count.textContent = label;
+      if (mount.lastElementChild !== count) mount.append(count);
     }
     const slot = document.querySelector("[data-avel-comments]");
     if (slot && !slot.contains(comments)) slot.append(comments);
