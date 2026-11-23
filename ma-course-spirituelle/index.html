@@ -180,6 +180,7 @@ body.dark .toast{background:var(--sun);color:#26304f}
 /* Lecture agréable : méditation, pensée et prière justifiées, avec coupure des mots en français */
 .refl,.thought,.prayer p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty;word-spacing:.02em}
 .avel-home-prayer{color:#26304f;background:#fffaf2;border-radius:14px;padding:1rem;margin-top:1rem}
+.weekly-message{text-align:center;margin:.8rem 0;padding:.5rem;border-radius:10px;background:#fff5dc;color:#42321c}.weekly-message small{font-size:.85rem}
 </style>
 </head>
 <body data-avel-site="course">
@@ -207,6 +208,16 @@ const START = "2026-11-04";  // premier jour de la course
 const BIBLE_DEFAULT = "LSG";
 const VERSES = [
 {
+  "date": "2026-11-23",
+  "ref": "Josué 1:9",
+  "version": "LSG 1910",
+  "text": "Ne t’ai-je pas donné cet ordre : Fortifie-toi et prends courage ? Ne t’effraie point et ne t’épouvante point, car l’Éternel, ton Dieu, est avec toi dans tout ce que tu entreprendras.",
+  "reflection": "Josué reçoit une grande responsabilité après la mort de Moïse. Dieu lui dit de se fortifier et de prendre courage, car il sera avec lui partout où il ira. Quelle responsabilité te paraît lourde en ce moment ? Présente-la à Dieu. Demande-lui de te montrer une chose concrète que tu peux faire aujourd’hui et de t’aider à l’accomplir avec confiance.",
+  "thought": "Dans la mission qui m’est confiée, je peux compter sur la présence de Dieu.",
+  "prayer": "Seigneur, merci de m’accompagner dans ce que tu me confies. Quand je doute de mes forces, donne-moi la sagesse de reconnaître ce que je peux faire aujourd’hui et le courage de le faire. Aide-moi à rester fidèle à ta Parole dans mes décisions. Au nom de Jésus. Amen. 🙏"
+},
+
+{
   "date": "2026-11-22",
   "ref": "Luc 18:1",
   "version": "LSG 1910",
@@ -229,6 +240,7 @@ function lsGet(k,d){ try{ const v=localStorage.getItem(k); return v===null?d:JSO
 function lsSet(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); return true; }catch(e){ return false; } }
 async function copy(t){ try{ await navigator.clipboard.writeText(t); toast("Copié ✓ Vous pouvez le coller où vous voulez"); }catch(e){ toast("Copie impossible ici"); } }
 
+function weeklyMessage(day){ return day >= "2026-11-23" && day <= "2026-11-29" ? "<p class=\"weekly-message\"><small>Message de la semaine</small><br><strong>Fortifie-toi et prends courage</strong></p>" : ""; }
 function verseFor(dayIso){
   const dated=VERSES.find(v=>v.date===dayIso); if(dated) return dated;
   const und=VERSES.filter(v=>!v.date); const d=new Date(dayIso+"T12:00:00");
@@ -298,7 +310,7 @@ function renderVerset(){
   let tile;
   if(cur<0) tile=`<a class="tile" href="#parcours"><span class="ti">${IC.crown}</span><span><b>Parcours terminé</b><small>${esc(PARCOURS.titre)}</small></span></a>`;
   else tile=`<a class="tile" href="#parcours"><span class="ti">${IC.path}</span><span><b>Parcours · Jour ${cur+1}</b><small>${pUnlocked(cur,st)?esc(PARCOURS.jours[cur].t):"La prochaine étape s'ouvre demain"}</small></span></a>`;
-  h+=`<section class="today"><span class="tk">Verset du jour</span><p class="tv">«&#8239;${esc(v.text)}&#8239;»</p><span class="tr">${esc(refOf(v))}</span><p data-avel-visits aria-live="polite"></p>
+  h+=`${weeklyMessage(TODAY)}<section class="today"><span class="tk">Verset du jour</span><p class="tv">«&#8239;${esc(v.text)}&#8239;»</p><span class="tr">${esc(refOf(v))}</span><p data-avel-visits aria-live="polite"></p>
       <button class="cta" id="med">Méditer maintenant ${IC.arrow}</button></section>
     
     <section class="prayer avel-home-prayer"><h2>Prière</h2><p>${esc(v.prayer)}</p></section>
@@ -315,7 +327,7 @@ function renderMeditation(){
   document.body.classList.remove("dark");
   const v=verseFor(TODAY);
   app.innerHTML=`<section class="hero"><div class="hbar"><button class="ib" id="back" aria-label="Retour">${IC.back}</button><span class="hd">${esc(fmt(TODAY))}</span><button class="ib" id="shr" aria-label="Partager">${IC.share}</button></div>
-      <p class="tv">«&#8239;${esc(v.text)}&#8239;»</p><span class="tr">${esc(refOf(v))}</span></section>
+      <p class="tv">«&#8239;${esc(v.text)}&#8239;»</p><span class="tr">${esc(refOf(v))}</span>${weeklyMessage(TODAY)}</section>
     <h2>Méditation</h2><div class="refl">${paras(v.reflection)}</div>
     ${v.thought?`<p class="thought"><b>Pensée du jour : </b>${esc(v.thought)}</p>`:""}
     <div class="sig">Méditation proposée par Avel &amp; Lumière</div>
