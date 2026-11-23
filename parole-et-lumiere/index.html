@@ -69,6 +69,7 @@ h2 .ic{display:inline-grid;place-items:center;width:34px;height:34px;border-radi
 /* Lecture agréable : méditation, pensée et prière justifiées, avec coupure des mots en français */
 .refl,.thought,.prayer p{text-align:justify}
 .refl,.thought,.prayer p{hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty;word-spacing:.02em}
+.weekly-message{text-align:center;margin:.8rem 0;padding:.5rem;border-radius:10px;background:#fff5dc;color:#42321c}.weekly-message small{font-size:.85rem}
 </style>
 </head>
 <body data-avel-site="matin">
@@ -83,6 +84,15 @@ const WHATSAPP_CHANNEL = "https://whatsapp.com/channel/0029VbDYUq02kNFm2aootG47"
 const SITE_URL = "https://avel-lumiere.github.io/parole-et-lumiere/";
 // Versets : « date » (AAAA-MM-JJ) = verset de ce jour ; sans date = rotation.
 const VERSES = [
+{
+  "date": "2026-11-23",
+  "ref": "Deutéronome 31:6 (LSG 1910)",
+  "text": "Fortifiez-vous et ayez du courage ! Ne craignez point et ne soyez point effrayés devant eux ; car l’Éternel, ton Dieu, marchera lui-même avec toi, il ne te délaissera point, il ne t’abandonnera point.",
+  "reflection": "Moïse encourage le peuple d’Israël au moment où il s’apprête à entrer dans un pays inconnu. Il lui rappelle cette promesse : Dieu marchera avec lui et ne l’abandonnera pas. Si tu commences cette semaine avec une inquiétude, prends un instant pour la confier au Seigneur. Tu peux lui demander le courage dont tu as besoin pour aujourd’hui, puis avancer un pas à la fois.",
+  "thought": "Je peux avancer avec courage, parce que le Seigneur marche avec moi.",
+  "prayer": "Père, tu connais les inquiétudes que je porte en ce début de semaine. Merci de marcher avec moi. Quand la peur me retient, rappelle-moi ta promesse et donne-moi le courage de faire le prochain pas avec toi. Au nom de Jésus. Amen. 🙏"
+},
+
 {
   "date": "2026-11-22",
   "ref": "Éphésiens 6:16 (BFC)",
@@ -296,6 +306,7 @@ const dayColor=s=>DAY_COLORS[new Date(s+"T12:00:00").getDay()];
 const TODAY=isoOf(new Date());
 
 function previousVerses(){ return VERSES.filter(v=>v.date&&v.date<TODAY).sort((a,b)=>b.date.localeCompare(a.date)); }
+function weeklyMessage(day){ return day >= "2026-11-23" && day <= "2026-11-29" ? "<p class=\"weekly-message\"><small>Message de la semaine</small><br><strong>Fortifie-toi et prends courage</strong></p>" : ""; }
 function verseOfDay(){
   const dated=VERSES.find(v=>v.date===TODAY); if(dated) return dated;
   const und=VERSES.filter(v=>!v.date);
@@ -317,7 +328,7 @@ function render(){
       <p class="date">${esc(fmt(archived?archived.date:TODAY))}</p>
       ${archived?`<button class="btn" id="back" style="margin-top:12px">← Revenir au verset du jour</button>`:""}
     </header>
-    <section class="verse"><p class="vt">${esc(v.text)}</p><span class="vr">${esc(v.ref)}</span><p data-avel-visits aria-live="polite"></p>
+    ${weeklyMessage(archived?archived.date:TODAY)}<section class="verse"><p class="vt">${esc(v.text)}</p><span class="vr">${esc(v.ref)}</span><p data-avel-visits aria-live="polite"></p>
       <div class="actions"><button class="btn" id="share">${copied?"✓ Lien copié !":"⤴ Partager le verset"}</button>
       <a class="btn" href="${WHATSAPP_CHANNEL}" target="_blank" rel="noopener">🔔 Recevoir chaque matin</a></div></section>
     <section class="card"><h2><span class="ic">🕊️</span>Méditer</h2><p class="refl">${esc(v.reflection)}</p>
