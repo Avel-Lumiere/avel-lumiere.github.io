@@ -64,7 +64,7 @@ h2{font:500 1.75rem var(--serif);margin:30px 0 6px}
 .toast.on{opacity:1}
 </style>
 </head>
-<body>
+<body data-avel-site="matin">
 <div class="wrap" id="app"></div>
 <div class="toast" id="toast"></div>
 <script>
@@ -193,5 +193,6 @@ render();
 if("serviceWorker" in navigator && location.protocol==="https:"){ navigator.serviceWorker.register("sw.js").catch(()=>{}); }
 })();
 </script>
+<script src="../avel-engagement.js?v=reactions1" defer></script>
 </body>
 </html>
