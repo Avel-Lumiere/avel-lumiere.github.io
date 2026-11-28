@@ -1,0 +1,1092 @@
+{
+ "avant": [
+  "Prenez quelques instants pour vous rendre disponible à la présence de Dieu. Lisez le passage biblique, puis laissez la méditation accompagner votre réflexion.",
+  "Vous pouvez lire la prière proposée ou parler au Seigneur avec vos propres mots. Rien ne vous oblige à aller vite : prenez le temps de vous arrêter sur une parole et de la garder dans votre cœur au fil de la journée.",
+  "Que ces pages soient une invitation à rencontrer le Seigneur, à écouter sa Parole et à marcher avec lui, un matin après l’autre."
+ ],
+ "themes": [
+  {
+   "id": "commencement",
+   "titre": "Au commencement",
+   "intro": "Avant toute chose, il y a Dieu. Il crée, il parle, et la lumière paraît. Ces premières pages nous ramènent à la source : tout vient de lui, et chaque matin peut recommencer avec lui."
+  },
+  {
+   "id": "jardin",
+   "titre": "Le jardin : Dieu prend soin de nous",
+   "intro": "En Éden, Dieu a tout préparé pour l’homme avant même qu’il en ait besoin. Il est encore aujourd’hui le berger qui pourvoit, nourrit et veille. Ces méditations invitent à reconnaître ses soins dans chaque journée."
+  },
+  {
+   "id": "responsabilite",
+   "titre": "Ma responsabilité",
+   "intro": "Dieu a placé l’homme dans le jardin « pour le cultiver et pour le garder ». Le péché a abîmé ce qu’il avait fait de beau, mais il nous confie encore une mission : envers lui, envers notre prochain et envers sa création."
+  },
+  {
+   "id": "solitude",
+   "titre": "La solitude",
+   "intro": "Il y a des jours où l’on se sent seul, incompris ou oublié. La Bible ne cache pas ces moments : Élie, David, Jésus lui-même les ont connus. Ces pages rappellent que Dieu rejoint chacun dans sa solitude et ne le délaisse jamais."
+  },
+  {
+   "id": "avecmoi",
+   "titre": "Dieu est avec moi : sécurité et confiance",
+   "intro": "Les inquiétudes ne disparaissent pas toujours, mais nous ne les portons pas seuls. Ces pages rappellent la présence fidèle de Dieu, notre lumière, notre soutien et notre refuge."
+  },
+  {
+   "id": "paix",
+   "titre": "La paix",
+   "intro": "Jésus donne une paix que le monde ne connaît pas. Ces méditations ouvrent un espace de silence pour déposer nos inquiétudes et recevoir sa paix, qui garde le cœur et les pensées."
+  },
+  {
+   "id": "repos",
+   "titre": "Le repos de Dieu",
+   "intro": "Au septième jour, Dieu se reposa de toute son œuvre, et il invite ses enfants à entrer dans son repos. Ce repos n’est pas seulement une pause : c’est une confiance qui cesse de lutter seule et se laisse porter par celui qui a tout accompli."
+  },
+  {
+   "id": "bontes",
+   "titre": "Ses bontés chaque matin : la reconnaissance",
+   "intro": "Ses compassions se renouvellent chaque matin. Dire merci ouvre la porte de sa présence et change notre regard sur la journée qui commence."
+  },
+  {
+   "id": "priere",
+   "titre": "La prière",
+   "intro": "Prier, c’est vivre en conversation avec Dieu. Ces pages encouragent à persévérer dans la prière, même quand la réponse se fait attendre."
+  },
+  {
+   "id": "foi",
+   "titre": "La foi",
+   "intro": "« Prenez par-dessus tout cela le bouclier de la foi. » La foi naît en écoutant la Parole, grandit dans l’épreuve et se montre dans nos actes. Ces méditations aident à la recevoir, à la fortifier et à avancer avec elle."
+  },
+  {
+   "id": "courage",
+   "titre": "Courage et persévérance",
+   "intro": "Dieu ne nous demande pas d’avancer sans peur, mais d’avancer avec lui. Ces méditations fortifient pour la course, un pas après l’autre."
+  },
+  {
+   "id": "humilite",
+   "titre": "Humilité et repentance",
+   "intro": "Jésus voit au-delà de nos fautes et nous appelle par notre nom. Reconnaître ce qui doit changer n’est pas une défaite : c’est le début d’un chemin nouveau."
+  },
+  {
+   "id": "obeissance",
+   "titre": "L’obéissance et les priorités",
+   "intro": "Chercher d’abord le Royaume, se nourrir de sa Parole, écouter le Père : ces pages aident à remettre Dieu à la première place dans nos choix."
+  },
+  {
+   "id": "croix",
+   "titre": "La croix et la grâce",
+   "intro": "Avant tout, le Christ est mort pour nos péchés. Tout le reste se construit sur ce fondement : l’amour de Dieu, que nous n’avons pas à mériter."
+  },
+  {
+   "id": "amour",
+   "titre": "L’amour",
+   "intro": "Dieu est amour. Aimé de lui, je suis appelé à aimer à mon tour, en paroles et en actes."
+  },
+  {
+   "id": "fruits",
+   "titre": "Les fruits de l’Esprit",
+   "intro": "« Le fruit de l’Esprit, c’est l’amour, la joie, la paix, la patience, la bonté, la bénignité, la fidélité, la douceur, la tempérance. » Ces fruits ne s’arrachent pas à force de volonté : ils mûrissent quand nous demeurons attachés au Christ, comme le sarment à la vigne."
+  },
+  {
+   "id": "servir",
+   "titre": "Servir avec ses dons",
+   "intro": "Le même Esprit distribue des dons différents pour l’utilité de tous. Chacun a sa place dans la course, et l’équipe avance ensemble."
+  },
+  {
+   "id": "esperance",
+   "titre": "L’espérance et la vie éternelle",
+   "intro": "Notre course a un but. Ces méditations tournent nos regards vers la promesse de Dieu et la couronne qui nous attend."
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-11-01",
+   "order": 0,
+   "app": "src",
+   "theme": "commencement",
+   "title": "Au commencement",
+   "ref": "Genèse 1:1",
+   "verse": "Au commencement, Dieu créa les cieux et la terre.",
+   "med": [
+    "Avant chaque journée, avant chaque projet, avant chaque décision, il y a Dieu. Il est le commencement de toutes choses, et il est aussi le commencement de votre journée. Ce matin, ne commencez pas par vos tâches, vos inquiétudes ou vos obligations. Commencez par lui. Prenez un instant pour reconnaître sa présence, lui confier votre journée et lui demander de diriger vos pas. Ce que Dieu commence, il sait aussi le conduire."
+   ],
+   "pensee": "Je commence ma journée avec Dieu, qui est le commencement de toutes choses.",
+   "priere": "Seigneur, au commencement de cette journée, je viens à toi. Tu es le Créateur de toutes choses et tu connais déjà ce que cette journée contient. Dirige mes pensées, mes paroles et mes actes. Que tout ce que je fais aujourd’hui soit placé entre tes mains. Au nom de Jésus, amen.",
+   "n": 1,
+   "chrono": 100
+  },
+  {
+   "date": "2026-11-02",
+   "order": 0,
+   "app": "src",
+   "theme": "commencement",
+   "title": "Que la lumière soit",
+   "ref": "Genèse 1:3",
+   "verse": "Dieu dit : Que la lumière soit ! Et la lumière fut.",
+   "med": [
+    "Il y a peut-être dans votre cœur une zone d’ombre : une inquiétude, une tristesse, un doute ou une situation que vous ne comprenez pas. Mais la parole de Dieu a le pouvoir de créer la lumière là où les ténèbres semblaient s’installer. Ce matin, invitez Jésus dans ce qui vous pèse. Il ne demande pas que vous compreniez tout avant d’avancer ; il vous invite simplement à lui ouvrir votre cœur. Là où sa lumière entre, l’obscurité recule."
+   ],
+   "pensee": "La parole de Dieu peut faire naître la lumière dans les zones les plus sombres de mon cœur.",
+   "priere": "Seigneur, dis dans mon cœur : « Que la lumière soit. » Éclaire mes pensées, mes peurs et mes doutes. Là où je ne vois pas clair, conduis-moi. Là où je me sens seul, rappelle-moi ta présence. Que ta lumière éclaire ma journée et me guide vers ce qui est bon. Au nom de Jésus, amen.",
+   "n": 2,
+   "chrono": 110
+  },
+  {
+   "date": "2026-11-18",
+   "order": 0,
+   "app": "src",
+   "theme": "commencement",
+   "title": "La lumière dans les ténèbres",
+   "ref": "Jean 1:1-5",
+   "verse": "Au commencement était la Parole, et la Parole était avec Dieu, et la Parole était Dieu. Elle était au commencement avec Dieu. Toutes choses ont été faites par elle, et rien de ce qui a été fait n’a été fait sans elle. En elle était la vie, et la vie était la lumière des hommes. La lumière luit dans les ténèbres, et les ténèbres ne l’ont point reçue.",
+   "med": [
+    "Avant toute chose, avant le premier matin du monde, la Parole était là. Jean ne commence pas son évangile par une crèche, mais par l’éternité : Jésus, la Parole vivante, était avec Dieu et il était Dieu. Tout ce qui existe vient de lui, y compris votre vie et ce jour qui commence. Et cette vie est lumière. Jean ne dit pas que les ténèbres n’existent pas. Il dit qu’elles n’ont pas pu arrêter la lumière. Il y a peut-être en vous ou autour de vous une zone d’ombre : une inquiétude, une tristesse, une question sans réponse. Ce matin, ouvrez-la à celui qui est la lumière. Là où il entre, l’obscurité recule."
+   ],
+   "pensee": "Aucune nuit n’est assez profonde pour éteindre la lumière du Christ : laissez-la entrer, et elle éclairera votre chemin.",
+   "priere": "Seigneur Jésus, tu es la Parole éternelle, la vie et la lumière des hommes. Merci d’être venu éclairer ma vie. Ce matin, je t’ouvre les endroits de mon cœur encore dans l’ombre : mes peurs, mes doutes, mes blessures. Que ta lumière les traverse et les apaise. Fais de moi aujourd’hui un reflet de ta lumière pour ceux que je rencontrerai. Au nom de Jésus, amen.",
+   "n": 3,
+   "chrono": 2000,
+   "encadre_fin": {
+    "titre": "La parole de Dieu dit",
+    "lignes": [
+     "« Ainsi, il y eut un soir, et il y eut un matin : ce fut le premier jour. » <font color=\"#5B6B7B\">(Genèse 1:5)</font>",
+     "Après chaque soir, Dieu fait venir un matin."
+    ]
+   }
+  },
+  {
+   "theme": "commencement",
+   "chrono": 3750,
+   "title": "Dieu déchire le voile des ténèbres",
+   "ref": "1 Jean 1:5",
+   "verse": "La nouvelle que nous avons apprise de lui, et que nous vous annonçons, c’est que Dieu est lumière, et qu’il n’y a point en lui de ténèbres.",
+   "med": [
+    "1 Jean 1:7 : « Mais si nous marchons dans la lumière, comme il est lui-même dans la lumière, nous sommes mutuellement en communion, et le sang de Jésus son Fils nous purifie de tout péché. »",
+    "Dieu est lumière, et quand nous l’invitons à vivre dans nos cœurs, il éclaire nos vies et nous devenons à notre tour une lumière pour le monde.",
+    "Matthieu 5:14 : « Vous êtes la lumière du monde. Une ville située sur une montagne ne peut être cachée. »",
+    "Lorsque Dieu entre dans une vie, il déchire le voile de l’obscurité qui règne dans celle-ci ; il apporte sa lumière, et son amour éclaire tous les aspects de cette existence.",
+    "Ne craignons rien, car une fois que Dieu a posé son sceau de lumière, elle est constamment avec nous. Il peut transformer l’obscurité la plus profonde en lumière étincelante.",
+    "Apocalypse 21:23 : « La ville n’a besoin ni du soleil ni de la lune pour l’éclairer ; car la gloire de Dieu l’éclaire, et l’agneau est son flambeau. »",
+    "Alors marchons dans la lumière du Divin : les situations les plus sombres deviendront claires, car les yeux de notre intelligence s’ouvriront.",
+    "La lumière de Dieu au commencement et à la fin :<br/>Genèse 1:3 : « Dieu dit : Que la lumière soit ! Et la lumière fut. »<br/>Apocalypse 22:21 : « Que la grâce du Seigneur Jésus soit avec tous ! »",
+    "Gloire à Dieu !"
+   ],
+   "pensee": "Tant que nous marchons dans la volonté de Dieu, nous demeurons dans sa lumière.",
+   "priere": "Seigneur, tu es lumière, et il n’y a point en toi de ténèbres. Entre dans chaque recoin de ma vie et déchire le voile de mes obscurités. Que ta lumière éclaire mes pensées, mes choix et mes relations aujourd’hui, et fais de moi une lumière pour ceux que je rencontrerai. Au nom de Jésus, amen.",
+   "date": "2026-11-26",
+   "order": 3,
+   "app": "doc",
+   "n": 4
+  },
+  {
+   "date": "2026-11-29",
+   "order": 0,
+   "app": "src",
+   "theme": "commencement",
+   "chrono": 3810,
+   "title": "Dieu vient restaurer en vous",
+   "ref": "Apocalypse 3:20",
+   "verse": "Voici, je me tiens à la porte, et je frappe. Si quelqu’un entend ma voix et ouvre la porte, j’entrerai chez lui, je souperai avec lui, et lui avec moi.",
+   "med": [
+    "Jésus ne dit pas « je déjeunerai avec lui », mais « je souperai avec lui ». Le souper, c’est le repas du soir, celui qu’on prend quand la journée s’achève, quand la lumière baisse et que la fatigue se fait sentir.",
+    "Souvenez-vous de la Création. Au commencement, « la terre était informe et vide : il y avait des ténèbres à la surface de l’abîme » (Genèse 1:2). Dieu est venu dans ces ténèbres, il a parlé, et toutes choses ont été créées. Et la Bible dit : « il y eut un soir, et il y eut un matin : ce fut le premier jour. » Avec Dieu, le jour commence par le soir.",
+    "C’est là qu’il vous rejoint. Il frappe à la porte de votre cœur au moment de votre soir : dans vos fatigues, vos nuits, vos zones d’ombre. Il vous invite à souper avec lui, non pour vous laisser dans l’obscurité, mais pour vous faire passer, avec lui, des ténèbres à la lumière. Là où il entre, il vient restaurer.",
+    "Ouvrez-lui la porte aujourd’hui. Après votre soir, il fera se lever un matin, et ce sera un jour nouveau."
+   ],
+   "pensee": "Avec Dieu, chaque soir mène à un matin.",
+   "priere": "Seigneur Jésus, j’entends ta voix qui frappe à la porte de mon cœur. Je t’ouvre, même ce qui est encore sombre en moi. Entre chez moi, viens souper avec moi, et restaure ce qui est abîmé. Fais-moi passer de mes ténèbres à ta lumière, et fais se lever en moi un matin nouveau. Au nom de Jésus, amen.",
+   "n": 5
+  },
+  {
+   "date": "2026-11-12",
+   "order": 0,
+   "app": "src",
+   "theme": "jardin",
+   "title": "Le Seigneur est mon berger",
+   "ref": "Psaume 23:1",
+   "verse": "L’Éternel est mon berger : je ne manquerai de rien.",
+   "med": [
+    "Dieu prend soin de vous comme un berger veille sur ses brebis. Qu’est-ce qui vous inquiète aujourd’hui ?"
+   ],
+   "pensee": "Le Seigneur veille sur moi et pourvoit à mes besoins.",
+   "priere": "Seigneur, mon berger, je dépose devant toi mes inquiétudes. Conduis-moi et donne-moi ta paix. Amen.",
+   "n": 6,
+   "chrono": 1000
+  },
+  {
+   "date": "2026-11-28",
+   "order": 0,
+   "app": "src",
+   "theme": "jardin",
+   "chrono": 1030,
+   "title": "La tendresse d’un Père",
+   "ref": "Psaume 103:13",
+   "verse": "Comme un père a compassion de ses enfants, l’Éternel a compassion de ceux qui le craignent.",
+   "med": [
+    "Dieu est comparé à un père aimant. Le mot « compassion » exprime la tendresse, la patience et la compréhension envers ceux qui le respectent. « Ceux qui le craignent » désigne ici ceux qui l’honorent et vivent avec respect envers lui : il ne s’agit pas d’une peur qui terrorise.",
+    "Mais c’est aussi un père juste, un père qui sait nous reprendre lorsque nous sommes désobéissants, afin de nous corriger et de nous ramener dans le bon chemin, à lui.",
+    "Ce matin, que vous traversiez un temps de douceur ou un temps de correction, souvenez-vous que l’un comme l’autre viennent du même cœur de Père."
+   ],
+   "pensee": "La tendresse et la correction de Dieu viennent du même cœur de Père.",
+   "priere": "Père, merci pour ta compassion envers moi. Tu connais ma faiblesse et tu es patient avec moi. Quand je m’éloigne de toi, reprends-moi avec amour et ramène-moi sur le bon chemin. Apprends-moi à t’honorer et à vivre avec respect devant toi. Au nom de Jésus, amen.",
+   "n": 7
+  },
+  {
+   "date": "2026-11-08",
+   "order": 0,
+   "app": "src",
+   "theme": "jardin",
+   "title": "Une journée à recevoir",
+   "ref": "Psaume 118:24",
+   "verse": "C’est ici la journée que l’Éternel a faite : qu’elle soit pour nous un sujet d’allégresse et de joie !",
+   "med": [
+    "Chaque lever de soleil est un cadeau renouvelé, une page blanche que Dieu nous invite à vivre dans la confiance. Même lorsque la veille a été chargée de doutes ou de fatigue, ce matin porte en lui une grâce toute fraîche. Choisir la joie aujourd’hui n’est pas ignorer les difficultés, mais décider de poser nos regards sur la fidélité de Dieu qui devance chacun de nos pas."
+   ],
+   "pensee": "Aujourd’hui est une création de Dieu : recevez-la comme un présent et laissez sa paix éclairer vos choix.",
+   "priere": "Seigneur, merci pour cette nouvelle journée que tu as préparée pour moi. Éloigne de mon cœur l’anxiété et le découragement, et remplis-moi de ta joie véritable. Guide mes paroles, fortifie mes pas et fais de moi une source d’encouragement pour ceux que je croiserai aujourd’hui. Au nom de Jésus, amen.",
+   "n": 8,
+   "chrono": 1600
+  },
+  {
+   "date": "2026-11-24",
+   "order": 1,
+   "app": "course",
+   "theme": "jardin",
+   "title": "À la recherche du Royaume",
+   "ref": "Matthieu 6:33",
+   "verse": "Cherchez premièrement le royaume et la justice de Dieu ; et toutes ces choses vous seront données par-dessus.",
+   "med": [
+    "Jésus prononce ces mots en parlant de ce qui nous préoccupe au quotidien, comme la nourriture et le vêtement. Notre Père connaît nos besoins et nous invite à donner la première place à son Royaume. Chercher sa justice peut prendre une forme très simple aujourd’hui. Dans une conversation difficile, je peux choisir de dire la vérité avec douceur. Au milieu d’une journée chargée, je peux prendre le temps d’écouter quelqu’un. Quel choix, aujourd’hui, donnera la première place à Dieu dans votre vie ?"
+   ],
+   "pensee": "Je cherche d’abord le Royaume de Dieu en lui donnant la première place dans mes choix.",
+   "priere": "Seigneur Jésus, tu connais mes besoins et mes préoccupations. Je te les confie. Apprends-moi à chercher d’abord ton Royaume et ta justice. Montre-moi, dans les décisions de cette journée, comment agir avec droiture et aimer ceux que tu mets sur mon chemin. Amen.",
+   "n": 9,
+   "chrono": 2300
+  },
+  {
+   "date": "2026-11-26",
+   "order": 1,
+   "app": "course",
+   "theme": "jardin",
+   "title": "Un jour à la fois",
+   "ref": "Matthieu 6:34",
+   "verse": "Ne vous inquiétez donc pas du lendemain ; car le lendemain aura soin de lui-même. À chaque jour suffit sa peine.",
+   "med": [
+    "Jésus vient de dire : « Cherchez premièrement le royaume et la justice de Dieu. » Il ajoute maintenant ce conseil plein de tendresse : ne portez pas aujourd’hui le poids de demain. Notre Père connaît nos besoins, et il nous donne la force pour la journée qui commence, pas pour toutes celles qui viendront.",
+    "Souvent, ce n’est pas le présent qui nous épuise, mais tout ce que nous imaginons pour plus tard. Dans une course, le coureur ne pense pas à toute la distance à la fois : il fait le pas qui est devant lui. Aujourd’hui, regardez ce que Dieu vous confie pour cette journée seulement. Faites-le avec lui, et laissez-lui demain. Quand demain viendra, il sera là aussi."
+   ],
+   "pensee": "Je vis ce jour avec Dieu et je lui confie demain.",
+   "priere": "Père, tu sais ce qui m’inquiète pour les jours à venir. Je te le remets. Donne-moi la force et la paix pour aujourd’hui, et aide-moi à faire avec toi ce que tu me confies dans cette journée. Quand mes pensées partent vers demain, ramène-les à ta présence. Au nom de Jésus, amen.",
+   "n": 10,
+   "chrono": 2301
+  },
+  {
+   "date": "2026-11-19",
+   "order": 1,
+   "app": "course",
+   "theme": "responsabilite",
+   "title": "Reconnaître sa faute",
+   "ref": "Genèse 38:26",
+   "verse": "Juda les reconnut, et dit : Elle est moins coupable que moi, puisque je ne l’ai pas donnée à Schéla, mon fils. Et il ne la connut plus.",
+   "med": [
+    "Juda était prêt à condamner Thamar sans l’écouter. Mais lorsqu’elle lui présente son sceau, son cordon et son bâton, la vérité éclate : c’est lui qui a manqué à sa parole. À cet instant, Juda aurait pu se défendre, se justifier ou détourner le regard. Il fait le choix le plus difficile : il reconnaît. « Elle est moins coupable que moi. » C’est un tournant dans sa vie. Ce même Juda, plus tard, se proposera à la place de son frère Benjamin, et c’est de sa descendance que viendra Jésus. Dans notre course spirituelle, nous avons tous des moments où Dieu nous met devant nos propres fautes. Il ne le fait pas pour nous écraser, mais pour nous relever. Reconnaître ses torts n’est pas une défaite : c’est le premier pas d’un nouveau départ. Aujourd’hui, s’il y a quelque chose que vous devez reconnaître devant Dieu ou devant quelqu’un, ne le repoussez pas à plus tard."
+   ],
+   "pensee": "Celui qui reconnaît sa faute ne perd pas la course : il retrouve le bon chemin.",
+   "priere": "Seigneur, donne-moi l’humilité de Juda quand la vérité me rattrape. Garde-moi de juger trop vite les autres et de fermer les yeux sur mes propres manquements. Ce que j’ai à reconnaître aujourd’hui, aide-moi à le dire avec franchise, devant toi et devant ceux que j’ai blessés. Merci parce que tu ne m’abandonnes pas à mes erreurs : tu fais de chaque aveu sincère le début d’un chemin nouveau. Au nom de Jésus, amen.",
+   "n": 11,
+   "chrono": 380
+  },
+  {
+   "date": "2026-11-23",
+   "order": 0,
+   "app": "src",
+   "theme": "avecmoi",
+   "title": "Il marche avec moi",
+   "ref": "Deutéronome 31:6",
+   "verse": "Fortifiez-vous et ayez du courage ! Ne craignez point et ne soyez point effrayés devant eux ; car l’Éternel, ton Dieu, marchera lui-même avec toi, il ne te délaissera point, il ne t’abandonnera point.",
+   "med": [
+    "Moïse encourage le peuple d’Israël au moment où il s’apprête à entrer dans un pays inconnu. Il lui rappelle cette promesse : Dieu marchera avec lui et ne l’abandonnera pas. Si vous commencez cette journée avec une inquiétude, prenez un instant pour la confier au Seigneur. Vous pouvez lui demander le courage dont vous avez besoin pour aujourd’hui, puis avancer un pas à la fois."
+   ],
+   "pensee": "Je peux avancer avec courage, parce que le Seigneur marche avec moi.",
+   "priere": "Père, tu connais les inquiétudes que je porte en ce début de journée. Merci de marcher avec moi. Quand la peur me retient, rappelle-moi ta promesse et donne-moi le courage de faire le prochain pas avec toi. Au nom de Jésus, amen.",
+   "n": 12,
+   "chrono": 600
+  },
+  {
+   "date": "2026-11-17",
+   "order": 0,
+   "app": "src",
+   "theme": "avecmoi",
+   "title": "L’Éternel est ma lumière",
+   "ref": "Psaume 27:1",
+   "verse": "L’Éternel est ma lumière et mon salut : de qui aurais-je crainte ? L’Éternel est le soutien de ma vie : de qui aurais-je peur ?",
+   "med": [
+    "Il arrive que la peur prenne une grande place dans nos pensées : la peur de l’échec, du regard des autres, de l’inconnu ou de ce qui pourrait arriver. Pourtant, Dieu ne vous demande pas de regarder la peur jusqu’à ce qu’elle disparaisse. Il vous invite à lever les yeux vers lui. L’Éternel est votre lumière : il éclaire le chemin, même lorsque vous ne voyez que le pas suivant. Il est aussi votre salut : il vous soutient lorsque vos forces semblent faibles. Aujourd’hui, nommez devant Dieu ce qui vous fait peur, puis dites-lui simplement : « Tu es ma lumière, tu es mon salut. »"
+   ],
+   "pensee": "Quand la peur parle, je choisis de regarder vers la lumière de Dieu.",
+   "priere": "Seigneur, tu es ma lumière et mon salut. Quand la peur cherche à me retenir, rappelle-moi que tu es mon soutien. Éclaire le chemin devant moi et donne-moi le courage d’avancer avec toi. Au nom de Jésus, amen.",
+   "n": 13,
+   "chrono": 1010
+  },
+  {
+   "date": "2026-11-25",
+   "order": 0,
+   "app": "src",
+   "theme": "avecmoi",
+   "title": "Crier vers Dieu",
+   "ref": "Psaume 3:5",
+   "verse": "De ma voix je crie à l’Éternel, et il me répond de sa montagne sainte.",
+   "med": [
+    "David traverse une épreuve et se sent entouré d’ennemis. Dans sa détresse, il élève la voix vers Dieu. Il ose lui dire ce qu’il vit parce qu’il croit que le Seigneur l’entend. Ce matin, si une situation vous pèse, prenez un instant pour en parler à Dieu avec vos propres mots. Dites-lui ce qui vous fait peur, ce qui vous fatigue ou ce que vous ne comprenez pas. Même si la situation reste difficile, vous pouvez reprendre courage en vous rappelant que Dieu entend votre prière."
+   ],
+   "pensee": "Quand je crie à Dieu, je peux reprendre courage, car il m’entend.",
+   "priere": "Père, tu connais ce que je traverse et ce que j’ai du mal à exprimer. Merci de m’écouter quand je crie vers toi. Apaise mon cœur dans l’attente et donne-moi le courage de traverser cette journée en gardant confiance en toi. Au nom de Jésus, amen.",
+   "n": 14,
+   "chrono": 1050
+  },
+  {
+   "date": "2026-11-25",
+   "order": 1,
+   "app": "course",
+   "theme": "avecmoi",
+   "title": "Me reposer dans la confiance",
+   "ref": "Psaume 3:6",
+   "verse": "Je me couche, et je m’endors ; je me réveille, car l’Éternel est mon soutien.",
+   "med": [
+    "Après avoir crié vers Dieu, David raconte qu’il a pu se coucher, dormir et se réveiller. Son épreuve continue, et pourtant il reconnaît que le Seigneur l’a soutenu jusque dans son sommeil. Il y a des soirs où nos pensées reviennent sans cesse à ce que nous n’avons pas pu régler. Ce soir, avant de vous coucher, confiez au Seigneur une chose que vous portez encore. Demandez-lui de vous aider à la lui remettre pour cette nuit. Demain, vous pourrez reprendre ce qui vous attend en vous rappelant que Dieu est votre soutien."
+   ],
+   "pensee": "Je peux confier à Dieu ce qui reste en suspens et me reposer en sa présence.",
+   "priere": "Seigneur, je te remets ce que je n’ai pas pu résoudre aujourd’hui. Apaise mes pensées et donne-moi de me reposer dans ta paix. Au réveil, rappelle-moi que tu es mon soutien et donne-moi la force d’avancer avec toi. Au nom de Jésus, amen.",
+   "n": 15,
+   "chrono": 1051
+  },
+  {
+   "date": "2026-11-13",
+   "order": 0,
+   "app": "src",
+   "theme": "avecmoi",
+   "title": "Confier mes chemins",
+   "ref": "Proverbes 3:5-6",
+   "verse": "Confie-toi en l’Éternel de tout ton cœur, et ne t’appuie pas sur ta sagesse ; reconnais-le dans toutes tes voies, et il aplanira tes sentiers.",
+   "med": [
+    "Dans quelle décision avez-vous besoin de faire confiance à Dieu ? Un choix professionnel, une relation, un projet ou un chemin qui vous semble incertain ? C’est normal de vouloir tout comprendre et tout maîtriser avant d’avancer. Mais Dieu vous invite à vous appuyer sur lui plutôt que sur votre seule sagesse. Il voit plus loin que vous et il connaît le chemin. Prenez un instant pour lui présenter cette décision. Reconnaissez-le dans chacune de vos voies, et laissez-le aplanir vos sentiers, un pas après l’autre."
+   ],
+   "pensee": "Je fais confiance à Dieu plus qu’à ma propre sagesse.",
+   "priere": "Père, je te fais confiance plus qu’à ma propre sagesse. Dirige mes pas. Amen.",
+   "n": 16,
+   "chrono": 1100
+  },
+  {
+   "theme": "avecmoi",
+   "chrono": 1299,
+   "title": "Celui qui remet son sort à Jésus",
+   "ref": "Psaume 46:2-4",
+   "verse": "Dieu est pour nous un refuge et un appui, un secours qui ne manque jamais dans la détresse. C’est pourquoi nous sommes sans crainte quand la terre est bouleversée, et que les montagnes chancellent au cœur des mers, quand les flots de la mer mugissent, écument, se soulèvent jusqu’à faire trembler les montagnes.",
+   "med": [
+    "Quiconque remet son âme au Christ n’a aucune raison de se décourager. Nous avons un Sauveur tout-puissant. En regardant à Jésus, « le chef et le consommateur de la foi » (Hébreux 12:2), vous pourrez dire avec le psalmiste : « Dieu est pour nous un refuge et un appui. »",
+    "Dans la vie à venir, nous comprendrons bien des choses qui, ici-bas, nous laissent perplexes. Nous verrons quel puissant adversaire nous avions, et comment les anges de Dieu avaient pour mission de nous protéger tandis que nous suivions les conseils de la Parole de Dieu.",
+    "Le Christ nous a prévenus que les flots ne seraient pas toujours calmes. Nous aurons des tribulations. Elles font partie de notre formation ; elles sont nécessaires à l’édification d’un caractère fort et équilibré."
+   ],
+   "pensee": "Avec Jésus, je n’ai aucune raison de me décourager.",
+   "priere": "Seigneur Jésus, je remets mon sort entre tes mains. Quand la terre tremble autour de moi et que les flots s’agitent, sois mon refuge et mon appui. Garde mes yeux fixés sur toi, et aide-moi à voir dans chaque épreuve une occasion de grandir. Au nom de Jésus, amen.",
+   "date": "2026-11-26",
+   "order": 22,
+   "app": "doc",
+   "n": 17
+  },
+  {
+   "date": "2026-11-06",
+   "order": 0,
+   "app": "src",
+   "theme": "avecmoi",
+   "title": "Dieu est avec moi",
+   "ref": "Ésaïe 41:10",
+   "verse": "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours, je te soutiens de ma droite triomphante.",
+   "med": [
+    "Ce matin, confiez à Dieu ce qui vous inquiète. Sa présence ne vous quitte pas : appuyez-vous sur lui pour avancer avec confiance, un pas après l’autre."
+   ],
+   "pensee": "Dieu est avec moi, même lorsque le chemin semble incertain.",
+   "priere": "Seigneur, merci pour ce nouveau matin. Tu connais mes inquiétudes et les défis qui m’attendent. Apaise mon cœur et rappelle-moi que je ne suis pas seul : tu es avec moi. Donne-moi la force d’avancer, la sagesse pour mes décisions et la confiance pour te remettre ce que je ne peux pas contrôler. Que ta paix accompagne chacun de mes pas aujourd’hui. Au nom de Jésus, amen.",
+   "n": 18,
+   "chrono": 1400
+  },
+  {
+   "date": "2026-11-26",
+   "order": 1,
+   "app": "doc",
+   "theme": "avecmoi",
+   "title": "Alliance avec Dieu",
+   "ref": "Matthieu 28:20",
+   "chrono": 2990,
+   "verse": "Et enseignez-leur à observer tout ce que je vous ai prescrit. Et voici, je suis avec vous tous les jours, jusqu’à la fin du monde.",
+   "med": [
+    "Pas un seul moment de notre vie, Dieu n’a manqué de veiller sur nous.",
+    "Il nous connaît depuis le ventre de nos mères, car c’est lui qui nous a formés. Il nous a donné la vie, il a insufflé en nous l’espoir, la foi, l’amour.",
+    "Mais dans notre jeunesse, et sous l’influence du malin, nous nous sommes écartés du plan qu’il avait conçu pour nous avant la fondation du monde. Satan a essayé de voler ses bienfaits, mais il ne pourra rien faire tant que nous restons attachés à notre bon Père céleste.",
+    "Nos propres choix nous ont éloignés de la bergerie de Dieu. Le bon berger n’abandonne jamais ses brebis : il nous a cherchés, il nous a retrouvés dans le désert, il nous a appelés par nos noms, pardonnés et ramenés à sa parfaite volonté, nous proposant de retourner dans l’alliance. Nous laissant conduire par lui, il nous a montré le chemin du retour à la bergerie ; il nous a lavés, purifiés, restaurés, nous donnant à nouveau accès à la vie : « la nouvelle naissance ».",
+    "Quand nous nous sentons seuls, désespérés, découragés, n’ayant personne vers qui nous tourner, alors repassons toutes ces étapes, jusqu’au moment où Dieu s’est sacrifié à la croix pour nous sauver, pour nous arracher des griffes de l’ennemi. Il a tout donné afin de nous ramener à la vie, laissant son trône de gloire et se faisant lui-même homme. Ne succombons pas au désespoir : faisons appel à notre seul secours, Jésus-Christ, celui qui a tout donné pour nous ramener à la vie. Ce Dieu fidèle nous a fait cette promesse d’être avec nous jusqu’à la fin du monde. Cette alliance est avec nous depuis le ventre de notre mère."
+   ],
+   "pensee": "Dieu a promis d’être avec moi tous les jours, jusqu’à la fin du monde.",
+   "priere": "Merci, Dieu fidèle, Dieu d’amour, Dieu de justice. Merci de m’avoir cherché, retrouvé et ramené dans ton alliance. Quand je me sens seul ou découragé, rappelle-moi que tu es avec moi tous les jours. Garde-moi dans ta bergerie. Au nom de Jésus, amen.",
+   "n": 19
+  },
+  {
+   "date": "2026-11-10",
+   "order": 0,
+   "app": "src",
+   "theme": "paix",
+   "title": "Faire silence",
+   "ref": "Psaume 46:11",
+   "verse": "Arrêtez, et sachez que je suis Dieu.",
+   "med": [
+    "Faites silence un instant. Laissez Dieu être Dieu dans votre vie."
+   ],
+   "pensee": "Dans le silence, je reconnais la présence de Dieu.",
+   "priere": "Seigneur, j’arrête mon agitation pour te reconnaître. Tu es Dieu, et je me repose en toi. Amen.",
+   "n": 20,
+   "chrono": 1300
+  },
+  {
+   "date": "2026-11-09",
+   "order": 0,
+   "app": "src",
+   "theme": "paix",
+   "title": "Sa paix, non celle du monde",
+   "ref": "Jean 14:27",
+   "verse": "Je vous laisse la paix, je vous donne ma paix. Je ne vous donne pas comme le monde donne. Que votre cœur ne se trouble point.",
+   "med": [
+    "La paix du Christ ne dépend pas des circonstances. Accueillez-la maintenant."
+   ],
+   "pensee": "La paix de Jésus demeure en moi, même au milieu des tempêtes.",
+   "priere": "Jésus, remplis-moi de ta paix, celle que le monde ne peut pas donner. Amen.",
+   "n": 21,
+   "chrono": 2800
+  },
+  {
+   "date": "2026-11-07",
+   "order": 0,
+   "app": "src",
+   "theme": "paix",
+   "title": "La paix qui garde le cœur",
+   "ref": "Philippiens 4:6-7",
+   "verse": "Ne vous inquiétez de rien ; mais en toute chose faites connaître vos besoins à Dieu par des prières et des supplications, avec des actions de grâces. Et la paix de Dieu, qui surpasse toute intelligence, gardera vos cœurs et vos pensées en Jésus-Christ.",
+   "med": [
+    "L’inquiétude est un fardeau que nous ne sommes pas appelés à porter seuls. Paul nous invite à un échange précieux : remettre chaque souci entre les mains de Dieu, et recevoir en retour sa paix. Ce matin, prenez le temps de nommer devant le Seigneur ce qui pèse sur votre cœur — une décision, une relation, une crainte pour l’avenir. Présentez-lui chaque chose, non pas avec des mots parfaits, mais avec un cœur sincère et reconnaissant. Car la gratitude ouvre la porte à la paix : lorsque nous nous souvenons de tout ce que Dieu a déjà accompli, nos inquiétudes perdent de leur force. Alors la paix de Dieu, qui dépasse tout ce que nous pouvons comprendre, monte la garde autour de notre cœur et de nos pensées, comme une sentinelle fidèle. Elle ne dépend pas des circonstances, mais de la présence du Christ en nous."
+   ],
+   "pensee": "Je confie mes soucis à Dieu et je reçois sa paix.",
+   "priere": "Père, je te confie mes besoins et je te remercie pour tes bienfaits. Que ta paix garde mon cœur. Amen.",
+   "n": 22,
+   "chrono": 3400
+  },
+  {
+   "date": "2026-11-13",
+   "order": 1,
+   "app": "course",
+   "theme": "repos",
+   "title": "Déposer mes fardeaux",
+   "ref": "Matthieu 11:28",
+   "verse": "Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos.",
+   "med": [
+    "Jésus vous invite à lui remettre vos fardeaux. Lequel voulez-vous lui confier aujourd’hui ? Une inquiétude, une souffrance, une peur pour l’avenir ou une situation qui vous dépasse ?",
+    "Prenez un instant pour lui en parler avec vos propres mots. Pas besoin de phrases parfaites : il écoute votre cœur.",
+    "Vous n’avez pas à tout porter seuls. Jésus vous accueille avec amour et vous invite à trouver du repos auprès de lui. Déposez ce poids entre ses mains et recevez sa paix pour cette journée."
+   ],
+   "pensee": "Je dépose mes fardeaux entre les mains de Jésus et je reçois son repos.",
+   "priere": "Jésus, je viens à toi avec ma fatigue. Donne-moi ton repos et allège mon cœur. Amen.",
+   "n": 23,
+   "chrono": 2401
+  },
+  {
+   "date": "2026-11-11",
+   "order": 0,
+   "app": "src",
+   "theme": "bontes",
+   "title": "La bonté de chaque matin",
+   "ref": "Psaume 143:8",
+   "verse": "Fais-moi dès le matin entendre ta bonté ! Car je me confie en toi.",
+   "med": [
+    "Avant même que la journée commence, Dieu vous précède. Sa bonté ne dépend pas de ce que vous avez réussi hier, ni de ce que vous parviendrez à accomplir aujourd’hui. Elle est là, fidèle et renouvelée, comme la lumière qui revient après la nuit. Ce matin, avant de penser à tout ce que vous devez faire, prenez un instant pour écouter ce que Dieu veut vous dire. Il ne vous demande pas de porter la journée entière d’un seul coup : il vous invite simplement à marcher avec lui, pas après pas."
+   ],
+   "pensee": "Avant de chercher la force en moi, je la reçois de Dieu.",
+   "priere": "Seigneur, fais-moi entendre ta bonté au matin. Avant que mes pensées ne s’agitent, rappelle-moi que tu es là. Donne-moi un cœur attentif à ta voix et la confiance de marcher avec toi aujourd’hui. Au nom de Jésus, amen.",
+   "n": 24,
+   "chrono": 1060
+  },
+  {
+   "date": "2026-11-03",
+   "order": 0,
+   "app": "src",
+   "theme": "bontes",
+   "title": "Une bonté renouvelée",
+   "ref": "Lamentations 3:22-23",
+   "verse": "Les bontés de l’Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme ; elles se renouvellent chaque matin.",
+   "med": [
+    "Chaque matin, Dieu vous offre une grâce nouvelle. Hier appartient à hier : ses erreurs, ses regrets et ses fatigues ne déterminent pas ce que vous vivrez aujourd’hui. La bonté du Seigneur se renouvelle pour vous, au milieu de ce que vous traversez. Prenez un instant pour lui confier ce qui reste lourd dans votre cœur, puis accueillez sa compassion. Sa fidélité d’hier peut nourrir votre confiance aujourd’hui."
+   ],
+   "pensee": "La bonté de Dieu se renouvelle pour moi chaque matin.",
+   "priere": "Père, merci pour ce nouveau matin. Merci parce que tes compassions ne s’épuisent pas et que ta fidélité est grande. Je te confie ce que j’ai vécu hier et ce qui pèse encore dans mon cœur. Aide-moi à accueillir ta grâce, à avancer avec confiance et à reconnaître ta présence dans les petites choses de cette journée. Au nom de Jésus, amen.",
+   "n": 25,
+   "chrono": 1500
+  },
+  {
+   "date": "2026-11-27",
+   "order": 0,
+   "app": "src",
+   "theme": "bontes",
+   "title": "Entrer en disant merci",
+   "ref": "Psaume 100:4",
+   "verse": "Entrez dans ses portes avec des louanges, dans ses parvis avec des cantiques ! Célébrez-le, bénissez son nom !",
+   "med": [
+    "Chaque matin, une porte s’ouvre devant vous : celle de la présence de Dieu. Le psalmiste nous montre comment la franchir : en disant merci. Avant de regarder votre téléphone, avant de penser à tout ce qui vous attend, prenez un instant pour entrer chez lui.",
+    "Remerciez-le pour la sécurité qu’il vous a donnée cette nuit : vous vous êtes couché, vous vous êtes endormi, et vous vous êtes réveillé sous sa garde. Remerciez-le pour ses bontés, qui se renouvellent chaque matin, même quand la veille a été difficile. Remerciez-le pour ses bienfaits : le souffle de vie, un toit, les personnes qu’il a placées près de vous, et surtout son amour, qui ne change pas.",
+    "La reconnaissance ne change pas seulement notre regard sur la journée : elle nous fait entrer dans sa présence. Celui qui commence sa journée en disant merci ne marche plus seul."
+   ],
+   "pensee": "La reconnaissance ouvre la porte de sa présence. Avant toute chose aujourd’hui, commencez par lui dire merci.",
+   "priere": "Seigneur, ce matin, j’entre dans ta présence avec un cœur reconnaissant. Merci pour ta protection cette nuit, merci pour tes bontés qui se renouvellent chaque matin, merci pour tous tes bienfaits dans ma vie. Que cette journée commence et se poursuive avec toi. Au nom de Jésus, amen.",
+   "n": 26,
+   "chrono": 1601
+  },
+  {
+   "date": "2026-11-20",
+   "order": 0,
+   "app": "src",
+   "theme": "bontes",
+   "title": "Joie, prière et gratitude",
+   "ref": "1 Thessaloniciens 5:16-18",
+   "verse": "Soyez toujours joyeux. Priez sans cesse. Rendez grâces en toutes choses, car c’est à votre égard la volonté de Dieu en Jésus Christ.",
+   "med": [
+    "Trois phrases courtes, et pourtant toute une manière de vivre. Paul écrit à des croyants qui souffrent : ils ont reçu la Parole « au milieu de beaucoup de tribulations, avec la joie du Saint-Esprit » (1 Thessaloniciens 1:6). La joie dont il parle ne dépend donc pas des circonstances. Elle vient de Dieu, qui reste fidèle quand tout le reste vacille. « Priez sans cesse » ne veut pas dire rester à genoux toute la journée, mais vivre en conversation avec le Seigneur : lui parler en marchant, en travaillant, en attendant, lui confier chaque inquiétude dès qu’elle se présente. Et remarquez bien : Paul ne dit pas de rendre grâces pour toutes choses, mais en toutes choses. Même au cœur d’une épreuve, il reste toujours une raison de dire merci : sa présence, son pardon, sa promesse. Ces trois attitudes se tiennent : la prière nourrit la reconnaissance, et la reconnaissance fait naître la joie. Voilà, nous dit Paul, la volonté de Dieu pour vous aujourd’hui. Ce n’est pas un fardeau de plus, c’est un chemin de liberté."
+   ],
+   "pensee": "La joie ne vient pas de ce que nous vivons, mais de Celui qui marche avec nous.",
+   "priere": "Seigneur, merci pour ce jour que tu me donnes. Apprends-moi la joie qui ne dépend pas des circonstances, celle qui vient de toi. Garde mon cœur en conversation avec toi, du matin jusqu’au soir, dans les petites choses comme dans les grandes. Même dans ce qui est difficile aujourd’hui, ouvre mes yeux sur les raisons de te dire merci. Que ma vie soit une prière, et que ma reconnaissance soit un témoignage autour de moi. Au nom de Jésus, amen.",
+   "n": 27,
+   "chrono": 3100,
+   "encadre": {
+    "titre": "Les buts de la prière",
+    "lignes": [
+     "La prière est au cœur de la vie chrétienne. Elle permet de communiquer avec Dieu, de lui exprimer nos besoins, nos remerciements et notre adoration. Elle nourrit la foi et apporte la paix intérieure.",
+     "• Glorifier, louer et sanctifier le nom du Seigneur (Psaume 148:1 : « Louez l’Éternel ! »)<br/>• Remercier Dieu<br/>• Rendre grâce à Dieu par Jésus-Christ<br/>• Contempler la gloire de Dieu<br/>• Connaître la volonté de Dieu avant de prendre nos décisions<br/>• Faire connaître à Dieu nos besoins"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-22",
+   "order": 1,
+   "app": "course",
+   "theme": "priere",
+   "title": "Prier sans se décourager",
+   "ref": "Luc 18:1",
+   "verse": "Jésus leur adressa une parabole, pour montrer qu’il faut toujours prier, et ne point se relâcher.",
+   "med": [
+    "Dans cette parabole, une veuve revient devant un juge pour lui demander justice. Jésus prend sa persévérance en exemple pour nous encourager à continuer de prier, même quand l’attente nous fatigue. Nous pouvons revenir à Dieu avec la même demande, lui dire que le temps nous paraît long et lui confier notre découragement.",
+    "Y a-t-il une situation pour laquelle vous avez presque cessé de prier ? Reprenez-la aujourd’hui devant le Seigneur, avec vos mots. Demandez-lui de soutenir votre foi dans l’attente et de vous montrer ce que vous pouvez faire dès aujourd’hui."
+   ],
+   "pensee": "Même quand l’attente me fatigue, je peux revenir à Dieu avec confiance.",
+   "priere": "Père, tu connais les prières que je porte depuis longtemps. Quand je me décourage, donne-moi la force de revenir vers toi. Aide-moi à te parler avec sincérité, à garder confiance dans l’attente et à faire le prochain pas avec toi. Au nom de Jésus, amen.",
+   "n": 28,
+   "chrono": 2600
+  },
+  {
+   "theme": "foi",
+   "chrono": 1460,
+   "title": "Connais-tu Dieu ?",
+   "ref": "Jérémie 33:3",
+   "verse": "Invoque-moi, et je te répondrai ; je t’annoncerai de grandes choses, des choses cachées, que tu ne connais pas.",
+   "med": [
+    "Un jour, un ami m’a demandé si je connaissais Dieu. Sur le coup, j’ai dit « oui », mais chemin faisant, d’expérience en expérience, je me suis rendu compte que nous ne connaissons pas réellement qui est Dieu, et que nous ne connaîtrons jamais entièrement qui est la personne de Dieu.",
+    "Nous apprenons à connaître Dieu lorsque nous entrons dans son schéma.",
+    "Nous commençons à connaître Dieu à partir du moment où nous faisons cette rencontre personnelle avec lui, lorsque nous faisons le choix de la vie, le choix de l’alliance éternelle, renonçant à nous-mêmes et laissant le Maître restaurer son Église ;",
+    "lorsque nous entrons dans cette étroite intimité avec lui, réclamant la présence de l’Esprit afin qu’il puisse ôter le voile qui nous empêche de le voir, le laissant œuvrer en nous, renouvelant constamment notre intelligence.",
+    "Connaître Dieu, c’est être constamment dans son école, nous laissant enseigner par le plus grand des enseignants : « lui-même ». C’est apprendre à connaître son caractère, son grand amour pour nous.",
+    "Il nous dit dans Jérémie 33:3 : « Invoque-moi, et je te répondrai ; Je t’annoncerai de grandes choses, des choses cachées, Que tu ne connais pas. »<br/>Et dans le Psaume 32:8 : « Je t’instruirai et te montrerai la voie que tu dois suivre ; Je te conseillerai, j’aurai le regard sur toi. »"
+   ],
+   "pensee": "Connaître Dieu, c’est rester chaque jour à son école.",
+   "priere": "Seigneur, je veux te connaître davantage. Ôte le voile qui m’empêche de te voir, renouvelle mon intelligence et apprends-moi ton caractère. Je t’invoque ce matin, comme tu m’y invites : réponds-moi, enseigne-moi la voie que je dois suivre et garde ton regard sur moi. Au nom de Jésus, amen.",
+   "date": "2026-11-26",
+   "order": 6,
+   "app": "doc",
+   "n": 29
+  },
+  {
+   "date": "2026-11-26",
+   "order": 2,
+   "app": "doc",
+   "theme": "foi",
+   "title": "Avoir foi en Dieu",
+   "ref": "Ézéchiel 37:1-14",
+   "chrono": 1510,
+   "verse": "La main de l’Éternel fut sur moi, et l’Éternel me transporta en esprit, et me déposa dans le milieu d’une vallée remplie d’ossements. Il me fit passer auprès d’eux, tout autour ; et voici, ils étaient fort nombreux, à la surface de la vallée, et ils étaient complètement secs. Il me dit : Fils de l’homme, ces os pourront-ils revivre ? Je répondis : Seigneur Éternel, tu le sais. Il me dit : Prophétise sur ces os, et dis-leur : Ossements desséchés, écoutez la parole de l’Éternel ! Ainsi parle le Seigneur, l’Éternel, à ces os : Voici, je vais faire entrer en vous un esprit, et vous vivrez ; je vous donnerai des nerfs, je ferai croître sur vous de la chair, je vous couvrirai de peau, je mettrai en vous un esprit, et vous vivrez. Et vous saurez que je suis l’Éternel. Je prophétisai, selon l’ordre que j’avais reçu. Et comme je prophétisais, il y eut un bruit, et voici, il se fit un mouvement, et les os s’approchèrent les uns des autres. Je regardai, et voici, il leur vint des nerfs, la chair crût, et la peau les couvrit par-dessus ; mais il n’y avait point en eux d’esprit. Il me dit : Prophétise, et parle à l’esprit ! Prophétise, fils de l’homme, et dis à l’esprit : Ainsi parle le Seigneur, l’Éternel : Esprit, viens des quatre vents, souffle sur ces morts, et qu’ils revivent ! Je prophétisai, selon l’ordre qu’il m’avait donné. Et l’esprit entra en eux, et ils reprirent vie, et ils se tinrent sur leurs pieds : c’était une armée nombreuse, très nombreuse. Il me dit : Fils de l’homme, ces os, c’est toute la maison d’Israël. Voici, ils disent : Nos os sont desséchés, notre espérance est détruite, nous sommes perdus ! Prophétise donc, et dis-leur : Ainsi parle le Seigneur, l’Éternel : Voici, j’ouvrirai vos sépulcres, je vous ferai sortir de vos sépulcres, ô mon peuple, et je vous ramènerai dans le pays d’Israël. Et vous saurez que je suis l’Éternel, lorsque j’ouvrirai vos sépulcres, et que je vous ferai sortir de vos sépulcres, ô mon peuple ! Je mettrai mon esprit en vous, et vous vivrez ; je vous rétablirai dans votre pays, et vous saurez que moi, l’Éternel, j’ai parlé et agi, dit l’Éternel.",
+   "med": [
+    "Ayez foi en Dieu : il est capable de restaurer une ville morte, de redonner une direction à une vie dénuée de tout sens. L’Éternel redonne la vie aux ossements desséchés. Croyez en la puissance du divin Maître.",
+    "Le prophète Ézéchiel se trouve devant une vallée d’ossements desséchés : aucune trace de vie, aucun espoir humain. Quand Dieu lui demande si ces os peuvent revivre, il ne répond pas « non » ; il répond : « Seigneur Éternel, tu le sais. » C’est déjà un acte de foi.",
+    "Puis la Parole est prononcée, et l’Esprit souffle : ce qui était mort se relève et devient une armée. Il n’y a pas de situation trop desséchée pour Dieu, ni dans une ville, ni dans une famille, ni dans un cœur. Ce que nous croyons perdu, il peut le relever."
+   ],
+   "pensee": "Remettez votre vie dans les mains de l’Éternel.",
+   "priere": "Éternel, tu connais les lieux desséchés de ma vie. Je ne vois pas toujours comment ils pourraient revivre, mais toi, tu le sais. Souffle ton Esprit sur moi ce matin, redonne vie à ce qui semble mort et redonne une direction à mes pas. Je remets ma vie entre tes mains. Au nom de Jésus, amen.",
+   "n": 30
+  },
+  {
+   "date": "2026-11-22",
+   "order": 0,
+   "app": "src",
+   "theme": "foi",
+   "title": "La foi comme bouclier",
+   "ref": "Éphésiens 6:16",
+   "verse": "Prenez par-dessus tout cela le bouclier de la foi, avec lequel vous pourrez éteindre tous les traits enflammés du malin.",
+   "med": [
+    "Il suffit parfois d’une parole blessante, d’une mauvaise nouvelle ou d’une pensée qui revient sans cesse pour que le découragement gagne du terrain. Paul nous invite alors à prendre la foi comme bouclier. Concrètement, c’est nous tourner vers Dieu au moment où la peur monte, lui dire ce qui nous trouble et nous rappeler qu’il est avec nous. Aujourd’hui, si une inquiétude vous revient, prenez un instant pour la nommer devant Dieu. Vous pouvez lui dire simplement : « Seigneur, voici ce qui me fait peur. Aide-moi à te faire confiance dans cette situation. » Puis demandez-lui de vous montrer le prochain pas que vous pouvez faire avec lui."
+   ],
+   "pensee": "Quand la peur revient, je peux revenir à Dieu et lui redire ma confiance.",
+   "priere": "Père, merci parce que je peux me réfugier auprès de toi. Tu connais les paroles qui me blessent et les pensées qui me découragent. Quand elles reviennent, rappelle-moi que tu es avec moi. Fortifie ma foi et donne-moi la paix et le courage de faire le prochain pas avec toi. Au nom de Jésus, amen.",
+   "n": 31,
+   "chrono": 3300
+  },
+  {
+   "date": "2026-11-23",
+   "order": 1,
+   "app": "course",
+   "theme": "courage",
+   "title": "Fortifié pour sa mission",
+   "ref": "Josué 1:9",
+   "verse": "Ne t’ai-je pas donné cet ordre : Fortifie-toi et prends courage ? Ne t’effraie point et ne t’épouvante point, car l’Éternel, ton Dieu, est avec toi dans tout ce que tu entreprendras.",
+   "med": [
+    "Josué reçoit une grande responsabilité après la mort de Moïse. Dieu lui dit de se fortifier et de prendre courage, car il sera avec lui partout où il ira. Quelle responsabilité vous paraît lourde en ce moment ? Présentez-la à Dieu. Demandez-lui de vous montrer une chose concrète que vous pouvez faire aujourd’hui et de vous aider à l’accomplir avec confiance."
+   ],
+   "pensee": "Dans la mission qui m’est confiée, je peux compter sur la présence de Dieu.",
+   "priere": "Seigneur, merci de m’accompagner dans ce que tu me confies. Quand je doute de mes forces, donne-moi la sagesse de reconnaître ce que je peux faire aujourd’hui et le courage de le faire. Aide-moi à rester fidèle à ta Parole dans mes décisions. Au nom de Jésus, amen.",
+   "n": 32,
+   "chrono": 651
+  },
+  {
+   "theme": "courage",
+   "chrono": 1020,
+   "title": "Ceinture pour la victoire",
+   "ref": "Psaume 18:40",
+   "verse": "Tu me ceins de force pour le combat, tu fais plier sous moi mes adversaires.",
+   "med": [
+    "Nous devons nous rappeler que la force vient de Dieu.",
+    "David a chanté ce psaume le jour où l’Éternel l’avait délivré de tous ses ennemis et de la main de Saül. Il ne se vante pas de sa propre force : il reconnaît que c’est Dieu qui l’a équipé pour le combat.",
+    "L’Éternel est celui qui nous donne la force et l’inspiration pour poursuivre la mission qu’il nous a confiée.",
+    "La force que Dieu nous accorde agit comme une protection autour de nous, comme une ceinture.",
+    "Ceints pour combattre, les guerriers de l’Éternel des armées ne peuvent échouer. Tout est programmé pour la victoire, car nous possédons une force surnaturelle.",
+    "Réjouissons-nous, ne craignons rien devant les combats qui peuvent se présenter à nous, car la victoire est déjà acquise.",
+    "La décision vient de nous : voulons-nous faire partie des victorieux ou pas ? Être dans l’équipe de Dieu ou pas ? Le choix nous appartient, et cela s’appelle le libre arbitre."
+   ],
+   "pensee": "La force vient de Dieu ; en lui, la victoire est déjà acquise.",
+   "priere": "Éternel, toi qui me ceins de force pour le combat, je viens à toi ce matin. Je reconnais que ma force ne vient pas de moi, mais de toi. Revêts-moi de ta puissance, garde-moi ferme devant les difficultés de cette journée, et aide-moi à choisir chaque jour d’être dans ton équipe. Au nom de Jésus, amen.",
+   "date": "2026-11-26",
+   "order": 7,
+   "app": "doc",
+   "n": 33
+  },
+  {
+   "theme": "courage",
+   "chrono": 3200,
+   "title": "Courir vers la couronne éternelle",
+   "ref": "1 Corinthiens 9:24-25",
+   "verse": "Ne savez-vous pas que ceux qui courent dans le stade courent tous, mais qu’un seul remporte le prix ? Courez de manière à le remporter. Tous ceux qui combattent s’imposent toute espèce d’abstinences, et ils le font pour obtenir une couronne corruptible ; mais nous, faisons-le pour une couronne incorruptible.",
+   "med": [
+    "Avant de prendre le départ d’une course, un athlète doit comprendre plusieurs choses essentielles. Il ne suffit pas de se présenter sur la ligne de départ et de commencer à courir en espérant remporter la victoire.",
+    "Il y a tout un travail à accomplir en amont.",
+    "<b>1. Pourquoi courir ? Comprendre l’enjeu de la course</b>",
+    "C’est la première question que nous devons nous poser.",
+    "Pourquoi nous engageons-nous dans cette course ? Quel est notre objectif ? Quelle victoire recherchons-nous ?",
+    "Un athlète qui ne connaît pas l’enjeu de sa course risque de courir sans direction, de gaspiller ses forces et de perdre de vue son objectif.",
+    "Spirituellement, avons-nous réellement compris pourquoi nous avons choisi de suivre Jésus-Christ ?",
+    "Avant de courir, il faut savoir pourquoi nous courons et vers qui nous courons.",
+    "<b>2. Avoir la bonne préparation pour atteindre l’objectif</b>",
+    "Une fois l’enjeu compris, vient le temps de la préparation.",
+    "Un athlète ne peut pas espérer remporter la victoire sans entraînement, sans discipline et sans persévérance.",
+    "Mais attention : il y a se préparer et se préparer correctement.",
+    "Dans notre marche avec Dieu, la bonne préparation passe par la connaissance de sa Parole, la prière, l’obéissance, la foi et la mise en pratique de ses enseignements.",
+    "Nous pouvons être très actifs dans les activités spirituelles sans être véritablement préparés intérieurement.",
+    "La question est donc : notre préparation correspond-elle réellement à l’objectif que nous voulons atteindre ?",
+    "<b>3. Avoir constitué des réserves pour tenir pendant la course</b>",
+    "Voilà un point particulièrement important.",
+    "Un athlète ne se contente pas de s’entraîner. Il veille également à disposer des ressources nécessaires pour soutenir son effort. Car une course peut être longue, éprouvante et semée de difficultés.",
+    "Qu’en est-il de nos réserves spirituelles ? Avons-nous suffisamment nourri notre foi par la Parole de Dieu ? Avons-nous développé une relation profonde avec Jésus-Christ ?",
+    "Lorsque surviennent les épreuves, les tentations, les fatigues et les découragements, sur quoi nous appuyons-nous pour continuer ?",
+    "Nos réserves spirituelles ne sont pas des forces que nous accumulons indépendamment de Dieu. Elles représentent cette foi nourrie quotidiennement, cette connaissance de sa Parole et cette confiance qui nous permettent de revenir à lui pour recevoir des forces nouvelles.",
+    "<b>4. Tenir jusqu’à l’arrivée</b>",
+    "Il ne suffit pas de bien commencer.",
+    "Certains prennent le départ avec enthousiasme, mais se découragent devant les premières difficultés. D’autres avancent rapidement, puis ralentissent lorsque la fatigue apparaît.",
+    "Et nous ? Sommes-nous tantôt actifs, tantôt persévérants, tantôt découragés, au point de perdre notre objectif de vue ?",
+    "La course chrétienne exige de la constance, mais elle nous apprend également à dépendre de la grâce de Dieu.",
+    "La victoire ne consiste pas à courir plus vite que les autres, mais à demeurer fidèles à Jésus-Christ jusqu’au bout.",
+    "<b>Réflexion pour notre partage</b>",
+    "Avant de nous engager dans une course, quatre questions méritent notre attention :<br/>• Pourquoi courir ? Avons-nous compris l’enjeu ?<br/>• Comment nous préparer ? Avons-nous choisi la bonne préparation ?<br/>• Avec quelles réserves ? Avons-nous nourri notre foi pour traverser les difficultés ?<br/>• Comment tenir jusqu’au bout ? Sommes-nous prêts à persévérer malgré les épreuves ?",
+    "Car comprendre l’enjeu de la course détermine notre préparation, notre préparation nous aide à affronter les difficultés, et notre dépendance envers Dieu nous permet de persévérer jusqu’à l’arrivée."
+   ],
+   "pensee": "Avons-nous compris que l’enjeu de cette course est éternel, alors que tant de choses pour lesquelles nous nous épuisons aujourd’hui sont passagères ?",
+   "priere": "Seigneur, donne-nous de comprendre l’enjeu de notre marche avec toi. Apprends-nous à nous préparer selon ta Parole, à nourrir notre foi et à puiser chaque jour nos forces en toi, afin de ne pas abandonner la course.",
+   "date": "2026-11-26",
+   "order": 5,
+   "app": "doc",
+   "n": 34
+  },
+  {
+   "date": "2026-11-26",
+   "order": 0,
+   "app": "doc",
+   "theme": "courage",
+   "title": "Sobres et vigilants",
+   "ref": "1 Pierre 5:8",
+   "chrono": 3700,
+   "verse": "Soyez sobres, veillez. Votre adversaire, le diable, rôde comme un lion rugissant, cherchant qui il dévorera.",
+   "encadre": {
+    "titre": "Qu’est-ce que la sobriété ?",
+    "lignes": [
+     "<b>Sobriété</b> : être maître de soi, lucide et équilibré."
+    ]
+   },
+   "med": [
+    "Cette Parole nous encourage à être maîtres de nous-mêmes, à demeurer alertes, lucides, prudents, réfléchis et équilibrés, car l’adversaire rôde, cherchant à nous faire tomber — mais dans la foi, nous pouvons lui résister, car nous sommes attachés à la vérité.",
+    "C’est une invitation à la prudence et à la vigilance :<br/>• avoir un esprit clair<br/>• ne pas être distrait spirituellement<br/>• ne pas être dominé par les passions, la peur ou les illusions<br/>• rester vigilant et conscient du combat spirituel",
+    "C’est donc aussi une interpellation sur l’état de notre cœur : veillons à garder notre cœur plus que tout, car de lui jaillissent les sources de la vie.",
+    "Que mon cœur soit le refuge de l’Esprit de Dieu et non la caverne de l’adversaire, là où il viendrait établir sa domination.",
+    "Le cœur étant le point central, le centre de l’être intérieur, c’est de là que naissent les pensées, les intentions, les désirs et les décisions.",
+    "Matthieu 6:21 dit : « Là où est ton trésor, là aussi sera ton cœur. »<br/>Luc 6:45 dit : « L’homme bon tire de bonnes choses du bon trésor de son cœur, et le méchant tire de mauvaises choses de son mauvais trésor ; car c’est de l’abondance du cœur que la bouche parle. »",
+    "Les versets suivants complètent cet appel. Le verset 9 nous dit comment réagir face à ce danger : « Résistez-lui avec une foi ferme, sachant que les mêmes souffrances sont imposées à vos frères dans le monde. » La foi est décrite comme une arme spirituelle, une force intérieure qui nous aide à rester fermes face aux épreuves.",
+    "Le verset 10 nous laisse une promesse : « Le Dieu de toute grâce, qui vous a appelés en Jésus-Christ à sa gloire éternelle, après que vous aurez souffert un peu de temps, vous perfectionnera lui-même, vous affermira, vous fortifiera, vous rendra inébranlables. » Les souffrances sont temporaires ; Dieu est présent au milieu de ces épreuves, et il restaure, renforce et consolide ceux qui persévèrent.",
+    "L’idée principale peut se résumer ainsi :<br/>• v. 8 : prendre conscience du danger → nécessité d’être vigilant<br/>• v. 9 : réaction appropriée → la foi comme moyen de résistance<br/>• v. 10 : promesse d’espérance → Dieu restaure et fortifie"
+   ],
+   "pensee": "Marchons dans la vigilance et dans la lumière. Restons enracinés, vigilants et confiants en Lui.",
+   "priere": "Que nos cœurs demeurent fermement attachés à l’Agneau, source de vie, de paix et de victoire. Que notre cœur demeure attaché à la Parole de Dieu, notre refuge sûr, notre lumière, notre sécurité en toutes circonstances et notre espérance. Que la grâce de Dieu soit notre couverture, notre refuge et notre protection.",
+   "n": 35
+  },
+  {
+   "date": "2026-11-19",
+   "order": 0,
+   "app": "src",
+   "theme": "humilite",
+   "title": "Jésus me voit et m’appelle",
+   "ref": "Luc 19:2-6",
+   "verse": "Et voici, un homme riche, appelé Zachée, chef des publicains, cherchait à voir qui était Jésus ; mais il ne pouvait y parvenir, à cause de la foule, car il était de petite taille. Il courut en avant, et monta sur un sycomore pour le voir, parce qu’il devait passer par là. Lorsque Jésus fut arrivé à cet endroit, il leva les yeux et lui dit : Zachée, hâte-toi de descendre ; car il faut que je demeure aujourd’hui dans ta maison. Zachée se hâta de descendre, et le reçut avec joie.",
+   "med": [
+    "Zachée était chef des collecteurs d’impôts, riche et mal vu de tous. Il voulait seulement apercevoir Jésus, de loin, caché dans les branches d’un sycomore. Mais c’est Jésus qui s’arrête, qui lève les yeux et qui l’appelle par son nom. Il ne lui fait aucun reproche. Il lui dit simplement : « Il faut que je demeure aujourd’hui dans ta maison. » Avant même que Zachée ait changé quoi que ce soit, Jésus l’a choisi. Autour de lui, la foule murmure : « Il est allé loger chez un homme pécheur. » Pourtant, c’est cet accueil qui transforme Zachée. Celui qui prenait ouvre maintenant ses mains : il donne la moitié de ses biens et répare ses torts. Il n’agit pas par obligation, mais parce que la joie est entrée dans sa maison. Peut-être vous sentez-vous trop loin, trop petit ou trop marqué par votre passé. Le Seigneur vous voit là où vous êtes. Il connaît votre nom, et il veut entrer chez vous aujourd’hui. Car le Fils de l’homme est venu chercher et sauver ce qui était perdu."
+   ],
+   "pensee": "Vous cherchiez à voir Jésus, mais c’est lui qui vous voit le premier. Il vous voit tel que vous êtes et frappe à la porte de votre cœur : à vous de décider de le laisser entrer.",
+   "priere": "Seigneur Jésus, comme Zachée, je veux te voir. Merci parce que tu m’as vu avant que je te cherche, et que tu m’appelles par mon nom malgré ce que je suis. Aujourd’hui, je t’ouvre la porte de ma maison et de mon cœur. Entre et change ce qui doit être changé. Rends-moi généreux là où j’ai été égoïste, et donne-moi le courage de réparer mes torts. Que la joie de ton salut se voie dans ma vie. Au nom de Jésus, amen.",
+   "n": 36,
+   "chrono": 2700
+  },
+  {
+   "date": "2026-11-18",
+   "order": 1,
+   "app": "course",
+   "theme": "obeissance",
+   "title": "Nourri par la Parole",
+   "ref": "Matthieu 4:4",
+   "verse": "Jésus répondit : Il est écrit : L’homme ne vivra pas de pain seulement, mais de toute parole qui sort de la bouche de Dieu.",
+   "med": [
+    "Jésus est dans le désert depuis quarante jours. Il a faim, il est fatigué, et c’est précisément là que la tentation arrive. Pour y répondre, il ne discute pas et ne cherche pas à se justifier : il s’appuie sur la Parole. « Il est écrit. » Jésus nous rappelle que nous avons deux faims. Celle du corps est bien réelle, mais il y en a une autre, plus profonde, que seul Dieu peut combler. Dans notre course spirituelle, il y a des jours de désert, où l’on se sent vide et vulnérable. Ces jours-là, la Parole de Dieu devient notre pain : elle nous fortifie, elle nous garde debout et nous aide à résister. Aujourd’hui, ne courez pas le ventre spirituel vide. Prenez le temps de vous nourrir d’une parole de Dieu, et gardez-la avec vous tout au long de la journée."
+   ],
+   "pensee": "Le pain nourrit le corps pour un jour ; la Parole de Dieu nourrit l’âme pour toujours.",
+   "priere": "Seigneur Jésus, toi qui as vaincu la tentation par la Parole, apprends-moi à me nourrir de ce qui sort de la bouche de Dieu. Quand je traverse un désert, quand je suis fatigué ou tenté, rappelle-moi ce qui est écrit. Donne-moi faim de ta Parole plus que de tout le reste. Qu’elle soit mon pain chaque matin et ma force tout au long de cette journée. Au nom de Jésus, amen.",
+   "n": 37,
+   "chrono": 2100
+  },
+  {
+   "date": "2026-11-24",
+   "order": 0,
+   "app": "src",
+   "theme": "obeissance",
+   "title": "Obéir en restant à l’écoute du Père",
+   "ref": "Jean 5:19",
+   "verse": "Jésus reprit donc la parole, et leur dit : En vérité, en vérité, je vous le dis, le Fils ne peut rien faire de lui-même, il ne fait que ce qu’il voit faire au Père ; et tout ce que le Père fait, le Fils aussi le fait pareillement.",
+   "med": [
+    "En regardant Jésus, nous découvrons une obéissance qui naît de sa relation avec le Père. Jésus regarde à lui et agit en accord avec lui. Nous aussi, nous pouvons apprendre à dépendre du Père dans les décisions les plus ordinaires. Avant de répondre à une parole qui vous a blessé ou de prendre une décision dans la précipitation, prenez un instant pour prier. Demandez au Père de vous rappeler ce que sa Parole vous enseigne et de vous donner le courage de le mettre en pratique."
+   ],
+   "pensee": "Avant d’agir, je prends le temps de me tourner vers le Père.",
+   "priere": "Père, apprends-moi à chercher ta volonté dans mes choix de ce jour. Quand je suis pressé d’agir, donne-moi la patience de m’arrêter devant toi. Aide-moi à écouter ta Parole et à lui obéir avec confiance. Au nom de Jésus, amen.",
+   "n": 38,
+   "chrono": 2200
+  },
+  {
+   "date": "2026-11-05",
+   "order": 0,
+   "app": "src",
+   "theme": "obeissance",
+   "title": "Un cœur qui choisit Dieu",
+   "ref": "2 Timothée 2:22",
+   "verse": "Fuis les passions de la jeunesse, et recherche la justice, la foi, la charité, la paix, avec ceux qui invoquent le Seigneur d’un cœur pur.",
+   "med": [
+    "Fuir ce qui nous éloigne de Dieu n’est pas être faible, c’est faire preuve de sagesse spirituelle. Recherchez la droiture, la foi, l’amour et la paix, avec ceux qui font appel au Seigneur : notre marche avec Dieu ne doit pas être solitaire."
+   ],
+   "pensee": "Nous ne pouvons pas toujours empêcher une mauvaise pensée de traverser notre esprit, mais avec l’aide du Saint-Esprit, nous pouvons choisir de ne pas lui donner une place dans notre cœur.",
+   "priere": "Père céleste, en ce nouveau jour, nous venons devant toi avec humilité. Examine nos cœurs et révèle-nous tout ce qui nous éloigne de ta présence. Apprends-nous à fuir les pensées, les désirs et les comportements qui ne te glorifient pas. Donne-nous un cœur droit, une foi persévérante, un amour sincère et un esprit de paix. Lorsque notre chair veut répondre par la colère, enseigne-nous la douceur. Lorsque notre orgueil veut prendre le dessus, enseigne-nous l’humilité. Lorsque nous sommes blessés, apprends-nous à pardonner. Place sur notre chemin des frères et des sœurs qui recherchent sincèrement ta présence, afin que nous puissions grandir ensemble dans ton amour. Que notre vie soit le reflet de ta Parole, non seulement dans nos paroles, mais surtout dans nos actes. Au nom précieux de Jésus-Christ, amen.",
+   "n": 39,
+   "chrono": 3600
+  },
+  {
+   "theme": "obeissance",
+   "chrono": 3601,
+   "title": "L’enseignement mène à la discipline",
+   "ref": "2 Timothée 3:16-17",
+   "verse": "Toute Écriture est inspirée de Dieu, et utile pour enseigner, pour convaincre, pour corriger, pour instruire dans la justice, afin que l’homme de Dieu soit accompli et propre à toute bonne œuvre.",
+   "encadre": {
+    "titre": "Les mots du verset",
+    "lignes": [
+     "<b>Les Écritures</b> : les textes sacrés, la Parole de Dieu, écrite et dite par les saints hommes de Dieu inspirés par le Saint-Esprit.",
+     "<b>Inspirée</b> : « écrite avec l’aide de Dieu ».",
+     "<b>Enseigner</b> : transmettre des connaissances. <b>Convaincre</b> : amener une personne à reconnaître quelque chose. <b>Corriger</b> : ramener à la règle. <b>Instruire</b> : dispenser un enseignement."
+    ]
+   },
+   "med": [
+    "Ce qui m’a été révélé dans ma quête de connaissance, c’est la discipline. L’enseignement mène à la discipline.",
+    "Qu’est-ce que l’apôtre Paul a voulu nous faire comprendre dans ce verset ? Nous connaissons tous l’histoire de Saul, devenu l’apôtre Paul. Il était convaincu d’œuvrer pour Dieu en persécutant les chrétiens, jusqu’à ce qu’il soit arrêté par Dieu sur le chemin de Damas. Il fit alors la rencontre du vrai Dieu, celui pour qui il disait œuvrer. Il a été mis à part, les écailles lui sont tombées des yeux ; acceptant cette relation avec l’Esprit de Dieu, il a été enseigné, qualifié par Dieu, puis envoyé en mission pour le service.",
+    "Pendant longtemps, il avait porté l’armure de ce qu’il connaissait de ses pères et de sa culture. Paul a connu les deux puissances : la puissance de la destruction, et la puissance qui donne la vie, la Parole de Dieu.",
+    "Aujourd’hui, les Écritures devraient nous être encore plus utiles. Nous vivons une époque où l’on parle beaucoup de liberté, et pourtant nous manquons cruellement de cette liberté dont nous parlons. Dans les derniers jours, l’homme deviendra plus orgueilleux, plus égoïste, plus attaché aux plaisirs, influencé par le monde qui l’entoure et enchaîné à un système.",
+    "L’enseignement des Écritures est là pour nous apprendre à mieux connaître notre Créateur, son caractère divin, et qui nous sommes. C’est un enseignement pour nous instruire dans la vérité, cette vérité qui nous affranchira : « vous connaîtrez la vérité, et la vérité vous affranchira » (Jean 8:32), « car la parole de Dieu est vivante et efficace » (Hébreux 4:12). Ce plan se trouve dans un manuel appelé « la Bible », écrit de mains d’hommes mais inspiré par Dieu.",
+    "Que devons-nous faire pour recevoir cet enseignement ? Aller à la rencontre de Dieu, par son Esprit, afin d’être :<br/>• enseignés,<br/>• corrigés,<br/>• disciplinés,<br/>• équipés,<br/>• envoyés pour le travail qui nous sera confié.",
+    "Ainsi l’homme de Dieu sera « accompli et propre à toute bonne œuvre ». Préparé pour la mission que Dieu lui confiera, il pourra à son tour enseigner, semer et témoigner de sa rencontre avec le Christ. Cette connaissance lui permettra de remporter la victoire sur lui-même et ses mauvais penchants, sur le monde, et surtout sur celui qui dirige le monde, l’ennemi de Dieu.",
+    "La Parole est une arme puissante, une épée à double tranchant. Les enfants de Dieu ont besoin de cette connaissance qui affermit leur foi, pour pouvoir dire avec foi « il est écrit » lorsque l’ennemi se présente, comme Jésus l’a fait au désert.",
+    "Être au service de Dieu implique un choix, difficile pour certains : rompre avec tout autre dieu, rejeter nos différentes idoles, afin de recevoir l’héritage du vrai Dieu, son enseignement. « Et vous verrez de nouveau la différence entre le juste et le méchant, entre celui qui sert Dieu et celui qui ne le sert pas » (Malachie 3:18)."
+   ],
+   "pensee": "Suis-je prêt à me laisser enseigner, corriger et discipliner par la Parole de Dieu ?",
+   "priere": "Seigneur, ta Parole est vivante et efficace. Je viens à toi pour être enseigné, corrigé, discipliné et équipé. Fais-moi passer par le feu du fondeur s’il le faut, et ôte de moi ce que les hommes ne voient pas mais que toi tu vois. Que ta vérité m’affranchisse, et rends-moi propre à toute bonne œuvre. Au nom de Jésus, amen.",
+   "date": "2026-11-26",
+   "order": 20,
+   "app": "doc",
+   "n": 40
+  },
+  {
+   "theme": "croix",
+   "chrono": 2760,
+   "title": "Mourir pour vivre",
+   "ref": "Jean 12:24",
+   "verse": "En vérité, en vérité, je vous le dis, si le grain de blé qui est tombé en terre ne meurt, il reste seul ; mais, s’il meurt, il porte beaucoup de fruit.",
+   "encadre": {
+    "titre": "Questions pour méditer",
+    "lignes": [
+     "• Pourquoi semer ? Le fais-je de manière intéressée ou désintéressée ?<br/>• Que symbolise le grain jeté en terre ?<br/>• Qu’est-ce que la mort à soi-même ?<br/>• Comment y parvient-on, et quels en sont les fruits ?"
+    ]
+   },
+   "med": [
+    "La leçon des semailles nous enseigne d’abord la générosité : « celui qui sème abondamment moissonnera abondamment » (2 Corinthiens 9:6). « Heureux vous qui partout semez le long des eaux » (Ésaïe 32:20). Celui qui sème ne garde pas le grain pour lui : il le confie à la terre sans voir tout de suite le résultat.",
+    "Jésus prend cette image pour parler de lui-même. Le grain jeté en terre illustre le sacrifice qu’il allait accomplir pour nous : en donnant sa vie à la croix, il a porté beaucoup de fruit, notre salut.",
+    "Il y a là un paradoxe. Dans le monde physique, la vie vient avant la mort. Pourtant le monde végétal nous enseigne que la mort vient avant la vie : le grain doit mourir pour germer. Suivant cette loi, la vie naît de la mort.",
+    "Et dans le monde spirituel ? Devons-nous mourir à nous-mêmes pour suivre Jésus ? Mourir à soi-même, c’est lâcher toute forme d’égoïsme, d’égocentrisme et d’individualisme pour entrer dans un processus de transformation et porter du bon fruit. Nous n’y parvenons pas par nos propres forces, mais en restant unis à Jésus, qui a ouvert le chemin."
+   ],
+   "pensee": "Le grain qui meurt porte beaucoup de fruit.",
+   "priere": "Seigneur Jésus, tu as accepté d’être ce grain jeté en terre pour me donner la vie. Apprends-moi à mourir à moi-même, à lâcher mon égoïsme et mon orgueil, pour que ta vie grandisse en moi. Rends-moi généreux comme le semeur, et fais porter à ma vie du bon fruit pour ta gloire. Au nom de Jésus, amen.",
+   "date": "2026-11-26",
+   "order": 21,
+   "app": "doc",
+   "n": 41
+  },
+  {
+   "date": "2026-11-26",
+   "order": 0,
+   "app": "src",
+   "theme": "croix",
+   "title": "L’essentiel avant tout",
+   "ref": "1 Corinthiens 15:3",
+   "verse": "Je vous ai enseigné avant tout, comme je l’avais aussi reçu, que Christ est mort pour nos péchés, selon les Écritures.",
+   "med": [
+    "« Avant tout. » Parmi tout ce que Paul a enseigné aux Corinthiens, voici ce qu’il place en premier : le Christ est mort pour nos péchés. Ce n’est pas une idée qu’il aurait inventée, mais un message qu’il a lui-même reçu et qu’il transmet fidèlement, comme on transmet un trésor de main en main. Et ce n’est pas un accident de l’histoire : les Écritures l’avaient annoncé, Dieu l’avait préparé depuis longtemps. Ce matin, avant les tâches, les soucis et les nouvelles de la journée, revenez à l’essentiel. Vos fautes, même celles qui vous pèsent encore, ont été portées à la croix. Vous n’avez pas à mériter l’amour de Dieu : il vous a été donné. C’est sur ce fondement que tout le reste peut se construire. Et ce que vous avez reçu, vous pouvez à votre tour le transmettre à quelqu’un aujourd’hui, par une parole, un geste ou un pardon."
+   ],
+   "pensee": "Avant toute chose, je me souviens que le Christ est mort pour moi.",
+   "priere": "Seigneur Jésus, merci d’avoir donné ta vie pour mes péchés. Ce matin, je veux commencer ma journée par l’essentiel : ta croix et ton amour. Garde-moi d’oublier ce que tu as fait pour moi au milieu de mes occupations. Donne-moi de vivre comme quelqu’un qui a été pardonné, et de transmettre autour de moi ce que j’ai reçu de toi. Amen.",
+   "n": 42,
+   "chrono": 2900,
+   "encadre": {
+    "titre": "Qu’est-ce que le péché ?",
+    "lignes": [
+     "<b>Le péché</b> : la déconnexion.",
+     "<b>Les péchés</b> : les conséquences de la déconnexion avec Dieu."
+    ]
+   }
+  },
+  {
+   "theme": "croix",
+   "chrono": 3150,
+   "title": "Crucifié avec Jésus",
+   "ref": "Galates 2:20",
+   "verse": "J’ai été crucifié avec Christ ; et si je vis, ce n’est plus moi qui vis, c’est Christ qui vit en moi ; si je vis maintenant dans la chair, je vis dans la foi au Fils de Dieu, qui m’a aimé et qui s’est livré lui-même pour moi.",
+   "med": [
+    "Par le baptême, j’ai été crucifié à la croix avec Jésus, et je revis avec lui par sa résurrection.",
+    "Et si je vis encore dans la chair, c’est ma foi qui me maintiendra en vie, connecté à cet amour.",
+    "Paul ne parle pas ici d’un simple effort pour devenir meilleur. Il parle d’un échange : ma vieille vie a été clouée à la croix avec le Christ, et c’est désormais lui qui vit en moi. Le baptême en est le signe visible : nous sommes ensevelis avec lui, afin de marcher, comme lui ressuscité, « en nouveauté de vie » (Romains 6:4).",
+    "Cela ne veut pas dire que mes faiblesses ont disparu. Je vis encore dans un corps fragile, avec mes combats de chaque jour. Mais je ne les affronte plus seul : je vis « dans la foi au Fils de Dieu, qui m’a aimé et qui s’est livré lui-même pour moi ». Chaque matin, je peux redire à Jésus : « Vis en moi aujourd’hui. »"
+   ],
+   "pensee": "Chaque matin, je laisse Christ vivre en moi.",
+   "priere": "Seigneur Jésus, merci de t’être livré pour moi. Par le baptême, j’ai été uni à ta mort et à ta résurrection. Aujourd’hui encore, je te donne ma vie : vis en moi, pense en moi, aime à travers moi. Quand je suis faible, garde-moi attaché à ton amour par la foi. Au nom de Jésus, amen.",
+   "date": "2026-11-26",
+   "order": 4,
+   "app": "doc",
+   "n": 43
+  },
+  {
+   "date": "2026-11-26",
+   "order": 30,
+   "app": "doc",
+   "theme": "amour",
+   "chrono": 2750,
+   "title": "Aimer Dieu, aimer son prochain",
+   "ref": "Matthieu 22:37, 39",
+   "verse": "Jésus lui répondit : Tu aimeras le Seigneur, ton Dieu, de tout ton cœur, de toute ton âme, et de toute ta pensée. […] Et voici le second, qui lui est semblable : Tu aimeras ton prochain comme toi-même.",
+   "med": [
+    "Un docteur de la loi pensait mettre Jésus à l’épreuve en lui demandant quel était le plus grand commandement. Jésus ne lui donne pas une longue liste : il résume toute la loi en deux amours, qui ne vont pas l’un sans l’autre.",
+    "Le premier se tourne vers Dieu : l’aimer de tout votre cœur, de toute votre âme et de toute votre pensée. Il ne s’agit pas de lui donner une partie de votre vie, mais tout ce que vous êtes : vos sentiments, vos choix et vos pensées.",
+    "Le second, dit Jésus, lui est semblable : aimer votre prochain comme vous-même. L’amour pour Dieu ne reste pas enfermé dans la prière ; il se voit dans la manière dont nous traitons ceux qui nous entourent. Et c’est en recevant d’abord l’amour de Dieu que nous devenons capables d’aimer les autres.",
+    "Aujourd’hui, demandez-vous qui est ce prochain que Dieu place sur votre chemin : un proche, un collègue, une personne difficile à aimer ? Un geste, une parole ou un temps d’écoute peuvent devenir une manière d’aimer Dieu à travers lui."
+   ],
+   "pensee": "Aimer Dieu de tout mon cœur me rend capable d’aimer mon prochain.",
+   "priere": "Seigneur, je veux t’aimer de tout mon cœur, de toute mon âme et de toute ma pensée. Prends la première place dans ma vie. Remplis-moi de ton amour, pour que je puisse aimer mon prochain comme moi-même, même lorsque c’est difficile. Ouvre mes yeux sur ceux que tu places sur mon chemin aujourd’hui. Au nom de Jésus, amen.",
+   "n": 44
+  },
+  {
+   "date": "2026-11-27",
+   "order": 1,
+   "app": "course",
+   "theme": "servir",
+   "title": "Des dons différents, un même Esprit",
+   "ref": "1 Corinthiens 12:4",
+   "verse": "Il y a diversité de dons, mais le même Esprit.",
+   "med": [
+    "À Corinthe, les croyants se comparaient : certains dons semblaient plus visibles, plus importants que d’autres. Paul leur rappelle que tous viennent de la même source. C’est le même Esprit qui les distribue, et il les donne « pour l’utilité commune » (verset 7).",
+    "Vous n’avez peut-être pas le don de parler en public ou de chanter devant tous. Mais vous avez reçu quelque chose : une parole qui encourage, des mains qui servent, une oreille qui écoute, une prière fidèle. Dans une course de relais, chaque coureur a sa place, et l’équipe ne gagne qu’ensemble. Aujourd’hui, ne comparez pas votre don à celui des autres. Demandez au Saint-Esprit comment l’utiliser pour bénir quelqu’un."
+   ],
+   "pensee": "Le même Esprit m’a confié un don : je veux le mettre au service des autres.",
+   "priere": "Saint-Esprit, merci pour les dons que tu as placés en moi, même ceux que je ne vois pas encore. Garde-moi de me comparer aux autres ou de mépriser ce que j’ai reçu. Montre-moi aujourd’hui comment servir, encourager et bâtir ceux qui m’entourent. Que tout ce que je fais rende gloire à Dieu. Au nom de Jésus, amen.",
+   "n": 45,
+   "chrono": 3150
+  },
+  {
+   "theme": "servir",
+   "chrono": 3700,
+   "title": "Être au service de Dieu",
+   "ref": "Hébreux 1:14",
+   "verse": "Ne sont-ils pas tous des esprits au service de Dieu, envoyés pour exercer un ministère en faveur de ceux qui doivent hériter du salut ?",
+   "med": [
+    "La création et chaque créature proclament la grandeur du Dieu vivant. À travers chaque élément de la nature, nous voyons son amour.",
+    "Notre Père éternel assure la vie de chacune de ses créatures (Éducation, 116.3) : « Notre Père céleste anime et entretient, au quotidien, le souffle de vie de chacune de ses créatures. »",
+    "<b>Serviteur dans le plan divin</b>",
+    "Les anges sont des esprits au service du divin Maître, exerçant chacun un ministère en faveur du salut de l’homme.",
+    "Cette même loi du service est valable, sur terre, pour la nature et pour l’homme. Chaque acteur de cette nature a son rôle à jouer, recevant quotidiennement sa feuille de route. Chacun, dans son rôle, contribue au bien-être de l’humanité.",
+    "Cette nature ne vit pas par elle-même, mais elle est entretenue et maintenue en vie par la grâce du Divin, afin qu’elle continue à donner ce qu’elle a reçu. Contrairement à l’homme, la nature n’est pas rebelle : elle est et demeure fidèle et soumise aux lois de Dieu.",
+    "Chaque homme a aussi son rôle à jouer dans le plan divin, chacun en fonction de ce qu’il a reçu.",
+    "Le Christ, notre modèle, est venu sur terre en tant que serviteur. Luc 22:27 : « Car quel est le plus grand, celui qui est à table, ou celui qui sert ? N’est-ce pas celui qui est à table ? Et moi, cependant, je suis au milieu de vous comme celui qui sert. »",
+    "<b>Donnez, et il vous sera donné</b>",
+    "Chaque élément de la nature nous montre la bonté de Dieu envers ceux qui sont fidèles, obéissants à la loi du service.",
+    "Luc 6:38 : « Donnez, et il vous sera donné : on versera dans votre sein une bonne mesure, serrée, secouée et qui déborde ; car on vous mesurera avec la mesure dont vous vous serez servis. »",
+    "<b>Être au service : lumières, canaux pour le monde</b>",
+    "Nous avons pour mission de dire et de montrer à l’humanité que Dieu l’aime d’un amour inconditionnel."
+   ],
+   "pensee": "Comme le Christ, je suis appelé à servir avec ce que j’ai reçu.",
+   "priere": "Père, merci pour la vie que tu entretiens en moi chaque jour. Comme Jésus est venu pour servir, apprends-moi à servir à mon tour, avec ce que tu m’as donné. Fais de moi un canal de ta bonté et une lumière qui montre ton amour à ceux qui m’entourent. Au nom de Jésus, amen.",
+   "date": "2026-11-26",
+   "order": 8,
+   "app": "doc",
+   "n": 46
+  }
+ ],
+ "cloture": [
+  "Seigneur, merci pour chaque matin que tu donnes.",
+  "Merci pour ta présence, ta paix et ta fidélité.",
+  "Aide-nous à te confier ce qui pèse,",
+  "à marcher avec courage,",
+  "et à laisser ta lumière éclairer nos chemins.",
+  "Au nom de Jésus, amen."
+ ],
+ "doublons_retires": [
+  {
+   "date": "2026-11-15",
+   "order": 0,
+   "app": "src",
+   "theme": "avecmoi",
+   "title": "Ne crains rien",
+   "ref": "Ésaïe 41:10",
+   "verse": "Ne crains rien, car je suis avec toi ; ne promène pas des regards inquiets, car je suis ton Dieu ; je te fortifie, je viens à ton secours.",
+   "med": [
+    "Vous n’êtes jamais seul. Dieu est votre force dans chaque épreuve."
+   ],
+   "pensee": "Quand la peur se lève, Dieu reste auprès de moi.",
+   "priere": "Seigneur, quand j’ai peur, rappelle-moi que tu es avec moi. Fortifie-moi aujourd’hui. Amen.",
+   "chrono": 1401
+  },
+  {
+   "date": "2026-11-04",
+   "order": 0,
+   "app": "src",
+   "theme": "paix",
+   "title": "Le repos promis",
+   "ref": "Matthieu 11:28",
+   "verse": "Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos.",
+   "med": [
+    "Jésus vous invite à lui remettre vos fardeaux. Lequel voulez-vous lui confier ?"
+   ],
+   "pensee": "",
+   "priere": "Jésus, je viens à toi avec ma fatigue. Donne-moi ton repos et allège mon cœur. Amen.",
+   "chrono": 2400
+  },
+  {
+   "date": "2026-11-14",
+   "order": 0,
+   "app": "src",
+   "theme": "bontes",
+   "title": "Ses compassions se renouvellent",
+   "ref": "Lamentations 3:22-23",
+   "verse": "Les bontés de l’Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme ; elles se renouvellent chaque matin.",
+   "med": [
+    "Chaque jour est un nouveau départ dans la fidélité de Dieu."
+   ],
+   "pensee": "La bonté de Dieu se renouvelle pour moi aujourd’hui.",
+   "priere": "Merci Seigneur pour tes compassions renouvelées ce jour. Grande est ta fidélité. Amen.",
+   "chrono": 1501
+  },
+  {
+   "date": "2026-11-21",
+   "order": 0,
+   "app": "src",
+   "theme": "bontes",
+   "title": "Une bonté renouvelée",
+   "ref": "Lamentations 3:22-23",
+   "verse": "Les bontés de l’Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme. Elles se renouvellent chaque matin. Oh ! que ta fidélité est grande !",
+   "med": [
+    "Ce matin, tu te réveilles peut-être avec une inquiétude qui était déjà là hier. Tu peux en parler à Dieu dès maintenant, avec les mots que tu as. Sa bonté se renouvelle au milieu même de ce que tu traverses. Prends un instant pour lui confier ce qui te pèse, puis rappelle-toi une occasion où il t’a déjà soutenu. Sa fidélité d’hier peut nourrir ta confiance aujourd’hui."
+   ],
+   "pensee": "La fidélité de Dieu d’hier nourrit ma confiance aujourd’hui.",
+   "priere": "Père, merci pour ce nouveau matin et pour ta bonté qui se renouvelle. Je te confie mes inquiétudes et ce qui reste en suspens dans ma vie. Aide-moi à reconnaître ta présence dans les petites choses de cette journée et à accueillir la paix que tu me donnes. Au nom de Jésus, amen.",
+   "chrono": 1502
+  },
+  {
+   "date": "2026-11-16",
+   "order": 0,
+   "app": "src",
+   "theme": "courage",
+   "title": "Avancer avec courage",
+   "ref": "Josué 1:9",
+   "verse": "Ne t’ai-je pas donné cet ordre : Fortifie-toi et prends courage ? Ne t’effraie point et ne t’épouvante point, car l’Éternel, ton Dieu, est avec toi dans tout ce que tu entreprendras.",
+   "med": [
+    "Une nouvelle semaine commence, avec ses projets, ses rendez-vous et peut-être quelques craintes. Dieu ne vous demande pas d’être fort par vous-même : il vous promet sa présence. Le courage n’est pas l’absence de peur, c’est avancer en sachant que Dieu marche devant vous. Qu’allez-vous entreprendre cette semaine en vous appuyant sur lui ?"
+   ],
+   "pensee": "Vous n’entrez pas seul dans cette semaine : là où vous allez, Dieu est déjà là.",
+   "priere": "Seigneur, au début de cette semaine, je te confie tout ce que je vais entreprendre. Quand la peur se présente, rappelle-moi que tu es avec moi. Donne-moi ta force et ton courage pour chaque pas. Amen.",
+   "chrono": 650
+  },
+  {
+   "ref": "1 Corinthiens 9:24-25",
+   "date": "2026-11-26",
+   "app": "doc",
+   "note": "Versions 1 et 2 de la méditation « Courir vers la couronne éternelle » (la version 3, la plus complète, est dans le livre).",
+   "texte": "📖 1 Corinthiens 9:24-25\n\nBible en français courant (BFC)\n\nVerset 24\n\n« Vous savez sûrement que les coureurs dans le stade courent tous, mais qu’un seul remporte le prix. »\n\nVerset 25\n\nPaul explique ensuite que les athlètes s’imposent une discipline rigoureuse pour obtenir une récompense passagère, tandis que les croyants recherchent une couronne éternelle.\n\nLire les deux versets intégralement dans la Bible en français courant⁠\n\n🌿 Méditation : Courir pour remporter la couronne éternelle\n\nL’apôtre Paul compare notre vie chrétienne à une course.\n\nComme un athlète qui s’entraîne avec persévérance, nous sommes appelés à avancer dans la foi avec discipline, patience et détermination.\n\nMais notre récompense n’est pas une gloire terrestre qui disparaît. Notre objectif est la vie éternelle auprès de Jésus-Christ.\n\nLa question que nous pouvons nous poser est : Est-ce que je cours chaque jour en gardant les yeux fixés sur Jésus ?\n\nQue le Seigneur nous donne la force de persévérer jusqu’au bout de notre course. Amen. 🙏🏿\n\n—————————————————————————————————\n\nCe verset m a invite à examiner sincèrement notre engagement envers Dieu. Car il y a se préparer… et véritablement se préparer. Ce n’est pas simplement commencer la course, mais être disposé à la poursuivre jusqu’au bout.\n\n🌿 Méditation — 1 Corinthiens 9:24-25\n\nSommes-nous réellement préparés pour la course ?\n\nL’apôtre Paul compare notre marche avec Dieu à celle d’un athlète qui se prépare pour remporter une victoire.\n\nMais il y a se préparer… et se préparer véritablement.\n\nAvons-nous choisi la bonne préparation, celle qui nous rapproche chaque jour de Dieu et nous transforme intérieurement ?\n\nOu sommes-nous des coureurs irréguliers, tantôt actifs, tantôt persévérants, tantôt fatigués, parfois même découragés, au point de ralentir notre marche spirituelle ?\n\nUn athlète ne se prépare pas uniquement lorsqu’il en ressent l’envie. Il s’entraîne avec discipline, constance et détermination, parce qu’il garde les yeux fixés sur son objectif.\n\nIl en est de même dans notre vie spirituelle. Nous ne pouvons pas rechercher la couronne éternelle tout en négligeant notre préparation.\n\nCependant, être fatigué ne signifie pas avoir abandonné la course. Dieu connaît nos faiblesses. Il nous appelle à revenir à lui, à reprendre des forces dans sa présence et à persévérer.\n\nLa véritable question n’est donc pas seulement : Sommes-nous dans la course ?\n\nMais plutôt : Comment nous préparons-nous ? Vers quel but courons-nous ? Et sommes-nous prêts à persévérer, même lorsque le chemin devient difficile ?\n\nCar ce n’est pas la rapidité de notre course qui compte, mais notre fidélité à Celui qui nous appelle.\n\n🙏🏿 Seigneur, apprends-nous à ne pas être des coureurs d’un moment, mais des disciples persévérants. Aide-nous à nous préparer chaque jour, à rester fidèles dans l’épreuve et à garder les yeux fixés sur Jésus, afin de poursuivre notre course jusqu’au bout. Amen.\n\nUne pensée à retenir : Nous pouvons être engagés dans la course sans être véritablement préparés à la terminer.\n\n—----------------------------------------\n\n"
+  },
+  {
+   "date": "2026-11-28",
+   "order": 0,
+   "app": "course",
+   "theme": "amour",
+   "title": "Aimer Dieu, aimer son prochain",
+   "ref": "Matthieu 22:37, 39",
+   "verse": "Jésus lui répondit : Tu aimeras le Seigneur, ton Dieu, de tout ton cœur, de toute ton âme, et de toute ta pensée. […] Et voici le second, qui lui est semblable : Tu aimeras ton prochain comme toi-même.",
+   "med": [
+    "On demande à Jésus quel est le plus grand commandement. Il aurait pu donner une longue liste de règles. Il répond par un seul mot, deux fois : aimer. Aimer Dieu de tout son être, et aimer son prochain comme soi-même. Puis il ajoute que toute la loi et les prophètes dépendent de ces deux commandements (verset 40).",
+    "Les deux vont ensemble, comme les deux jambes d’un coureur : on n’avance pas avec une seule. Aimer Dieu sans aimer les autres devient une religion froide. Aimer les autres sans aimer Dieu finit par s’épuiser. C’est en recevant d’abord son amour que nous trouvons la force d’aimer à notre tour, même ceux qui sont difficiles à aimer. Aujourd’hui, commence par lui donner ton cœur dans la prière. Puis demande-lui de te montrer une personne à qui tu peux témoigner cet amour : une parole, un appel, un service, un pardon."
+   ],
+   "pensee": "J’aime Dieu de tout mon cœur, et son amour me rend capable d’aimer mon prochain.",
+   "priere": "Seigneur, je veux t’aimer de tout mon cœur, de toute mon âme et de toute ma pensée. Remplis-moi de ton amour, car le mien est souvent trop petit. Ouvre mes yeux sur ceux que tu places sur mon chemin aujourd’hui, surtout ceux que j’ai du mal à aimer. Que mes paroles et mes gestes leur fassent connaître ta bonté. Au nom de Jésus. Amen.",
+   "chrono": 2750,
+   "note": "Publié sur Ma course spirituelle le 28 nov. 2026 ; déjà dans le livre (version du 26 nov., plus complète)."
+  }
+ ]
+}
